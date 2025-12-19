@@ -1,4 +1,5 @@
-loadstring([[game.ReplicatedStorage:WaitForChild('RemoteEvents'):WaitForChild('CustomMakeup'):FireServer('Lips', 188, 2)
+game.ReplicatedStorage:WaitForChild('RemoteEvents'):WaitForChild('ClassicMakeup'):FireServer(227, "Light)
+game.ReplicatedStorage:WaitForChild('RemoteEvents'):WaitForChild('CustomMakeup'):FireServer('Lips', 188, 2)
 game.ReplicatedStorage:WaitForChild('RemoteEvents'):WaitForChild('CustomMakeup'):FireServer('Lips', 188, 3)
 game.ReplicatedStorage:WaitForChild('RemoteEvents'):WaitForChild('CustomMakeup'):FireServer('Lips', 188, 1)
 game.ReplicatedStorage:WaitForChild('RemoteEvents'):WaitForChild('CustomMakeup'):FireServer('Eyes', 190, 1)
@@ -20,4 +21,4 @@ game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('
 game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ApplyMakeupColor'):FireServer('Touches', 398, 2, Color3.new(1, 1, 1))
 game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ApplyMakeupColor'):FireServer('Contour', 50, 1, Color3.new(1, 1, 1))
 game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ApplyMakeupColor'):FireServer('Touches', 404, 1, Color3.new(1, 1, 1))
-game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ApplyMakeupColor'):FireServer('Touches', 400, 4, Color3.new(1, 1, 1))]])()
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ApplyMakeupColor'):FireServer('Touches', 400, 4, Color3.new(1, 1, 1))
