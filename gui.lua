@@ -2036,7 +2036,7 @@ local script = G2L["66"];
 	local clearString = "game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ClassicMakeup'):FireServer(1, 'Light')\n"
 	
 	script.Parent.MouseButton1Up:Connect(function()
-		setclipboard(getCMPreset())
+		setclipboard(clearString..getCMPreset())
 	end)
 end;
 task.spawn(C_66);
