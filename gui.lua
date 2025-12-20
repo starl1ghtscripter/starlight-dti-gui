@@ -2092,9 +2092,9 @@ local script = G2L["2c"];
 		-- bubblegum gal fashion doll:
 		["BubblegumGalFashionDoll"] = 210,
 		-- halloween ltd 3pk:
-		["ShipwreckedSiren3PK"] = 212,
-		["PumpkinWitch3PK"] = 213,
-		["TransformedLina3PK"] = 214
+		["ShipwreckedSiren3PK"] = 213,
+		["PumpkinWitch3PK"] = 214,
+		["TransformedLina3PK"] = 212
 	}
 	
 	local equipMode = "Light"
