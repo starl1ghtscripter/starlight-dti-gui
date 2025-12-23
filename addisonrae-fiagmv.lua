@@ -20,6 +20,7 @@ game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('
 game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('DressUpToggle'):FireServer("Classic Heels", 1, {["Pointy"] = "Off"})
 game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('EquipItem'):FireServer("Tinted Glasses")
 game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ColorAccessory'):FireServer("Tinted Glasses", '1', Color3.new(0, 0, 0))
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('MaterialAccessory'):FireServer("Tinted Glasses", '1', 'MattePlastic')
 game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ColorAccessory'):FireServer("Tinted Glasses", '2', Color3.new(0, 0, 0))
 game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('DressUpToggle'):FireServer("Tinted Glasses", 0, {})
 game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ChangeNailStyle'):FireServer('Default')
