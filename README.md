@@ -11,4 +11,6 @@
 -# Note that we do not take any responsibility if you get banned from/reported to DTI. 𑣲
 
 Copy and paste the script below into your executor to use the GUI.
-```loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()```
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()
+```
