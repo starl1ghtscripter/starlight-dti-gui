@@ -348,7 +348,6 @@ G2L["28"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Main
 G2L["29"] = Instance.new("ScrollingFrame", G2L["28"]);
-G2L["29"]["Visible"] = false;
 G2L["29"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 G2L["29"]["BorderSizePixel"] = 0;
 G2L["29"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
@@ -1694,9 +1693,9 @@ G2L["b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], 
 G2L["b1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["b1"]["BackgroundTransparency"] = 1;
 G2L["b1"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["b1"]["Size"] = UDim2.new(1, 0, 0.25, 0);
+G2L["b1"]["Size"] = UDim2.new(1, 0, 0.3, 0);
 G2L["b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b1"]["Text"] = [[Select an idle/walk from a walkpack for FREE!]];
+G2L["b1"]["Text"] = [[Select an idle/walk from a walkpack for FREE! (This feature can sometimes be buggy!)]];
 G2L["b1"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
@@ -2009,6 +2008,7 @@ G2L["d1"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FitPresets
 G2L["d2"] = Instance.new("ScrollingFrame", G2L["28"]);
+G2L["d2"]["Visible"] = false;
 G2L["d2"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 G2L["d2"]["BorderSizePixel"] = 0;
 G2L["d2"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
@@ -3670,6 +3670,10 @@ local function C_5()
 local script = G2L["5"];
 	local notifCont = require(game:GetService("ReplicatedStorage").Client.Controllers.NotificationController)
 	notifCont:Notify("Welcome to Starlight DTI GUI! Please read the Main tab for some info.")
+	if setclipboard then
+		setclipboard("https://discord.gg/FaN3kG55Qb")
+		notifCont:Notify("Discord invite copied to clipboard.")
+	end
 	
 	local main = script.Parent
 	local uiScale = Instance.new("UIScale", main)
@@ -4705,19 +4709,33 @@ local script = G2L["b5"];
 	local clearMakeup = "game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ClassicMakeup'):FireServer("..getClearFace()..", 'Light')\n"
 	local clearOutfit = "for i, v in game.Players.LocalPlayer.Character:WaitForChild('EquippedAccessories'):GetChildren() do "..unEquipRemote..":FireServer(v.Name) end\n"
 	
+	local notifCont = require(game:GetService("ReplicatedStorage").Client.Controllers.NotificationController)
+	
 	script.Parent:WaitForChild("CustomMakeup").MouseButton1Up:Connect(function()
-		setclipboard(clearMakeup..getCMPreset())
+		if setclipboard then
+			setclipboard(clearMakeup..getCMPreset())
+		else
+			notifCont:Notify("Your executor does not support this feature.")
+		end
 	end)
 	
 	script.Parent:WaitForChild("Outfit").MouseButton1Up:Connect(function()
-		setclipboard(clearOutfit..getOutfit()..clearMakeup..getMakeup())
+		if setclipboard then
+			setclipboard(clearOutfit..getOutfit()..clearMakeup..getMakeup())
+		else
+			notifCont:Notify("Your executor does not support this feature.")
+		end
 	end)
 	
 	script.Parent:WaitForChild("StealCM").MouseButton1Up:Connect(function()
 		if script.Parent:WaitForChild("StealName").Text then
 			local username = string.lower(script.Parent:WaitForChild("StealName").Text)
 			if not username then return end
-			setclipboard(clearMakeup..getCMPreset(username))
+			if setclipboard then
+				setclipboard(clearMakeup..getCMPreset(username))
+			else
+				notifCont:Notify("Your executor does not support this feature.")
+			end
 		end
 	end)
 	
@@ -4727,6 +4745,8 @@ local script = G2L["b5"];
 			if not username then return end
 			if loadstring then
 				loadstring(clearMakeup..getCMPreset(username))()
+			else
+				notifCont:Notify("Your executor does not support this feature.")
 			end
 		end
 	end)
@@ -4735,7 +4755,11 @@ local script = G2L["b5"];
 		if script.Parent:WaitForChild("StealName").Text then
 			local username = string.lower(script.Parent:WaitForChild("StealName").Text)
 			if not username then return end
-			setclipboard(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))
+			if setclipboard then
+				setclipboard(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))
+			else
+				notifCont:Notify("Your executor does not support this feature.")
+			end
 		end
 	end)
 	
@@ -4745,6 +4769,8 @@ local script = G2L["b5"];
 			if not username then return end
 			if loadstring then
 				loadstring(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))()
+			else
+				notifCont:Notify("Your executor does not support this feature.")
 			end
 		end
 	end)
