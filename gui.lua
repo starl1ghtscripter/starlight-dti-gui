@@ -4906,11 +4906,11 @@ task.spawn(C_12c);
 local function C_136()
 local script = G2L["136"];
 	local places = {
-		["Regular"] = 0,
-		["Freeplay"] = 0,
-		["Pro"] = 0,
-		["Master"] = 0,
-		["Casual"] = 0,
+		["Regular"] = 15101393044,
+		["Freeplay"] = 17481176031,
+		["Pro"] = 15642275269,
+		["Master"] = 89606894431558,
+		["Casual"] = 110125451314286,
 		["H2024"] = 134934496342792,
 		["W2024"] = 75162152842511,
 		["V2025"] = 102776598174583,
