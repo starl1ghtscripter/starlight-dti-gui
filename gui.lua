@@ -1,3 +1,4 @@
+-- Instances: 447 | Scripts: 26 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.DTIGUI
@@ -20,10 +21,10 @@ G2L["3"]["Name"] = [[Sounds]];
 G2L["4"] = Instance.new("Frame", G2L["1"]);
 G2L["4"]["BorderSizePixel"] = 0;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(213, 154, 192);
-G2L["4"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["4"]["AnchorPoint"] = Vector2.new(0.5, 0);
 G2L["4"]["AutomaticSize"] = Enum.AutomaticSize.Y;
 G2L["4"]["Size"] = UDim2.new(0, 400, 0, 0);
-G2L["4"]["Position"] = UDim2.new(0.80487, 0, 0.5, 0);
+G2L["4"]["Position"] = UDim2.new(0.80487, 0, 0.35, 0);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Name"] = [[Main]];
 G2L["4"]["BackgroundTransparency"] = 0.25;
