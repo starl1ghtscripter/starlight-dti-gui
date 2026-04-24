@@ -6507,7 +6507,7 @@ task.spawn(C_1c9);
 -- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.LocalScript
 local function C_1d8()
 local script = G2L["1d8"];
-	local uiScale = script.Parent.Parent.Parent.Parent.Parent.UIScale
+	local uiScale = script.Parent.Parent.Parent.Parent.Parent:FindFirstChildOfClass("UIScale") or Instance.New("UIScale", script.Parent.Parent.Parent.Parent.Parent)
 	local sizes = {
 		Default = 1,
 		Small = 0.75,
