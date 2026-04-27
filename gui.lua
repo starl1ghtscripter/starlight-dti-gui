@@ -6982,7 +6982,7 @@ local script = G2L["1e4"];
 	
 	local function clearInfoUIs(exempt)
 		for _, child in pairs(gui:GetChildren()) do
-			if child:GetAttribute("InfoUI") and child ~= child then
+			if child:GetAttribute("InfoUI") and child ~= exempt then
 				child:Destroy()
 			end
 		end
