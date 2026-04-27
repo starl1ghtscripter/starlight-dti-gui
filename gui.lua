@@ -4766,6 +4766,7 @@ G2L["1f0"]["Color"] = Color3.fromRGB(255, 135, 206);
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Render
 G2L["1f1"] = Instance.new("ImageLabel", G2L["1e5"]);
 G2L["1f1"]["BorderSizePixel"] = 0;
+G2L["1f1"]["ScaleType"] = Enum.ScaleType.Fit;
 G2L["1f1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1f1"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["1f1"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
