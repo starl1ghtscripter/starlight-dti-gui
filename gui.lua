@@ -3510,20 +3510,20 @@ G2L["16f"]["Text"] = [[Unlock Toy Codes + Locked Makeup]];
 G2L["16f"]["Name"] = [[GETALL]];
 
 
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL.LocalScript
+G2L["170"] = Instance.new("LocalScript", G2L["16f"]);
+
+
+
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL.UICorner
-G2L["170"] = Instance.new("UICorner", G2L["16f"]);
-G2L["170"]["CornerRadius"] = UDim.new(0, 5);
+G2L["171"] = Instance.new("UICorner", G2L["16f"]);
+G2L["171"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL.UIStroke
-G2L["171"] = Instance.new("UIStroke", G2L["16f"]);
-G2L["171"]["Thickness"] = 1.5;
-G2L["171"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL.LocalScript
-G2L["172"] = Instance.new("LocalScript", G2L["16f"]);
-
+G2L["172"] = Instance.new("UIStroke", G2L["16f"]);
+G2L["172"]["Thickness"] = 1.5;
+G2L["172"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport
@@ -7025,8 +7025,8 @@ local script = G2L["154"];
 end;
 task.spawn(C_154);
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL.LocalScript
-local function C_172()
-local script = G2L["172"];
+local function C_170()
+local script = G2L["170"];
 	local registry
 	local success = pcall(function()
 		registry = require(game.ReplicatedStorage.Content.Item.Registry)
@@ -7090,7 +7090,7 @@ local script = G2L["172"];
 		end
 	end
 end;
-task.spawn(C_172);
+task.spawn(C_170);
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.PlaceTeleports
 local function C_174()
 local script = G2L["174"];
@@ -7374,7 +7374,8 @@ local script = G2L["1cc"];
 				render = thingInfo.Render[2]
 			end
 			local price = thingInfo.Metadata.Price
-			return {thingType, render, price, thingInfo.Name}
+			local currency = thingInfo.Metadata.Currency or "Cash"
+			return {thingType, render, price, thingInfo.Name, currency}
 		end
 	end
 	
@@ -7403,12 +7404,13 @@ local script = G2L["1cc"];
 				local thingType = info[1]
 				local render = info[2]
 				local price = info[3]
+				local currency = info[5]
 				local clone = infoTemplate:Clone()
 				clone.Render.Image = render
 				clone.Type.Text = thingType
 				clone.ItemName.Text = info[4]
 				if price then
-					clone.Price.Text = "Price: $"..price
+					clone.Price.Text = "Price: $"..price.." "..currency
 				else
 					clone.Price.Text = "No price"
 				end
