@@ -7365,7 +7365,7 @@ local script = G2L["1cc"];
 		local success = pcall(function()
 			registry = require(game.ReplicatedStorage.Content.Item.Registry)
 		end)
-		if not success then return end
+		if not success then return false end
 		local thingInfo = registry:Get(name)
 		if thingInfo then
 			local thingType = thingInfo.Type
@@ -7376,14 +7376,8 @@ local script = G2L["1cc"];
 			local price = thingInfo.Metadata.Price
 			local currency = thingInfo.Metadata.Currency or "Cash"
 			return {thingType, render, price, thingInfo.Name, currency}
-		end
-	end
-	
-	local function clearInfoUIs(exempt)
-		for _, child in pairs(gui:GetChildren()) do
-			if child:GetAttribute("InfoUI") and child ~= exempt then
-				child:Destroy()
-			end
+		else
+			return false
 		end
 	end
 	
@@ -7405,22 +7399,23 @@ local script = G2L["1cc"];
 				local render = info[2]
 				local price = info[3]
 				local currency = info[5]
-				local clone = infoTemplate:Clone()
+				local clone = infoTemplate
 				clone.Render.Image = render
 				clone.Type.Text = thingType
 				clone.ItemName.Text = info[4]
 				if price then
-					clone.Price.Text = "Price: $"..price.." "..currency
+					clone.Price.Text = "Price: $"..price
+					if currency then
+						clone.Price.Text = "Price: $"..price.." "..currency
+					end
 				else
 					clone.Price.Text = "No price"
 				end
 				clone.Name = info[4]
-				clone:SetAttribute("InfoUI", true)
-				clearInfoUIs(clone)
 				clone.Visible = true
 				clone.Parent = gui
 				clone.Close.MouseButton1Up:Connect(function()
-					clone:Destroy()
+					clone.Visible = false
 				end)
 			else
 				local prev = nameBox.Text
