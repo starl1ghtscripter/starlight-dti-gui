@@ -1,0 +1,5 @@
+game.ReplicatedStorage.RemoteEvents.EquipItem:FireServer("Halloween Witch Set")
+	game.ReplicatedStorage.RemoteEvents.EquipItem:FireServer("Winter: Belt Skirt DIONCELLA")
+	
+	game.ReplicatedStorage.RemoteEvents.DressUpToggle:FireServer("Halloween Witch Set", 0)
+	game.ReplicatedStorage.RemoteEvents.DressUpToggle:FireServer("Winter: Belt Skirt DIONCELLA", 0)
