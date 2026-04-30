@@ -3,8 +3,7 @@
 
 - Access to free DLC makeup, including all collections. ⟡
 - Ability to steal outfits and custom makeup looks.  ݁ ⟡ ݁ 
-- Free walk packs available. (Occasionally buggy)  ݁ ⟡ ݁                                          
-- Teleport to older quests, including all quests from 2024 and 2025!  ݁ ⟡ ݁ 
+- Free walk packs available. (Occasionally buggy)  ݁ ⟡ ݁ 
 - Unlock all POSES + CODES for free!  ݁ ⟡ ݁ 
 - Outfit presets to help you troll or achieve top spots on the leaderboard.  ݁ ⟡ ݁ 
 -------------------------------------------------------------------------------------
