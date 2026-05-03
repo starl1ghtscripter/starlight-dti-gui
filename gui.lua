@@ -3481,10 +3481,8 @@ G2L["16c"]["BackgroundTransparency"] = 0.5;
 G2L["16c"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["16c"]["LayoutOrder"] = -999;
 G2L["16c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16c"]["Text"] = [[]];
+G2L["16c"]["Text"] = [[Unlock DLC + Other Locked Makeup]];
 G2L["16c"]["Name"] = [[GETALL]];
-G2L["16c"]["Visible"] = false
-
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL.LocalScript
 G2L["16d"] = Instance.new("LocalScript", G2L["16c"]);
@@ -7207,8 +7205,6 @@ task.spawn(C_151);
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL.LocalScript
 local function C_16d()
 local script = G2L["16d"];
- print("patched")
- if true then return end
 	local registry
 	local success = pcall(function()
 		registry = require(game.ReplicatedStorage.Content.Item.Registry)
