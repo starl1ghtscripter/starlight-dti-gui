@@ -6835,7 +6835,7 @@ local script = G2L["c1"];
 				if scale ~= 1 then
 					table.insert(lines,
 						adjustRemote
-							..":FireServer(\'"..item.Name.."\'"
+							..":FireServer(\""..item.Name.."\""
 							..", 'Scale'"
 							..", _"
 							..", "..scale..")"
