@@ -11,13 +11,8 @@ return {
 		end
 
 		return function()
-			local env = {
-				script = scriptObj,
-				print = print,
-				warn = warn,
-				game = game,
-				workspace = workspace,
-			}
+			local env = getfenv(fn)
+   env.script = scriptObj
 
 			setfenv(fn, env)
 			return fn()
