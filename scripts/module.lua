@@ -1,19 +1,27 @@
 local pref = "https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/"
-return {
- ["getScript"] = function(path, scriptObj)
-  local full = pref..path
-  local src = game:HttpGet(full)
 
-  local fn, err = loadstring(src)
-  if not fn then
-   warn("Loadstring failed:", err)
-   return nil
-  end
-  
-  if scriptObj then
-   fn = "local script = scriptObj".."\n"..fn
-  end
-  
-  return fn
- end
+return {
+	getScript = function(path, scriptObj)
+		local src = game:HttpGet(pref .. path)
+
+		local fn, err = loadstring(src)
+		if not fn then
+			warn("Loadstring failed:", err)
+			return nil
+		end
+
+		return function()
+			-- run with custom environment
+			local env = {
+				script = scriptObj,
+				print = print,
+				warn = warn,
+				game = game,
+				workspace = workspace,
+			}
+
+			setfenv(fn, env)
+			return fn()
+		end
+	end
 }
