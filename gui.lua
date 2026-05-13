@@ -5567,6 +5567,13 @@ G2L["243"] = Instance.new("UIPadding", G2L["240"]);
 G2L["243"]["PaddingRight"] = UDim.new(0, 7);
 G2L["243"]["PaddingLeft"] = UDim.new(0, 7);
 
+G2L["243"] = Instance.new("LocalScript", G2L["4a"]);
+G2L["243"]["Name"] = [[TestScript]]
+
+local function testScript()
+local script = G2L["243"];
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/test.lua"))()
+end;
 
 -- StarterGui.DTIGUI.Sounds
 local function C_2()
