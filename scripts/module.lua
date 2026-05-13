@@ -11,7 +11,6 @@ return {
 		end
 
 		return function()
-			-- run with custom environment
 			local env = {
 				script = scriptObj,
 				print = print,
