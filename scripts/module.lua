@@ -12,7 +12,7 @@ return {
 
 		return function()
 			local env = getfenv(fn)
-   env.script = scriptObj
+      env.script = scriptObj
 
 			setfenv(fn, env)
 			return fn()
