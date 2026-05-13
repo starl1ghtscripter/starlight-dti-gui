@@ -1,1 +1,1 @@
-print("hellooo")
+print(script.Parent.Name)
