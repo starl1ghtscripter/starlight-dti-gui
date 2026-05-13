@@ -4,9 +4,6 @@ return {
   local full = pref..path
   local src = game:HttpGet(full)
 
-  print("Loaded:", full)
-  print("Source:", src)
-
   local fn, err = loadstring(src)
   if not fn then
    warn("Loadstring failed:", err)
