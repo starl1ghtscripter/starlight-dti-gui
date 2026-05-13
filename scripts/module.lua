@@ -2,6 +2,6 @@ local pref = "https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-
 return {
  getScript = function(path)
   local full = pref..path
-  return loadstring(game:HttpGet("full"))
+  return loadstring(game:HttpGet(full))
  end
 }
