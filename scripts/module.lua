@@ -12,7 +12,8 @@ return {
 
 		return function()
 			local env = getfenv(fn)
-            env.script = scriptObj
+      env.script = scriptObj
+        for k, v in pairs(env) do print(i) end
 
 			setfenv(fn, env)
 			return fn()
