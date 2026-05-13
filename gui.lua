@@ -5572,7 +5572,8 @@ G2L["243"]["Name"] = [[TestScript]]
 
 local function testScript()
 local script = G2L["243"];
- loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/test.lua"))()
+ local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/module.lua"))()
+ module.getScript("test.lua")()
 end;
 
 -- StarterGui.DTIGUI.Sounds
