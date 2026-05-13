@@ -1,5 +1,5 @@
 local mobile = false
-	local UIS = game.UserInputService
+	local UIS = game:GetService("UserInputService")
 	if UIS.TouchEnabled and not UIS.KeyboardEnabled then
 		mobile = true
 	end
