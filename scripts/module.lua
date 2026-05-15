@@ -15,7 +15,7 @@ return {
       		env.script = scriptObj
 
 			setfenv(fn, env)
-			return fn()
+			return fn
 		end
 	end
 }
