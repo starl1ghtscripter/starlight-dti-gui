@@ -1,0 +1,23 @@
+return {
+	["CvntyY2K"] = "cvnty2k",
+	["MessyLana"] =  "messylana",
+	["BubblegumCandycane"] = "bluecandycane",
+	["TallBitch"] = "tallbtch",
+	["NakedLana"] = "nkedlana",
+	["GyaruUniform"] = "gyaruuniform",
+	["BeachBaddie"] = "beachbaddie",
+	["MrsClause"] = "mrsclaus",
+	["HotPinkY2K"] = "hotpinky2k",
+	["ARFameIsAGun"] = "addisonraefiag",
+	["KATSEYEMeganGnarly"] = "katseyemegan1",
+	["KATSEYELaraPinkyUp"] = "katseyelara1",
+	["KATSEYEYoonchaePinkyUp"] = "katseyeyoonchae1",
+	KATSEYESophiaGabriela = "katseyesophia1",
+	KATSEYEDanielaBCTour = "katseyedani1",
+	KATSEYEManonGnarly = "katseyemanon1",
+	KATSEYEManonTouch = "katseyemanon2",
+	CutePinkFrilly = "pinkfrilly",
+	PinkSpacebuns = "pinkspacebuns",
+	GothicRomance = "gothicromance",
+	CuteGothic = "cutegoth"
+}
