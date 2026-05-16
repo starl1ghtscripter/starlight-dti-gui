@@ -19,5 +19,6 @@ return {
 	CutePinkFrilly = "pinkfrilly",
 	PinkSpacebuns = "pinkspacebuns",
 	GothicRomance = "gothicromance",
-	CuteGothic = "cutegoth"
+	CuteGothic = "cutegoth",
+	Stripper = "stripper"
 }
