@@ -1,0 +1,7 @@
+local RemoteEvents = game.ReplicatedStorage.RemoteEvents
+local equip = RemoteEvents.EquipItem
+local toggle = RemoteEvents.DressUpToggle
+
+
+equip:FireServer("Troll Head")
+toggle:FireServer("Troll Head")
