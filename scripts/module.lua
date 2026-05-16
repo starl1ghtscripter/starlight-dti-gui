@@ -8,12 +8,9 @@ return {
 			return nil
 		end
 
-		return function()
-			local env = getfenv(fn)
-      		env.script = scriptObj
-
-			setfenv(fn, env)
-			return fn()
-		end
+		local env = getfenv(fn)
+      	env.script = scriptObj
+		setfenv(fn, env)
+		return fn
 	end
 }
