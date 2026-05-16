@@ -1,8 +1,6 @@
-local pref = "https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/"
-
 return {
 	getScript = function(path, scriptObj)
-		local src = game:HttpGet(pref .. path)
+		local src = game:HttpGet(path)
 
 		local fn, err = loadstring(src)
 		if not fn then
