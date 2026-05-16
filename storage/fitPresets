@@ -21,5 +21,10 @@ return {
 	GothicRomance = "gothicromance",
 	CuteGothic = "cutegoth",
 	Stripper = "stripper",
-	WhiteQueen = "whitequeen"
+	WhiteQueen = "whitequeen",
+	TapeTop = "tapetop",
+	GapMale = "gapmale",
+	BrownFitTed = "brownfitted",
+	BTIFlower = "btiflower",
+	Y2KLeopardPrint = "y2kleopardprint"
 }
