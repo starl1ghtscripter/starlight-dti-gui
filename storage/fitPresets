@@ -23,8 +23,7 @@ return {
 	Stripper = "stripper",
 	WhiteQueen = "whitequeen",
 	TapeTop = "tapetop",
-	GapMale = "gapmale",
 	BrownFitTed = "brownfitted",
-	BTIFlower = "btiflower",
-	Y2KLeopardPrint = "y2kleopardprint"
+	Y2KLeopardPrint = "y2kleopardprint",
+	BeigeBitch = "beigebitch"
 }
