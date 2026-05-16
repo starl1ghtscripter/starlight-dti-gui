@@ -1,0 +1,22 @@
+for i, v in game.Players.LocalPlayer.Character:WaitForChild('EquippedAccessories'):GetChildren() do game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('UnequipItem'):FireServer(v.Name) end
+game.ReplicatedStorage.RemoteEvents.ChangeGender:FireServer("Woman")
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('EquipItem'):FireServer("Lana Doll")
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('DressUpToggle'):FireServer("Lana Doll", 1, {})
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ColorAccessory'):FireServer("Lana Doll", '1', Color3.new(1, 1, 1))
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ColorAccessory'):FireServer("Lana Doll", '2', Color3.new(1, 1, 1))
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ColorAccessory'):FireServer("Lana Doll", '3', Color3.new(1, 1, 1))
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ColorAccessory'):FireServer("Lana Doll", '4', Color3.new(1, 1, 1))
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ColorAccessory'):FireServer("Lana Doll", '5', Color3.new(0.40392160415649414, 0.29019609093666077, 0.2352941334247589))
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ColorAccessory'):FireServer("Lana Doll", '5', 'rbxassetid://104670465305100')
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ChangeNailStyle'):FireServer('Default')
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ColorAccessory'):FireServer('Nails', '1', Color3.new(0.9803921580314636, 0.6784313917160034, 0.501960813999176))
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('MaterialAccessory'):FireServer('Nails', '1', '')
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ChangeSkintone'):FireServer(Color3.new(0.35686275362968445, 0.364705890417099, 0.4117647111415863))
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('VitiligoSkin'):FireServer('Off')game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ClassicMakeup'):FireServer(269, 'Light')
+game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ClassicMakeup'):FireServer(269, 'Light')
+loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/trolls/invis"))()
+local args = {
+	"ShowNametag",
+	"Hide"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("ChangeSetting"):InvokeServer(unpack(args))
