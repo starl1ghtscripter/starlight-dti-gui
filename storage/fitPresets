@@ -20,5 +20,6 @@ return {
 	PinkSpacebuns = "pinkspacebuns",
 	GothicRomance = "gothicromance",
 	CuteGothic = "cutegoth",
-	Stripper = "stripper"
+	Stripper = "stripper",
+	WhiteQueen = "whitequeen"
 }
