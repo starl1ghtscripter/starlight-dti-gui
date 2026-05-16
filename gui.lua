@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 676 | Scripts: 38 | Modules: 0 | Tags: 0
+-- Instances: 678 | Scripts: 38 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Starlight
@@ -6153,6 +6153,8 @@ G2L["280"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
 G2L["280"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["280"]["Text"] = [[Pink]];
 G2L["280"]["Name"] = [[Type]];
+-- Attributes
+G2L["280"]:SetAttribute([[TypeBtn]], [[]]);
 
 
 -- StarterGui.Starlight.Catalog.Handler.Type.UICorner
@@ -6496,21 +6498,40 @@ G2L["2a4"] = Instance.new("UICorner", G2L["2a1"]);
 G2L["2a4"]["CornerRadius"] = UDim.new(0, 7);
 
 
+-- StarterGui.Starlight.Catalog.NoResult
+G2L["2a5"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["2a5"]["TextWrapped"] = true;
+G2L["2a5"]["BorderSizePixel"] = 0;
+G2L["2a5"]["TextSize"] = 14;
+G2L["2a5"]["TextScaled"] = true;
+G2L["2a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a5"]["BackgroundTransparency"] = 1;
+G2L["2a5"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2a5"]["Size"] = UDim2.new(0.5, 0, 0.2, 0);
+G2L["2a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a5"]["Text"] = [[No Results Found.]];
+G2L["2a5"]["Name"] = [[NoResult]];
+G2L["2a5"]["Position"] = UDim2.new(0.5, 0, 0.62, 0);
+
+
+-- StarterGui.Starlight.Catalog.NoResult.UIStroke
+G2L["2a6"] = Instance.new("UIStroke", G2L["2a5"]);
+G2L["2a6"]["Thickness"] = 1.5;
+G2L["2a6"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
 -- StarterGui.Starlight.Sounds
 local function C_2()
 local script = G2L["2"];
-	local click = "rbxassetid://6895079853"
+	local sound = game:GetService("ReplicatedFirst")["Showdown _GController"].Click
 	
 	for i, btn in script.Parent:GetDescendants() do
 		if btn:IsA("TextButton") or btn:IsA("ImageButton") then
+			if btn:GetAttribute("CatalogBorder") or btn:GetAttribute("TypeBtn") then continue end
 			btn.MouseButton1Down:Connect(function()
-				local sound = Instance.new("Sound")
-				sound.SoundId = click
-				sound.Parent = btn
-				sound.Volume = 0.5
 				sound:Play()
-				sound.Ended:Wait()
-				sound:Destroy()
 			end)
 		end
 	end
@@ -9090,6 +9111,7 @@ local script = G2L["27f"];
 	end
 	local function updateVisibleItems()
 		query = searchBar.Text:lower()
+		local visible = 0
 		for _, item in pairs(itemScroller:GetChildren()) do
 			if item:IsA("Frame") and item:GetAttribute("Type") then
 				local matchesType = item:GetAttribute("Type") == usingType
@@ -9098,7 +9120,15 @@ local script = G2L["27f"];
 					matchesSearch = string.find(item.Name:lower(), query, 1, true) ~= nil
 				end
 				item.Visible = matchesType and matchesSearch
+				if item.Visible == true then
+					visible += 1
+				end
 			end
+		end
+		if visible == 0 then
+			main.NoResult.Visible = true
+		else
+			main.NoResult.Visible = false
 		end
 	end
 	local function populateItems()
@@ -9120,6 +9150,9 @@ local script = G2L["27f"];
 				continue
 			end
 			item.Parent = itemScroller
+			item.Button.MouseButton1Down:Connect(function()
+				game:GetService("ReplicatedFirst")["Showdown _GController"].Pop:Play()
+			end)
 			item.Button.MouseButton1Up:Connect(function()
 				if setclipboard then
 					setclipboard(data.Name)
@@ -9135,6 +9168,9 @@ local script = G2L["27f"];
 			btn.Name = thingType
 			btn.Text = thingType
 			btn.Parent = typeScroller
+			btn.MouseButton1Down:Connect(function()
+				game:GetService("ReplicatedFirst")["Showdown _GController"].Click:Play()
+			end)
 			btn.MouseButton1Up:Connect(function()
 				usingType = thingType
 				updateVisibleItems()
