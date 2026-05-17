@@ -1832,7 +1832,6 @@ G2L["c1"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 -- StarterGui.Starlight.Main.Container.Categories.MakePreset
 G2L["c2"] = Instance.new("ScrollingFrame", G2L["39"]);
-G2L["c2"]["Visible"] = false;
 G2L["c2"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 G2L["c2"]["BorderSizePixel"] = 0;
 G2L["c2"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
@@ -1876,7 +1875,7 @@ G2L["c5"]["BackgroundTransparency"] = 0.5;
 G2L["c5"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["c5"]["LayoutOrder"] = 2;
 G2L["c5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c5"]["Text"] = [[Copy Custom Makeup]];
+G2L["c5"]["Text"] = [[Copy Your Makeup To Clipboard]];
 G2L["c5"]["Name"] = [[CustomMakeup]];
 
 
@@ -1904,7 +1903,7 @@ G2L["c8"]["BackgroundTransparency"] = 0.5;
 G2L["c8"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["c8"]["LayoutOrder"] = 2;
 G2L["c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c8"]["Text"] = [[Copy Outfit]];
+G2L["c8"]["Text"] = [[Copy Your Outfit To Clipboard]];
 G2L["c8"]["Name"] = [[Outfit]];
 
 
@@ -1955,7 +1954,6 @@ G2L["ce"] = Instance.new("TextLabel", G2L["c2"]);
 G2L["ce"]["TextWrapped"] = true;
 G2L["ce"]["BorderSizePixel"] = 0;
 G2L["ce"]["TextSize"] = 14;
-G2L["ce"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["ce"]["TextScaled"] = true;
 G2L["ce"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ce"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
@@ -1964,7 +1962,7 @@ G2L["ce"]["BackgroundTransparency"] = 1;
 G2L["ce"]["AnchorPoint"] = Vector2.new(1, 0);
 G2L["ce"]["Size"] = UDim2.new(1, 0, 0.2, 0);
 G2L["ce"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ce"]["Text"] = [[STEAL FROM OTHER PLAYERS]];
+G2L["ce"]["Text"] = [[STEAL FROM OTHER PLAYERS!]];
 G2L["ce"]["LayoutOrder"] = 3;
 G2L["ce"]["Position"] = UDim2.new(1, 0, 0, 0);
 
@@ -1972,7 +1970,8 @@ G2L["ce"]["Position"] = UDim2.new(1, 0, 0, 0);
 -- StarterGui.Starlight.Main.Container.Categories.MakePreset.TextLabel.UIPadding
 G2L["cf"] = Instance.new("UIPadding", G2L["ce"]);
 G2L["cf"]["PaddingTop"] = UDim.new(0, 3);
-G2L["cf"]["PaddingRight"] = UDim.new(0, 5);
+G2L["cf"]["PaddingRight"] = UDim.new(0, 2);
+G2L["cf"]["PaddingLeft"] = UDim.new(0, 2);
 G2L["cf"]["PaddingBottom"] = UDim.new(0, 3);
 
 
@@ -1984,6 +1983,7 @@ G2L["d0"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 -- StarterGui.Starlight.Main.Container.Categories.MakePreset.StealName
 G2L["d1"] = Instance.new("TextBox", G2L["c2"]);
+G2L["d1"]["CursorPosition"] = -1;
 G2L["d1"]["Name"] = [[StealName]];
 G2L["d1"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["d1"]["BorderSizePixel"] = 0;
@@ -1994,7 +1994,7 @@ G2L["d1"]["TextScaled"] = true;
 G2L["d1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["d1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["d1"]["ClearTextOnFocus"] = false;
-G2L["d1"]["PlaceholderText"] = [[Username/DisplayName (not case-sensitive)]];
+G2L["d1"]["PlaceholderText"] = [[Username/Display (Can be shortened)]];
 G2L["d1"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["d1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["d1"]["Text"] = [[]];
@@ -2026,7 +2026,7 @@ G2L["d4"]["BackgroundTransparency"] = 0.5;
 G2L["d4"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["d4"]["LayoutOrder"] = 4;
 G2L["d4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d4"]["Text"] = [[Steal Custom Makeup (Copy)]];
+G2L["d4"]["Text"] = [[Copy Makeup To Clipboard]];
 G2L["d4"]["Name"] = [[StealCM]];
 
 
@@ -2054,7 +2054,7 @@ G2L["d7"]["BackgroundTransparency"] = 0.5;
 G2L["d7"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["d7"]["LayoutOrder"] = 4;
 G2L["d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d7"]["Text"] = [[Steal Outfit (Copy)]];
+G2L["d7"]["Text"] = [[Copy Outfit To Clipboard]];
 G2L["d7"]["Name"] = [[StealOutfit]];
 
 
@@ -2082,7 +2082,7 @@ G2L["da"]["BackgroundTransparency"] = 0.5;
 G2L["da"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["da"]["LayoutOrder"] = 4;
 G2L["da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["da"]["Text"] = [[Steal Custom Makeup (Equip)]];
+G2L["da"]["Text"] = [[Equip Makeup]];
 G2L["da"]["Name"] = [[StealCMEQ]];
 
 
@@ -2110,7 +2110,7 @@ G2L["dd"]["BackgroundTransparency"] = 0.5;
 G2L["dd"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["dd"]["LayoutOrder"] = 4;
 G2L["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["dd"]["Text"] = [[Steal Outfit (Equip)]];
+G2L["dd"]["Text"] = [[Equip Outfit]];
 G2L["dd"]["Name"] = [[StealOutfitEQ]];
 
 
@@ -3991,6 +3991,7 @@ G2L["1a1"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 -- StarterGui.Starlight.Main.Container.Categories.Troll
 G2L["1a2"] = Instance.new("ScrollingFrame", G2L["39"]);
+G2L["1a2"]["Visible"] = false;
 G2L["1a2"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 G2L["1a2"]["BorderSizePixel"] = 0;
 G2L["1a2"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
@@ -8244,7 +8245,10 @@ local script = G2L["c3"];
 	
 	script.Parent:WaitForChild("CustomMakeup").MouseButton1Up:Connect(function()
 		if setclipboard then
-			setclipboard(clearMakeup..getCMPreset())
+			setclipboard(clearMakeup..getMakeup())
+			if notifCont then
+				notifCont:Notify("Copied Your Makeup To Clipboard!")
+			end
 		else
 			if not notifCont then return end
 			notifCont:Notify("Your executor does not support this feature.")
@@ -8254,6 +8258,9 @@ local script = G2L["c3"];
 	script.Parent:WaitForChild("Outfit").MouseButton1Up:Connect(function()
 		if setclipboard then
 			setclipboard(clearOutfit..getOutfit()..clearMakeup..getMakeup())
+			if notifCont then
+				notifCont:Notify("Copied Your Outfit To Clipboard!")
+			end
 		else
 			if not notifCont then return end
 			notifCont:Notify("Your executor does not support this feature.")
@@ -8265,7 +8272,20 @@ local script = G2L["c3"];
 			local username = string.lower(script.Parent:WaitForChild("StealName").Text)
 			if not username then return end
 			if setclipboard then
-				setclipboard(clearMakeup..getCMPreset(username))
+				setclipboard(clearMakeup..getMakeup(username))
+				if notifCont then
+					local plr
+					for i, v in game.Players:GetPlayers() do
+						if string.lower(v.Name) == username or string.lower(v.DisplayName) == username then
+							plr = v
+						elseif string.lower(v.Name):find(username) or string.lower(v.DisplayName):find(username) then
+							plr = v
+						end
+					end
+					if plr then
+						notifCont:Notify("Copied "..plr.Name.."'s Makeup To Clipboard!")
+					end
+				end
 			else
 				if not notifCont then return end
 				notifCont:Notify("Your executor does not support this feature.")
@@ -8278,7 +8298,20 @@ local script = G2L["c3"];
 			local username = string.lower(script.Parent:WaitForChild("StealName").Text)
 			if not username then return end
 			if loadstring then
-				loadstring(clearMakeup..getCMPreset(username))()
+				loadstring(clearMakeup..getMakeup(username))()
+				if notifCont then
+					local plr
+					for i, v in game.Players:GetPlayers() do
+						if string.lower(v.Name) == username or string.lower(v.DisplayName) == username then
+							plr = v
+						elseif string.lower(v.Name):find(username) or string.lower(v.DisplayName):find(username) then
+							plr = v
+						end
+					end
+					if plr then
+						notifCont:Notify("Equipped "..plr.Name.."'s Makeup!")
+					end
+				end
 			else
 				if not notifCont then return end
 				notifCont:Notify("Your executor does not support this feature.")
@@ -8292,6 +8325,19 @@ local script = G2L["c3"];
 			if not username then return end
 			if setclipboard then
 				setclipboard(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))
+				if notifCont then
+					local plr
+					for i, v in game.Players:GetPlayers() do
+						if string.lower(v.Name) == username or string.lower(v.DisplayName) == username then
+							plr = v
+						elseif string.lower(v.Name):find(username) or string.lower(v.DisplayName):find(username) then
+							plr = v
+						end
+					end
+					if plr then
+						notifCont:Notify("Copied "..plr.Name.."'s Outfit To Clipboard!")
+					end
+				end
 			else
 				if not notifCont then return end
 				notifCont:Notify("Your executor does not support this feature.")
@@ -8305,6 +8351,19 @@ local script = G2L["c3"];
 			if not username then return end
 			if loadstring then
 				loadstring(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))()
+				if notifCont then
+					local plr
+					for i, v in game.Players:GetPlayers() do
+						if string.lower(v.Name) == username or string.lower(v.DisplayName) == username then
+							plr = v
+						elseif string.lower(v.Name):find(username) or string.lower(v.DisplayName):find(username) then
+							plr = v
+						end
+					end
+					if plr then
+						notifCont:Notify("Equipped "..plr.Name.."'s Outfit!")
+					end
+				end
 			else
 				if not notifCont then return end
 				notifCont:Notify("Your executor does not support this feature.")
