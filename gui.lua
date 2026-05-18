@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 732 | Scripts: 40 | Modules: 0 | Tags: 0
+-- Instances: 762 | Scripts: 40 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Starlight
@@ -6933,6 +6933,7 @@ G2L["2d1"]["LayoutOrder"] = 2;
 G2L["2d1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2d1"]["Text"] = [[]];
 G2L["2d1"]["Name"] = [[PriceOnly]];
+G2L["2d1"]["Visible"] = false;
 G2L["2d1"]["Position"] = UDim2.new(0.37, 0, 0.5, 0);
 
 
@@ -7015,28 +7016,335 @@ G2L["2da"] = Instance.new("UIAspectRatioConstraint", G2L["2d9"]);
 
 
 
--- StarterGui.Starlight.Catalog.NoResult
-G2L["2db"] = Instance.new("TextLabel", G2L["29e"]);
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter
+G2L["2db"] = Instance.new("TextButton", G2L["2bb"]);
 G2L["2db"]["TextWrapped"] = true;
 G2L["2db"]["BorderSizePixel"] = 0;
+G2L["2db"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["2db"]["TextSize"] = 14;
 G2L["2db"]["TextScaled"] = true;
+G2L["2db"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2db"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2db"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2db"]["BackgroundTransparency"] = 1;
-G2L["2db"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2db"]["Size"] = UDim2.new(0.5, 0, 0.2, 0);
+G2L["2db"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["2db"]["BackgroundTransparency"] = 0.6;
+G2L["2db"]["Size"] = UDim2.new(0.25, 0, 0.8, 0);
+G2L["2db"]["LayoutOrder"] = 3;
 G2L["2db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2db"]["Text"] = [[No Results Found.]];
-G2L["2db"]["Name"] = [[NoResult]];
-G2L["2db"]["Position"] = UDim2.new(0.5, 0, 0.62, 0);
+G2L["2db"]["Text"] = [[]];
+G2L["2db"]["Name"] = [[PriceFilter]];
+G2L["2db"]["Position"] = UDim2.new(0.37, 0, 0.5, 0);
+G2L["2db"]["SelectionGroup"] = true;
+-- Attributes
+G2L["2db"]:SetAttribute([[Item]], [[]]);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.UICorner
+G2L["2dc"] = Instance.new("UICorner", G2L["2db"]);
+G2L["2dc"]["CornerRadius"] = UDim.new(0, 7);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Arrow
+G2L["2dd"] = Instance.new("TextLabel", G2L["2db"]);
+G2L["2dd"]["TextWrapped"] = true;
+G2L["2dd"]["Active"] = true;
+G2L["2dd"]["BorderSizePixel"] = 0;
+G2L["2dd"]["TextSize"] = 14;
+G2L["2dd"]["TextScaled"] = true;
+G2L["2dd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2dd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2dd"]["BackgroundTransparency"] = 1;
+G2L["2dd"]["AnchorPoint"] = Vector2.new(1, 0.5);
+G2L["2dd"]["Size"] = UDim2.new(0.2, 0, 1, 0);
+G2L["2dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2dd"]["Text"] = [[↓]];
+G2L["2dd"]["Selectable"] = true;
+G2L["2dd"]["Name"] = [[Arrow]];
+G2L["2dd"]["Position"] = UDim2.new(0.9, 0, 0.5, 0);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Arrow.UIStroke
+G2L["2de"] = Instance.new("UIStroke", G2L["2dd"]);
+G2L["2de"]["Thickness"] = 1.5;
+G2L["2de"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Arrow.UICorner
+G2L["2df"] = Instance.new("UICorner", G2L["2dd"]);
+G2L["2df"]["CornerRadius"] = UDim.new(0, 2);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Arrow.UIAspectRatioConstraint
+G2L["2e0"] = Instance.new("UIAspectRatioConstraint", G2L["2dd"]);
+
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.TextLabel
+G2L["2e1"] = Instance.new("TextLabel", G2L["2db"]);
+G2L["2e1"]["TextWrapped"] = true;
+G2L["2e1"]["BorderSizePixel"] = 0;
+G2L["2e1"]["TextSize"] = 14;
+G2L["2e1"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2e1"]["TextScaled"] = true;
+G2L["2e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e1"]["BackgroundTransparency"] = 1;
+G2L["2e1"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["2e1"]["Size"] = UDim2.new(0.75, 0, 1, 0);
+G2L["2e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e1"]["Text"] = [[All Items]];
+G2L["2e1"]["Position"] = UDim2.new(0, 0, 0.5, 0);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.TextLabel.UIStroke
+G2L["2e2"] = Instance.new("UIStroke", G2L["2e1"]);
+G2L["2e2"]["Thickness"] = 1.5;
+G2L["2e2"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.TextLabel.UIPadding
+G2L["2e3"] = Instance.new("UIPadding", G2L["2e1"]);
+G2L["2e3"]["PaddingTop"] = UDim.new(0, 1);
+G2L["2e3"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["2e3"]["PaddingBottom"] = UDim.new(0, 1);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder
+G2L["2e4"] = Instance.new("ScrollingFrame", G2L["2db"]);
+G2L["2e4"]["Visible"] = false;
+G2L["2e4"]["Active"] = true;
+G2L["2e4"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["2e4"]["ZIndex"] = 2;
+G2L["2e4"]["BorderSizePixel"] = 0;
+G2L["2e4"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["2e4"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.ScrollBar;
+G2L["2e4"]["Name"] = [[Holder]];
+G2L["2e4"]["BackgroundColor3"] = Color3.fromRGB(213, 154, 192);
+G2L["2e4"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["2e4"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["2e4"]["Size"] = UDim2.new(0.95, 0, 0, 75);
+G2L["2e4"]["Position"] = UDim2.new(0.5, 0, 1.8, 0);
+G2L["2e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e4"]["ScrollBarThickness"] = 3;
+G2L["2e4"]["BackgroundTransparency"] = 0.1;
+-- Attributes
+G2L["2e4"]:SetAttribute([[BGCOLOR]], [[]]);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.UICorner
+G2L["2e5"] = Instance.new("UICorner", G2L["2e4"]);
+G2L["2e5"]["CornerRadius"] = UDim.new(0, 7);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.UIListLayout
+G2L["2e6"] = Instance.new("UIListLayout", G2L["2e4"]);
+G2L["2e6"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["2e6"]["Padding"] = UDim.new(0, 3);
+G2L["2e6"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.!
+G2L["2e7"] = Instance.new("Frame", G2L["2e4"]);
+G2L["2e7"]["BorderSizePixel"] = 0;
+G2L["2e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e7"]["Size"] = UDim2.new(0, 1, 0, 1);
+G2L["2e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e7"]["Name"] = [[!]];
+G2L["2e7"]["LayoutOrder"] = -999;
+G2L["2e7"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.Z!
+G2L["2e8"] = Instance.new("Frame", G2L["2e4"]);
+G2L["2e8"]["BorderSizePixel"] = 0;
+G2L["2e8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e8"]["Size"] = UDim2.new(0, 1, 0, 1);
+G2L["2e8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e8"]["Name"] = [[Z!]];
+G2L["2e8"]["LayoutOrder"] = 999;
+G2L["2e8"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.UIStroke
+G2L["2e9"] = Instance.new("UIStroke", G2L["2e4"]);
+G2L["2e9"]["Thickness"] = 1.5;
+G2L["2e9"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["2e9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.All
+G2L["2ea"] = Instance.new("TextButton", G2L["2e4"]);
+G2L["2ea"]["TextWrapped"] = true;
+G2L["2ea"]["BorderSizePixel"] = 0;
+G2L["2ea"]["TextSize"] = 14;
+G2L["2ea"]["TextScaled"] = true;
+G2L["2ea"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ea"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ea"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ea"]["BackgroundTransparency"] = 0.5;
+G2L["2ea"]["Size"] = UDim2.new(0.9, 0, 0, 15);
+G2L["2ea"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ea"]["Text"] = [[All Items]];
+G2L["2ea"]["Name"] = [[All]];
+-- Attributes
+G2L["2ea"]:SetAttribute([[TypeBtn]], [[]]);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.All.UICorner
+G2L["2eb"] = Instance.new("UICorner", G2L["2ea"]);
+G2L["2eb"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.All.UIStroke
+G2L["2ec"] = Instance.new("UIStroke", G2L["2ea"]);
+G2L["2ec"]["Thickness"] = 1.5;
+G2L["2ec"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.CashOnly
+G2L["2ed"] = Instance.new("TextButton", G2L["2e4"]);
+G2L["2ed"]["TextWrapped"] = true;
+G2L["2ed"]["BorderSizePixel"] = 0;
+G2L["2ed"]["TextSize"] = 14;
+G2L["2ed"]["TextScaled"] = true;
+G2L["2ed"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ed"]["BackgroundTransparency"] = 0.5;
+G2L["2ed"]["Size"] = UDim2.new(0.9, 0, 0, 15);
+G2L["2ed"]["LayoutOrder"] = 2;
+G2L["2ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ed"]["Text"] = [[Pink Cash Only]];
+G2L["2ed"]["Name"] = [[CashOnly]];
+-- Attributes
+G2L["2ed"]:SetAttribute([[TypeBtn]], [[]]);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.CashOnly.UICorner
+G2L["2ee"] = Instance.new("UICorner", G2L["2ed"]);
+G2L["2ee"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.CashOnly.UIStroke
+G2L["2ef"] = Instance.new("UIStroke", G2L["2ed"]);
+G2L["2ef"]["Thickness"] = 1.5;
+G2L["2ef"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.OtherOnly
+G2L["2f0"] = Instance.new("TextButton", G2L["2e4"]);
+G2L["2f0"]["TextWrapped"] = true;
+G2L["2f0"]["BorderSizePixel"] = 0;
+G2L["2f0"]["TextSize"] = 14;
+G2L["2f0"]["TextScaled"] = true;
+G2L["2f0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f0"]["BackgroundTransparency"] = 0.5;
+G2L["2f0"]["Size"] = UDim2.new(0.9, 0, 0, 15);
+G2L["2f0"]["LayoutOrder"] = 3;
+G2L["2f0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f0"]["Text"] = [[Other Currencies]];
+G2L["2f0"]["Name"] = [[OtherOnly]];
+-- Attributes
+G2L["2f0"]:SetAttribute([[TypeBtn]], [[]]);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.OtherOnly.UICorner
+G2L["2f1"] = Instance.new("UICorner", G2L["2f0"]);
+G2L["2f1"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.OtherOnly.UIStroke
+G2L["2f2"] = Instance.new("UIStroke", G2L["2f0"]);
+G2L["2f2"]["Thickness"] = 1.5;
+G2L["2f2"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.NoPriced
+G2L["2f3"] = Instance.new("TextButton", G2L["2e4"]);
+G2L["2f3"]["TextWrapped"] = true;
+G2L["2f3"]["BorderSizePixel"] = 0;
+G2L["2f3"]["TextSize"] = 14;
+G2L["2f3"]["TextScaled"] = true;
+G2L["2f3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f3"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f3"]["BackgroundTransparency"] = 0.5;
+G2L["2f3"]["Size"] = UDim2.new(0.9, 0, 0, 15);
+G2L["2f3"]["LayoutOrder"] = 4;
+G2L["2f3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f3"]["Text"] = [[Non Priced Only]];
+G2L["2f3"]["Name"] = [[NoPriced]];
+-- Attributes
+G2L["2f3"]:SetAttribute([[TypeBtn]], [[]]);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.NoPriced.UICorner
+G2L["2f4"] = Instance.new("UICorner", G2L["2f3"]);
+G2L["2f4"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.NoPriced.UIStroke
+G2L["2f5"] = Instance.new("UIStroke", G2L["2f3"]);
+G2L["2f5"]["Thickness"] = 1.5;
+G2L["2f5"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.AllPriced
+G2L["2f6"] = Instance.new("TextButton", G2L["2e4"]);
+G2L["2f6"]["TextWrapped"] = true;
+G2L["2f6"]["BorderSizePixel"] = 0;
+G2L["2f6"]["TextSize"] = 14;
+G2L["2f6"]["TextScaled"] = true;
+G2L["2f6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f6"]["BackgroundTransparency"] = 0.5;
+G2L["2f6"]["Size"] = UDim2.new(0.9, 0, 0, 15);
+G2L["2f6"]["LayoutOrder"] = 1;
+G2L["2f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f6"]["Text"] = [[All Priced]];
+G2L["2f6"]["Name"] = [[AllPriced]];
+-- Attributes
+G2L["2f6"]:SetAttribute([[TypeBtn]], [[]]);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.AllPriced.UICorner
+G2L["2f7"] = Instance.new("UICorner", G2L["2f6"]);
+G2L["2f7"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.AllPriced.UIStroke
+G2L["2f8"] = Instance.new("UIStroke", G2L["2f6"]);
+G2L["2f8"]["Thickness"] = 1.5;
+G2L["2f8"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.NoResult
+G2L["2f9"] = Instance.new("TextLabel", G2L["29e"]);
+G2L["2f9"]["TextWrapped"] = true;
+G2L["2f9"]["BorderSizePixel"] = 0;
+G2L["2f9"]["TextSize"] = 14;
+G2L["2f9"]["TextScaled"] = true;
+G2L["2f9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f9"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f9"]["BackgroundTransparency"] = 1;
+G2L["2f9"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2f9"]["Size"] = UDim2.new(0.5, 0, 0.2, 0);
+G2L["2f9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f9"]["Text"] = [[No Results Found.]];
+G2L["2f9"]["Name"] = [[NoResult]];
+G2L["2f9"]["Position"] = UDim2.new(0.5, 0, 0.62, 0);
 
 
 -- StarterGui.Starlight.Catalog.NoResult.UIStroke
-G2L["2dc"] = Instance.new("UIStroke", G2L["2db"]);
-G2L["2dc"]["Thickness"] = 1.5;
-G2L["2dc"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["2fa"] = Instance.new("UIStroke", G2L["2f9"]);
+G2L["2fa"]["Thickness"] = 1.5;
+G2L["2fa"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Sounds
@@ -9784,7 +10092,9 @@ local script = G2L["29f"];
 	local typeDisplay = main.HolderTop.Types.TextLabel
 	local dropdownBtn = main.HolderTop.Types.Arrow
 	local searchBar = main.HolderTop.Search
-	local pricedHolder = main.HolderTop.PriceOnly
+	local pricedHolder = main.HolderTop.PriceFilter
+	local priceScroller = pricedHolder.Holder
+	local priceDropdownBtn = pricedHolder.Arrow
 	local itemModule
 	local success = pcall(function()
 		itemModule = require(game.ReplicatedStorage.Content.Item.Item)
@@ -9799,7 +10109,7 @@ local script = G2L["29f"];
 	local types = itemModule.Type
 	local usingType
 	local query
-	local pricedOnly
+	local priceFilter
 	
 	local function clearExcluding(obj, excludes)
 		for _, child in obj:GetChildren() do
@@ -9820,13 +10130,20 @@ local script = G2L["29f"];
 				if query ~= "" then
 					matchesSearch = string.find(item.Name:lower(), query, 1, true) ~= nil
 				end
-				item.Visible = matchesType and matchesSearch
-				if pricedOnly then
-					local priced = item:GetAttribute("Priced")
-					if not priced then
-						item.Visible = false
-					end
+				local matchesPrice = false
+				
+				if pricedOnly == "All" then
+					matchesPrice = true
+				elseif pricedOnly == "AllPriced" then
+					matchesPrice = item:GetAttribute("Priced")
+				elseif pricedOnly == "CashOnly" then
+					matchesPrice = item:GetAttribute("Priced") and not item:GetAttribute("OtherCurrency")
+				elseif pricedOnly == "OtherOnly" then
+					matchesPrice = item:GetAttribute("OtherCurrency")
+				elseif pricedOnly == "NoPriced" then
+					matchesPrice = not item:GetAttribute("Priced")
 				end
+				item.Visible = matchesType and matchesSearch and matchesPrice
 				if item.Visible == true then
 					visible += 1
 				end
@@ -9859,6 +10176,10 @@ local script = G2L["29f"];
 			local price = data.Metadata.Price
 			if price then
 				item:SetAttribute("Priced", true)
+			end
+			local currency = data.Metadata.Currency
+			if currency then
+				item:SetAttribute("OtherCurrency", true)
 			end
 			item.Parent = itemScroller
 			item.Button.MouseButton1Down:Connect(function()
@@ -9901,7 +10222,18 @@ local script = G2L["29f"];
 			dropdownBtn.Rotation = 0
 		end
 	end
-	
+	local function togglePriceDropdown(force)
+		if force ~= nil then
+			priceScroller.Visible = force
+		else
+			priceScroller.Visible = not priceScroller.Visible
+		end
+		if priceScroller.Visible == true then
+			priceDropdownBtn.Rotation = 180
+		else
+			priceDropdownBtn.Rotation = 0
+		end
+	end
 	local function refreshItem()
 		populateItems()
 		updateVisibleItems()
@@ -9929,12 +10261,26 @@ local script = G2L["29f"];
 		populateItems()
 		main.Visible = false
 		query = searchBar.Text
-		pricedOnly = false
+		pricedOnly = "All"
 		usingType = getFirstType()
 		typeDisplay.Text = usingType
-		pricedHolder.Button.Check.Visible = pricedOnly
+		--pricedHolder.Button.Check.Visible = pricedOnly
+		pricedHolder.TextLabel.Text = priceScroller:FindFirstChild(pricedOnly).Text
 		toggleDropdown(false)
+		togglePriceDropdown(false)
 		updateVisibleItems()
+		for _, btn in priceScroller:GetChildren() do
+			if btn:IsA("TextButton") then
+				btn.MouseButton1Down:Connect(function()
+					game:GetService("ReplicatedFirst")["Showdown _GController"].Click:Play()
+				end)
+				btn.MouseButton1Up:Connect(function()
+					pricedOnly = btn.Name
+					pricedHolder.TextLabel.Text = btn.Text
+					updateVisibleItems()
+				end)
+			end
+		end
 		main.Ref.MouseButton1Up:Connect(function()
 			refreshItem()
 		end)
@@ -9953,8 +10299,8 @@ local script = G2L["29f"];
 		dropdownBtn.Parent.MouseButton1Up:Connect(function()
 			toggleDropdown()
 		end)
-		pricedHolder.MouseButton1Up:Connect(function()
-			priceButtonToggleAction()
+		priceDropdownBtn.Parent.MouseButton1Up:Connect(function()
+			togglePriceDropdown()
 		end)
 	end
 	init()
