@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 762 | Scripts: 40 | Modules: 0 | Tags: 0
+-- Instances: 768 | Scripts: 40 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Starlight
@@ -4774,6 +4774,7 @@ G2L["1f3"]["Name"] = [[Template]];
 G2L["1f3"]["BackgroundTransparency"] = 0.25;
 -- Attributes
 G2L["1f3"]:SetAttribute([[ApplyGradient]], [[]]);
+G2L["1f3"]:SetAttribute([[BGCOLOR]], [[]]);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.GameUtils.Shopping.Template.UICorner
@@ -6434,140 +6435,140 @@ G2L["29f"] = Instance.new("LocalScript", G2L["29e"]);
 G2L["29f"]["Name"] = [[Handler]];
 
 
--- StarterGui.Starlight.Catalog.Handler.Item
-G2L["2a0"] = Instance.new("Frame", G2L["29f"]);
-G2L["2a0"]["BorderSizePixel"] = 0;
-G2L["2a0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a0"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2a0"]["Size"] = UDim2.new(0, 414, 0, 496);
-G2L["2a0"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["2a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a0"]["Name"] = [[Item]];
-G2L["2a0"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.Starlight.Catalog.Handler.Item.UIScale
-G2L["2a1"] = Instance.new("UIScale", G2L["2a0"]);
-G2L["2a1"]["Scale"] = 0.95;
-
-
--- StarterGui.Starlight.Catalog.Handler.Item.ImageLabel
-G2L["2a2"] = Instance.new("ImageLabel", G2L["2a0"]);
-G2L["2a2"]["ZIndex"] = -1;
-G2L["2a2"]["BorderSizePixel"] = 0;
-G2L["2a2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2a2"]["Image"] = [[rbxassetid://108246859457722]];
-G2L["2a2"]["Size"] = UDim2.new(0.94203, 0, 0.78629, 0);
-G2L["2a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a2"]["BackgroundTransparency"] = 1;
-G2L["2a2"]["Position"] = UDim2.new(0.49873, 0, 0.42073, 0);
-
-
--- StarterGui.Starlight.Catalog.Handler.Item.Label
-G2L["2a3"] = Instance.new("TextLabel", G2L["2a0"]);
-G2L["2a3"]["TextWrapped"] = true;
-G2L["2a3"]["ZIndex"] = 2;
-G2L["2a3"]["BorderSizePixel"] = 0;
-G2L["2a3"]["TextSize"] = 14;
-G2L["2a3"]["TextStrokeColor3"] = Color3.fromRGB(144, 144, 144);
-G2L["2a3"]["TextScaled"] = true;
-G2L["2a3"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["2a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2a3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a3"]["BackgroundTransparency"] = 1;
-G2L["2a3"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2a3"]["Size"] = UDim2.new(0.96616, 0, 0.17, 0);
-G2L["2a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a3"]["Text"] = [[Petal Dress]];
-G2L["2a3"]["LayoutOrder"] = 2;
-G2L["2a3"]["Name"] = [[Label]];
-G2L["2a3"]["Position"] = UDim2.new(0.5, 0, 0.898, 0);
-
-
--- StarterGui.Starlight.Catalog.Handler.Item.Label.UIStroke
-G2L["2a4"] = Instance.new("UIStroke", G2L["2a3"]);
-G2L["2a4"]["Thickness"] = 1.5;
-G2L["2a4"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.Starlight.Catalog.Handler.Item.Button
-G2L["2a5"] = Instance.new("ImageButton", G2L["2a0"]);
-G2L["2a5"]["Active"] = false;
-G2L["2a5"]["BorderSizePixel"] = 0;
-G2L["2a5"]["BackgroundTransparency"] = 1;
-G2L["2a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a5"]["ImageColor3"] = Color3.fromRGB(255, 135, 206);
-G2L["2a5"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2a5"]["Image"] = [[rbxassetid://73104527993906]];
-G2L["2a5"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a5"]["Name"] = [[Button]];
-G2L["2a5"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
--- Attributes
-G2L["2a5"]:SetAttribute([[CatalogBorder]], [[]]);
-
-
 -- StarterGui.Starlight.Catalog.Handler.Type
-G2L["2a6"] = Instance.new("TextButton", G2L["29f"]);
-G2L["2a6"]["TextWrapped"] = true;
-G2L["2a6"]["BorderSizePixel"] = 0;
-G2L["2a6"]["TextSize"] = 14;
-G2L["2a6"]["TextScaled"] = true;
-G2L["2a6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2a6"]["BackgroundTransparency"] = 0.5;
-G2L["2a6"]["Size"] = UDim2.new(0.9, 0, 0, 15);
-G2L["2a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a6"]["Text"] = [[TYPENAME]];
-G2L["2a6"]["Name"] = [[Type]];
+G2L["2a0"] = Instance.new("TextButton", G2L["29f"]);
+G2L["2a0"]["TextWrapped"] = true;
+G2L["2a0"]["BorderSizePixel"] = 0;
+G2L["2a0"]["TextSize"] = 14;
+G2L["2a0"]["TextScaled"] = true;
+G2L["2a0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a0"]["BackgroundTransparency"] = 0.5;
+G2L["2a0"]["Size"] = UDim2.new(0.9, 0, 0, 15);
+G2L["2a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a0"]["Text"] = [[TYPENAME]];
+G2L["2a0"]["Name"] = [[Type]];
 -- Attributes
-G2L["2a6"]:SetAttribute([[TypeBtn]], [[]]);
+G2L["2a0"]:SetAttribute([[TypeBtn]], [[]]);
 
 
 -- StarterGui.Starlight.Catalog.Handler.Type.UICorner
-G2L["2a7"] = Instance.new("UICorner", G2L["2a6"]);
-G2L["2a7"]["CornerRadius"] = UDim.new(0, 5);
+G2L["2a1"] = Instance.new("UICorner", G2L["2a0"]);
+G2L["2a1"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.Starlight.Catalog.Handler.Type.UIStroke
-G2L["2a8"] = Instance.new("UIStroke", G2L["2a6"]);
-G2L["2a8"]["Thickness"] = 1.5;
-G2L["2a8"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["2a2"] = Instance.new("UIStroke", G2L["2a0"]);
+G2L["2a2"]["Thickness"] = 1.5;
+G2L["2a2"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.Starlight.Catalog.TextLabel
-G2L["2a9"] = Instance.new("TextLabel", G2L["29e"]);
+-- StarterGui.Starlight.Catalog.Handler.Item
+G2L["2a3"] = Instance.new("Frame", G2L["29f"]);
+G2L["2a3"]["BorderSizePixel"] = 0;
+G2L["2a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a3"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2a3"]["Size"] = UDim2.new(0, 414, 0, 496);
+G2L["2a3"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["2a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a3"]["Name"] = [[Item]];
+G2L["2a3"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Starlight.Catalog.Handler.Item.UIScale
+G2L["2a4"] = Instance.new("UIScale", G2L["2a3"]);
+G2L["2a4"]["Scale"] = 0.95;
+
+
+-- StarterGui.Starlight.Catalog.Handler.Item.ImageLabel
+G2L["2a5"] = Instance.new("ImageLabel", G2L["2a3"]);
+G2L["2a5"]["ZIndex"] = -1;
+G2L["2a5"]["BorderSizePixel"] = 0;
+G2L["2a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a5"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2a5"]["Image"] = [[rbxassetid://108246859457722]];
+G2L["2a5"]["Size"] = UDim2.new(0.94203, 0, 0.78629, 0);
+G2L["2a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a5"]["BackgroundTransparency"] = 1;
+G2L["2a5"]["Position"] = UDim2.new(0.49873, 0, 0.42073, 0);
+
+
+-- StarterGui.Starlight.Catalog.Handler.Item.Label
+G2L["2a6"] = Instance.new("TextLabel", G2L["2a3"]);
+G2L["2a6"]["TextWrapped"] = true;
+G2L["2a6"]["ZIndex"] = 2;
+G2L["2a6"]["BorderSizePixel"] = 0;
+G2L["2a6"]["TextSize"] = 14;
+G2L["2a6"]["TextStrokeColor3"] = Color3.fromRGB(144, 144, 144);
+G2L["2a6"]["TextScaled"] = true;
+G2L["2a6"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["2a6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a6"]["BackgroundTransparency"] = 1;
+G2L["2a6"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2a6"]["Size"] = UDim2.new(0.96616, 0, 0.17, 0);
+G2L["2a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a6"]["Text"] = [[Petal Dress]];
+G2L["2a6"]["LayoutOrder"] = 2;
+G2L["2a6"]["Name"] = [[Label]];
+G2L["2a6"]["Position"] = UDim2.new(0.5, 0, 0.898, 0);
+
+
+-- StarterGui.Starlight.Catalog.Handler.Item.Label.UIStroke
+G2L["2a7"] = Instance.new("UIStroke", G2L["2a6"]);
+G2L["2a7"]["Thickness"] = 1.5;
+G2L["2a7"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.Handler.Item.Button
+G2L["2a8"] = Instance.new("ImageButton", G2L["2a3"]);
+G2L["2a8"]["Active"] = false;
+G2L["2a8"]["BorderSizePixel"] = 0;
+G2L["2a8"]["BackgroundTransparency"] = 1;
+G2L["2a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a8"]["ImageColor3"] = Color3.fromRGB(255, 135, 206);
+G2L["2a8"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2a8"]["Image"] = [[rbxassetid://73104527993906]];
+G2L["2a8"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a8"]["Name"] = [[Button]];
+G2L["2a8"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+-- Attributes
+G2L["2a8"]:SetAttribute([[CatalogBorder]], [[]]);
+
+
+-- StarterGui.Starlight.Catalog.Handler.Item.Info
+G2L["2a9"] = Instance.new("TextButton", G2L["2a3"]);
 G2L["2a9"]["TextWrapped"] = true;
 G2L["2a9"]["BorderSizePixel"] = 0;
 G2L["2a9"]["TextSize"] = 14;
-G2L["2a9"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["2a9"]["TextScaled"] = true;
+G2L["2a9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2a9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a9"]["BackgroundTransparency"] = 1;
-G2L["2a9"]["Size"] = UDim2.new(0.75, 0, 0, 30);
+G2L["2a9"]["AnchorPoint"] = Vector2.new(1, 1);
+G2L["2a9"]["BackgroundTransparency"] = 0.5;
+G2L["2a9"]["Size"] = UDim2.new(0.4, 0, 0.12, 0);
 G2L["2a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a9"]["Text"] = [[DTI Item Catalog]];
+G2L["2a9"]["Text"] = [[Info]];
+G2L["2a9"]["Name"] = [[Info]];
+G2L["2a9"]["Position"] = UDim2.new(0.9, 0, 0.75, 0);
 
 
--- StarterGui.Starlight.Catalog.TextLabel.UIPadding
-G2L["2aa"] = Instance.new("UIPadding", G2L["2a9"]);
-G2L["2aa"]["PaddingTop"] = UDim.new(0, 3);
-G2L["2aa"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["2aa"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.Starlight.Catalog.Handler.Item.Info.UICorner
+G2L["2aa"] = Instance.new("UICorner", G2L["2a9"]);
+G2L["2aa"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.Starlight.Catalog.TextLabel.UIStroke
+-- StarterGui.Starlight.Catalog.Handler.Item.Info.UIStroke
 G2L["2ab"] = Instance.new("UIStroke", G2L["2a9"]);
 G2L["2ab"]["Thickness"] = 1.5;
 G2L["2ab"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.Starlight.Catalog.Close
-G2L["2ac"] = Instance.new("TextButton", G2L["29e"]);
+-- StarterGui.Starlight.Catalog.Handler.Item.Buy
+G2L["2ac"] = Instance.new("TextButton", G2L["2a3"]);
 G2L["2ac"]["TextWrapped"] = true;
 G2L["2ac"]["BorderSizePixel"] = 0;
 G2L["2ac"]["TextSize"] = 14;
@@ -6575,666 +6576,665 @@ G2L["2ac"]["TextScaled"] = true;
 G2L["2ac"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2ac"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2ac"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["2ac"]["BackgroundTransparency"] = 1;
-G2L["2ac"]["Size"] = UDim2.new(0.1, 0, 0, 30);
+G2L["2ac"]["AnchorPoint"] = Vector2.new(1, 1);
+G2L["2ac"]["BackgroundTransparency"] = 0.5;
+G2L["2ac"]["Size"] = UDim2.new(0.4, 0, 0.12, 0);
 G2L["2ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2ac"]["Text"] = [[X]];
-G2L["2ac"]["Name"] = [[Close]];
-G2L["2ac"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["2ac"]["Text"] = [[Buy]];
+G2L["2ac"]["Name"] = [[Buy]];
+G2L["2ac"]["Position"] = UDim2.new(0.9, 0, 0.6, 0);
+
+
+-- StarterGui.Starlight.Catalog.Handler.Item.Buy.UICorner
+G2L["2ad"] = Instance.new("UICorner", G2L["2ac"]);
+G2L["2ad"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Starlight.Catalog.Handler.Item.Buy.UIStroke
+G2L["2ae"] = Instance.new("UIStroke", G2L["2ac"]);
+G2L["2ae"]["Thickness"] = 1.5;
+G2L["2ae"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.TextLabel
+G2L["2af"] = Instance.new("TextLabel", G2L["29e"]);
+G2L["2af"]["TextWrapped"] = true;
+G2L["2af"]["BorderSizePixel"] = 0;
+G2L["2af"]["TextSize"] = 14;
+G2L["2af"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2af"]["TextScaled"] = true;
+G2L["2af"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2af"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2af"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2af"]["BackgroundTransparency"] = 1;
+G2L["2af"]["Size"] = UDim2.new(0.75, 0, 0, 30);
+G2L["2af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2af"]["Text"] = [[DTI Item Catalog]];
+
+
+-- StarterGui.Starlight.Catalog.TextLabel.UIPadding
+G2L["2b0"] = Instance.new("UIPadding", G2L["2af"]);
+G2L["2b0"]["PaddingTop"] = UDim.new(0, 3);
+G2L["2b0"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["2b0"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.Starlight.Catalog.TextLabel.UIStroke
+G2L["2b1"] = Instance.new("UIStroke", G2L["2af"]);
+G2L["2b1"]["Thickness"] = 1.5;
+G2L["2b1"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.Close
+G2L["2b2"] = Instance.new("TextButton", G2L["29e"]);
+G2L["2b2"]["TextWrapped"] = true;
+G2L["2b2"]["BorderSizePixel"] = 0;
+G2L["2b2"]["TextSize"] = 14;
+G2L["2b2"]["TextScaled"] = true;
+G2L["2b2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b2"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["2b2"]["BackgroundTransparency"] = 1;
+G2L["2b2"]["Size"] = UDim2.new(0.1, 0, 0, 30);
+G2L["2b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b2"]["Text"] = [[X]];
+G2L["2b2"]["Name"] = [[Close]];
+G2L["2b2"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.Starlight.Catalog.Close.CloseHandler
-G2L["2ad"] = Instance.new("LocalScript", G2L["2ac"]);
-G2L["2ad"]["Name"] = [[CloseHandler]];
+G2L["2b3"] = Instance.new("LocalScript", G2L["2b2"]);
+G2L["2b3"]["Name"] = [[CloseHandler]];
 
 
 -- StarterGui.Starlight.Catalog.Close.UIPadding
-G2L["2ae"] = Instance.new("UIPadding", G2L["2ac"]);
-G2L["2ae"]["PaddingTop"] = UDim.new(0, 3);
-G2L["2ae"]["PaddingRight"] = UDim.new(0, 5);
-G2L["2ae"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["2b4"] = Instance.new("UIPadding", G2L["2b2"]);
+G2L["2b4"]["PaddingTop"] = UDim.new(0, 3);
+G2L["2b4"]["PaddingRight"] = UDim.new(0, 5);
+G2L["2b4"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.Starlight.Catalog.Close.UIStroke
-G2L["2af"] = Instance.new("UIStroke", G2L["2ac"]);
-G2L["2af"]["Thickness"] = 1.5;
-G2L["2af"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["2b5"] = Instance.new("UIStroke", G2L["2b2"]);
+G2L["2b5"]["Thickness"] = 1.5;
+G2L["2b5"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Catalog.UICorner
-G2L["2b0"] = Instance.new("UICorner", G2L["29e"]);
-G2L["2b0"]["CornerRadius"] = UDim.new(0, 7);
+G2L["2b6"] = Instance.new("UICorner", G2L["29e"]);
+G2L["2b6"]["CornerRadius"] = UDim.new(0, 7);
 
 
 -- StarterGui.Starlight.Catalog.UIDragDetector
-G2L["2b1"] = Instance.new("UIDragDetector", G2L["29e"]);
-G2L["2b1"]["SelectionModeDragSpeed"] = UDim2.new(0, 0, 0, 0);
-G2L["2b1"]["ResponseStyle"] = Enum.UIDragDetectorResponseStyle.Scale;
+G2L["2b7"] = Instance.new("UIDragDetector", G2L["29e"]);
+G2L["2b7"]["SelectionModeDragSpeed"] = UDim2.new(0, 0, 0, 0);
+G2L["2b7"]["ResponseStyle"] = Enum.UIDragDetectorResponseStyle.Scale;
 
 
 -- StarterGui.Starlight.Catalog.UIScale
-G2L["2b2"] = Instance.new("UIScale", G2L["29e"]);
+G2L["2b8"] = Instance.new("UIScale", G2L["29e"]);
 
 
 
 -- StarterGui.Starlight.Catalog.UIStroke
-G2L["2b3"] = Instance.new("UIStroke", G2L["29e"]);
-G2L["2b3"]["Thickness"] = 1.5;
-G2L["2b3"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["2b3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["2b9"] = Instance.new("UIStroke", G2L["29e"]);
+G2L["2b9"]["Thickness"] = 1.5;
+G2L["2b9"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["2b9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.Starlight.Catalog.ScrollingFrame
-G2L["2b4"] = Instance.new("ScrollingFrame", G2L["29e"]);
-G2L["2b4"]["Active"] = true;
-G2L["2b4"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["2b4"]["BorderSizePixel"] = 0;
-G2L["2b4"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["2b4"]["ScrollBarImageTransparency"] = 0.5;
-G2L["2b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b4"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2b4"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["2b4"]["Size"] = UDim2.new(0.95, 0, 0.67, 0);
-G2L["2b4"]["Position"] = UDim2.new(0.5, 0, 0.62, 0);
-G2L["2b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b4"]["ScrollBarThickness"] = 3;
-G2L["2b4"]["BackgroundTransparency"] = 0.8;
+G2L["2ba"] = Instance.new("ScrollingFrame", G2L["29e"]);
+G2L["2ba"]["Active"] = true;
+G2L["2ba"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["2ba"]["BorderSizePixel"] = 0;
+G2L["2ba"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["2ba"]["ScrollBarImageTransparency"] = 0.5;
+G2L["2ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ba"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2ba"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["2ba"]["Size"] = UDim2.new(0.95, 0, 0.67, 0);
+G2L["2ba"]["Position"] = UDim2.new(0.5, 0, 0.62, 0);
+G2L["2ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ba"]["ScrollBarThickness"] = 3;
+G2L["2ba"]["BackgroundTransparency"] = 0.8;
 
 
 -- StarterGui.Starlight.Catalog.ScrollingFrame.UICorner
-G2L["2b5"] = Instance.new("UICorner", G2L["2b4"]);
-G2L["2b5"]["CornerRadius"] = UDim.new(0, 7);
+G2L["2bb"] = Instance.new("UICorner", G2L["2ba"]);
+G2L["2bb"]["CornerRadius"] = UDim.new(0, 7);
 
 
 -- StarterGui.Starlight.Catalog.ScrollingFrame.UIStroke
-G2L["2b6"] = Instance.new("UIStroke", G2L["2b4"]);
-G2L["2b6"]["Thickness"] = 1.5;
-G2L["2b6"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["2b6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.Starlight.Catalog.ScrollingFrame.UIGridLayout
-G2L["2b7"] = Instance.new("UIGridLayout", G2L["2b4"]);
-G2L["2b7"]["CellSize"] = UDim2.new(0, 93, 0, 112);
-G2L["2b7"]["CellPadding"] = UDim2.new(0, 0, 0, 0);
-
-
--- StarterGui.Starlight.Catalog.Ref
-G2L["2b8"] = Instance.new("TextButton", G2L["29e"]);
-G2L["2b8"]["TextWrapped"] = true;
-G2L["2b8"]["BorderSizePixel"] = 0;
-G2L["2b8"]["TextSize"] = 14;
-G2L["2b8"]["TextScaled"] = true;
-G2L["2b8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b8"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["2b8"]["BackgroundTransparency"] = 1;
-G2L["2b8"]["Size"] = UDim2.new(0.15, 0, 0, 30);
-G2L["2b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b8"]["Text"] = [[Refresh]];
-G2L["2b8"]["Name"] = [[Ref]];
-G2L["2b8"]["Position"] = UDim2.new(0.9, 0, 0, 0);
-
-
--- StarterGui.Starlight.Catalog.Ref.UIPadding
-G2L["2b9"] = Instance.new("UIPadding", G2L["2b8"]);
-G2L["2b9"]["PaddingTop"] = UDim.new(0, 2);
-G2L["2b9"]["PaddingRight"] = UDim.new(0, 2);
-G2L["2b9"]["PaddingLeft"] = UDim.new(0, 2);
-G2L["2b9"]["PaddingBottom"] = UDim.new(0, 2);
-
-
--- StarterGui.Starlight.Catalog.Ref.UIStroke
-G2L["2ba"] = Instance.new("UIStroke", G2L["2b8"]);
-G2L["2ba"]["Thickness"] = 1.5;
-G2L["2ba"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.Starlight.Catalog.HolderTop
-G2L["2bb"] = Instance.new("Frame", G2L["29e"]);
-G2L["2bb"]["Active"] = true;
-G2L["2bb"]["ZIndex"] = 2;
-G2L["2bb"]["BorderSizePixel"] = 0;
-G2L["2bb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2bb"]["Selectable"] = true;
-G2L["2bb"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2bb"]["Size"] = UDim2.new(0.95, 0, 0.1, 0);
-G2L["2bb"]["Position"] = UDim2.new(0.5, 0, 0.2, 0);
-G2L["2bb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2bb"]["Name"] = [[HolderTop]];
-G2L["2bb"]["LayoutOrder"] = 3;
-G2L["2bb"]["BackgroundTransparency"] = 0.8;
-G2L["2bb"]["SelectionGroup"] = true;
--- Attributes
-G2L["2bb"]:SetAttribute([[Item]], [[]]);
-
-
--- StarterGui.Starlight.Catalog.HolderTop.UIStroke
-G2L["2bc"] = Instance.new("UIStroke", G2L["2bb"]);
+G2L["2bc"] = Instance.new("UIStroke", G2L["2ba"]);
 G2L["2bc"]["Thickness"] = 1.5;
 G2L["2bc"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["2bc"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.Starlight.Catalog.HolderTop.UICorner
-G2L["2bd"] = Instance.new("UICorner", G2L["2bb"]);
-G2L["2bd"]["CornerRadius"] = UDim.new(0, 7);
+-- StarterGui.Starlight.Catalog.ScrollingFrame.UIGridLayout
+G2L["2bd"] = Instance.new("UIGridLayout", G2L["2ba"]);
+G2L["2bd"]["CellSize"] = UDim2.new(0, 93, 0, 112);
+G2L["2bd"]["CellPadding"] = UDim2.new(0, 0, 0, 0);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.Search
-G2L["2be"] = Instance.new("TextBox", G2L["2bb"]);
-G2L["2be"]["Name"] = [[Search]];
-G2L["2be"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["2be"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2be"]["BorderSizePixel"] = 0;
+-- StarterGui.Starlight.Catalog.Ref
+G2L["2be"] = Instance.new("TextButton", G2L["29e"]);
 G2L["2be"]["TextWrapped"] = true;
+G2L["2be"]["BorderSizePixel"] = 0;
 G2L["2be"]["TextSize"] = 14;
-G2L["2be"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2be"]["TextScaled"] = true;
+G2L["2be"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2be"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2be"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2be"]["AnchorPoint"] = Vector2.new(1, 0.5);
-G2L["2be"]["ClearTextOnFocus"] = false;
-G2L["2be"]["PlaceholderText"] = [[Search...]];
-G2L["2be"]["Size"] = UDim2.new(0.36, 0, 0.8, 0);
-G2L["2be"]["Position"] = UDim2.new(0.99, 0, 0.5, 0);
+G2L["2be"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["2be"]["BackgroundTransparency"] = 1;
+G2L["2be"]["Size"] = UDim2.new(0.15, 0, 0, 30);
 G2L["2be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2be"]["Text"] = [[]];
-G2L["2be"]["LayoutOrder"] = 3;
-G2L["2be"]["BackgroundTransparency"] = 0.75;
+G2L["2be"]["Text"] = [[Refresh]];
+G2L["2be"]["Name"] = [[Ref]];
+G2L["2be"]["Position"] = UDim2.new(0.9, 0, 0, 0);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.Search.UIStroke
-G2L["2bf"] = Instance.new("UIStroke", G2L["2be"]);
-G2L["2bf"]["Thickness"] = 1.5;
-G2L["2bf"]["Color"] = Color3.fromRGB(255, 135, 206);
+-- StarterGui.Starlight.Catalog.Ref.UIPadding
+G2L["2bf"] = Instance.new("UIPadding", G2L["2be"]);
+G2L["2bf"]["PaddingTop"] = UDim.new(0, 2);
+G2L["2bf"]["PaddingRight"] = UDim.new(0, 2);
+G2L["2bf"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["2bf"]["PaddingBottom"] = UDim.new(0, 2);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.Search.UIPadding
-G2L["2c0"] = Instance.new("UIPadding", G2L["2be"]);
-G2L["2c0"]["PaddingRight"] = UDim.new(0, 4);
+-- StarterGui.Starlight.Catalog.Ref.UIStroke
+G2L["2c0"] = Instance.new("UIStroke", G2L["2be"]);
+G2L["2c0"]["Thickness"] = 1.5;
+G2L["2c0"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.Search.UICorner
-G2L["2c1"] = Instance.new("UICorner", G2L["2be"]);
-G2L["2c1"]["CornerRadius"] = UDim.new(0, 7);
-
-
--- StarterGui.Starlight.Catalog.HolderTop.Types
-G2L["2c2"] = Instance.new("TextButton", G2L["2bb"]);
-G2L["2c2"]["TextWrapped"] = true;
-G2L["2c2"]["BorderSizePixel"] = 0;
-G2L["2c2"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2c2"]["TextSize"] = 14;
-G2L["2c2"]["TextScaled"] = true;
-G2L["2c2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2c2"]["AnchorPoint"] = Vector2.new(0, 0.5);
-G2L["2c2"]["BackgroundTransparency"] = 0.6;
-G2L["2c2"]["Size"] = UDim2.new(0.35, 0, 0.8, 0);
-G2L["2c2"]["LayoutOrder"] = 3;
-G2L["2c2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c2"]["Text"] = [[]];
-G2L["2c2"]["Name"] = [[Types]];
-G2L["2c2"]["Position"] = UDim2.new(0.01, 0, 0.5, 0);
-G2L["2c2"]["SelectionGroup"] = true;
+-- StarterGui.Starlight.Catalog.HolderTop
+G2L["2c1"] = Instance.new("Frame", G2L["29e"]);
+G2L["2c1"]["Active"] = true;
+G2L["2c1"]["ZIndex"] = 2;
+G2L["2c1"]["BorderSizePixel"] = 0;
+G2L["2c1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c1"]["Selectable"] = true;
+G2L["2c1"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2c1"]["Size"] = UDim2.new(0.95, 0, 0.1, 0);
+G2L["2c1"]["Position"] = UDim2.new(0.5, 0, 0.2, 0);
+G2L["2c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c1"]["Name"] = [[HolderTop]];
+G2L["2c1"]["LayoutOrder"] = 3;
+G2L["2c1"]["BackgroundTransparency"] = 0.8;
+G2L["2c1"]["SelectionGroup"] = true;
 -- Attributes
-G2L["2c2"]:SetAttribute([[Item]], [[]]);
+G2L["2c1"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.Types.UICorner
-G2L["2c3"] = Instance.new("UICorner", G2L["2c2"]);
+-- StarterGui.Starlight.Catalog.HolderTop.UIStroke
+G2L["2c2"] = Instance.new("UIStroke", G2L["2c1"]);
+G2L["2c2"]["Thickness"] = 1.5;
+G2L["2c2"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["2c2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.UICorner
+G2L["2c3"] = Instance.new("UICorner", G2L["2c1"]);
 G2L["2c3"]["CornerRadius"] = UDim.new(0, 7);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.Types.Arrow
-G2L["2c4"] = Instance.new("TextLabel", G2L["2c2"]);
-G2L["2c4"]["TextWrapped"] = true;
-G2L["2c4"]["Active"] = true;
+-- StarterGui.Starlight.Catalog.HolderTop.Search
+G2L["2c4"] = Instance.new("TextBox", G2L["2c1"]);
+G2L["2c4"]["Name"] = [[Search]];
+G2L["2c4"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["2c4"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2c4"]["BorderSizePixel"] = 0;
+G2L["2c4"]["TextWrapped"] = true;
 G2L["2c4"]["TextSize"] = 14;
+G2L["2c4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2c4"]["TextScaled"] = true;
 G2L["2c4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2c4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c4"]["BackgroundTransparency"] = 1;
+G2L["2c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["2c4"]["AnchorPoint"] = Vector2.new(1, 0.5);
-G2L["2c4"]["Size"] = UDim2.new(0.2, 0, 1, 0);
+G2L["2c4"]["ClearTextOnFocus"] = false;
+G2L["2c4"]["PlaceholderText"] = [[Search...]];
+G2L["2c4"]["Size"] = UDim2.new(0.36, 0, 0.8, 0);
+G2L["2c4"]["Position"] = UDim2.new(0.99, 0, 0.5, 0);
 G2L["2c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c4"]["Text"] = [[↓]];
-G2L["2c4"]["Selectable"] = true;
-G2L["2c4"]["Name"] = [[Arrow]];
-G2L["2c4"]["Position"] = UDim2.new(0.9, 0, 0.5, 0);
+G2L["2c4"]["Text"] = [[]];
+G2L["2c4"]["LayoutOrder"] = 3;
+G2L["2c4"]["BackgroundTransparency"] = 0.75;
 
 
--- StarterGui.Starlight.Catalog.HolderTop.Types.Arrow.UIStroke
+-- StarterGui.Starlight.Catalog.HolderTop.Search.UIStroke
 G2L["2c5"] = Instance.new("UIStroke", G2L["2c4"]);
 G2L["2c5"]["Thickness"] = 1.5;
 G2L["2c5"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
+-- StarterGui.Starlight.Catalog.HolderTop.Search.UIPadding
+G2L["2c6"] = Instance.new("UIPadding", G2L["2c4"]);
+G2L["2c6"]["PaddingRight"] = UDim.new(0, 4);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.Search.UICorner
+G2L["2c7"] = Instance.new("UICorner", G2L["2c4"]);
+G2L["2c7"]["CornerRadius"] = UDim.new(0, 7);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.Types
+G2L["2c8"] = Instance.new("TextButton", G2L["2c1"]);
+G2L["2c8"]["TextWrapped"] = true;
+G2L["2c8"]["BorderSizePixel"] = 0;
+G2L["2c8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2c8"]["TextSize"] = 14;
+G2L["2c8"]["TextScaled"] = true;
+G2L["2c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c8"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["2c8"]["BackgroundTransparency"] = 0.6;
+G2L["2c8"]["Size"] = UDim2.new(0.35, 0, 0.8, 0);
+G2L["2c8"]["LayoutOrder"] = 3;
+G2L["2c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c8"]["Text"] = [[]];
+G2L["2c8"]["Name"] = [[Types]];
+G2L["2c8"]["Position"] = UDim2.new(0.01, 0, 0.5, 0);
+G2L["2c8"]["SelectionGroup"] = true;
+-- Attributes
+G2L["2c8"]:SetAttribute([[Item]], [[]]);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.Types.UICorner
+G2L["2c9"] = Instance.new("UICorner", G2L["2c8"]);
+G2L["2c9"]["CornerRadius"] = UDim.new(0, 7);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.Types.Arrow
+G2L["2ca"] = Instance.new("TextLabel", G2L["2c8"]);
+G2L["2ca"]["TextWrapped"] = true;
+G2L["2ca"]["Active"] = true;
+G2L["2ca"]["BorderSizePixel"] = 0;
+G2L["2ca"]["TextSize"] = 14;
+G2L["2ca"]["TextScaled"] = true;
+G2L["2ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2ca"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ca"]["BackgroundTransparency"] = 1;
+G2L["2ca"]["AnchorPoint"] = Vector2.new(1, 0.5);
+G2L["2ca"]["Size"] = UDim2.new(0.2, 0, 1, 0);
+G2L["2ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ca"]["Text"] = [[↓]];
+G2L["2ca"]["Selectable"] = true;
+G2L["2ca"]["Name"] = [[Arrow]];
+G2L["2ca"]["Position"] = UDim2.new(0.9, 0, 0.5, 0);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.Types.Arrow.UIStroke
+G2L["2cb"] = Instance.new("UIStroke", G2L["2ca"]);
+G2L["2cb"]["Thickness"] = 1.5;
+G2L["2cb"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
 -- StarterGui.Starlight.Catalog.HolderTop.Types.Arrow.UICorner
-G2L["2c6"] = Instance.new("UICorner", G2L["2c4"]);
-G2L["2c6"]["CornerRadius"] = UDim.new(0, 2);
+G2L["2cc"] = Instance.new("UICorner", G2L["2ca"]);
+G2L["2cc"]["CornerRadius"] = UDim.new(0, 2);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.Types.Arrow.UIAspectRatioConstraint
-G2L["2c7"] = Instance.new("UIAspectRatioConstraint", G2L["2c4"]);
+G2L["2cd"] = Instance.new("UIAspectRatioConstraint", G2L["2ca"]);
 
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.Types.TextLabel
-G2L["2c8"] = Instance.new("TextLabel", G2L["2c2"]);
-G2L["2c8"]["TextWrapped"] = true;
-G2L["2c8"]["BorderSizePixel"] = 0;
-G2L["2c8"]["TextSize"] = 14;
-G2L["2c8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2c8"]["TextScaled"] = true;
-G2L["2c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c8"]["BackgroundTransparency"] = 1;
-G2L["2c8"]["AnchorPoint"] = Vector2.new(0, 0.5);
-G2L["2c8"]["Size"] = UDim2.new(0.75, 0, 1, 0);
-G2L["2c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c8"]["Text"] = [[Type Name]];
-G2L["2c8"]["Position"] = UDim2.new(0, 0, 0.5, 0);
+G2L["2ce"] = Instance.new("TextLabel", G2L["2c8"]);
+G2L["2ce"]["TextWrapped"] = true;
+G2L["2ce"]["BorderSizePixel"] = 0;
+G2L["2ce"]["TextSize"] = 14;
+G2L["2ce"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2ce"]["TextScaled"] = true;
+G2L["2ce"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ce"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ce"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ce"]["BackgroundTransparency"] = 1;
+G2L["2ce"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["2ce"]["Size"] = UDim2.new(0.75, 0, 1, 0);
+G2L["2ce"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ce"]["Text"] = [[Type Name]];
+G2L["2ce"]["Position"] = UDim2.new(0, 0, 0.5, 0);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.Types.TextLabel.UIStroke
-G2L["2c9"] = Instance.new("UIStroke", G2L["2c8"]);
-G2L["2c9"]["Thickness"] = 1.5;
-G2L["2c9"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["2cf"] = Instance.new("UIStroke", G2L["2ce"]);
+G2L["2cf"]["Thickness"] = 1.5;
+G2L["2cf"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.Types.TextLabel.UIPadding
-G2L["2ca"] = Instance.new("UIPadding", G2L["2c8"]);
-G2L["2ca"]["PaddingTop"] = UDim.new(0, 1);
-G2L["2ca"]["PaddingLeft"] = UDim.new(0, 5);
-G2L["2ca"]["PaddingBottom"] = UDim.new(0, 1);
+G2L["2d0"] = Instance.new("UIPadding", G2L["2ce"]);
+G2L["2d0"]["PaddingTop"] = UDim.new(0, 1);
+G2L["2d0"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["2d0"]["PaddingBottom"] = UDim.new(0, 1);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.Types.Holder
-G2L["2cb"] = Instance.new("ScrollingFrame", G2L["2c2"]);
-G2L["2cb"]["Visible"] = false;
-G2L["2cb"]["Active"] = true;
-G2L["2cb"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["2cb"]["ZIndex"] = 2;
-G2L["2cb"]["BorderSizePixel"] = 0;
-G2L["2cb"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["2cb"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.ScrollBar;
-G2L["2cb"]["Name"] = [[Holder]];
-G2L["2cb"]["BackgroundColor3"] = Color3.fromRGB(213, 154, 192);
-G2L["2cb"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["2cb"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["2cb"]["Size"] = UDim2.new(0.95, 0, 0, 75);
-G2L["2cb"]["Position"] = UDim2.new(0.5, 0, 1.8, 0);
-G2L["2cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2cb"]["ScrollBarThickness"] = 3;
-G2L["2cb"]["BackgroundTransparency"] = 0.1;
+G2L["2d1"] = Instance.new("ScrollingFrame", G2L["2c8"]);
+G2L["2d1"]["Visible"] = false;
+G2L["2d1"]["Active"] = true;
+G2L["2d1"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["2d1"]["ZIndex"] = 2;
+G2L["2d1"]["BorderSizePixel"] = 0;
+G2L["2d1"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["2d1"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.ScrollBar;
+G2L["2d1"]["Name"] = [[Holder]];
+G2L["2d1"]["BackgroundColor3"] = Color3.fromRGB(213, 154, 192);
+G2L["2d1"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["2d1"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["2d1"]["Size"] = UDim2.new(0.95, 0, 0, 75);
+G2L["2d1"]["Position"] = UDim2.new(0.5, 0, 1.8, 0);
+G2L["2d1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d1"]["ScrollBarThickness"] = 3;
+G2L["2d1"]["BackgroundTransparency"] = 0.1;
 -- Attributes
-G2L["2cb"]:SetAttribute([[BGCOLOR]], [[]]);
+G2L["2d1"]:SetAttribute([[BGCOLOR]], [[]]);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.Types.Holder.UICorner
-G2L["2cc"] = Instance.new("UICorner", G2L["2cb"]);
-G2L["2cc"]["CornerRadius"] = UDim.new(0, 7);
-
-
--- StarterGui.Starlight.Catalog.HolderTop.Types.Holder.UIListLayout
-G2L["2cd"] = Instance.new("UIListLayout", G2L["2cb"]);
-G2L["2cd"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["2cd"]["Padding"] = UDim.new(0, 3);
-
-
--- StarterGui.Starlight.Catalog.HolderTop.Types.Holder.!
-G2L["2ce"] = Instance.new("Frame", G2L["2cb"]);
-G2L["2ce"]["BorderSizePixel"] = 0;
-G2L["2ce"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2ce"]["Size"] = UDim2.new(0, 1, 0, 1);
-G2L["2ce"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2ce"]["Name"] = [[!]];
-G2L["2ce"]["LayoutOrder"] = 999;
-G2L["2ce"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.Starlight.Catalog.HolderTop.Types.Holder.Z!
-G2L["2cf"] = Instance.new("Frame", G2L["2cb"]);
-G2L["2cf"]["BorderSizePixel"] = 0;
-G2L["2cf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2cf"]["Size"] = UDim2.new(0, 1, 0, 1);
-G2L["2cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2cf"]["Name"] = [[Z!]];
-G2L["2cf"]["LayoutOrder"] = -999;
-G2L["2cf"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.Starlight.Catalog.HolderTop.Types.Holder.UIStroke
-G2L["2d0"] = Instance.new("UIStroke", G2L["2cb"]);
-G2L["2d0"]["Thickness"] = 1.5;
-G2L["2d0"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["2d0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.Starlight.Catalog.HolderTop.PriceOnly
-G2L["2d1"] = Instance.new("TextButton", G2L["2bb"]);
-G2L["2d1"]["BorderSizePixel"] = 0;
-G2L["2d1"]["TextSize"] = 14;
-G2L["2d1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d1"]["AnchorPoint"] = Vector2.new(0, 0.5);
-G2L["2d1"]["BackgroundTransparency"] = 0.5;
-G2L["2d1"]["Size"] = UDim2.new(0.25, 0, 0.8, 0);
-G2L["2d1"]["LayoutOrder"] = 2;
-G2L["2d1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d1"]["Text"] = [[]];
-G2L["2d1"]["Name"] = [[PriceOnly]];
-G2L["2d1"]["Visible"] = false;
-G2L["2d1"]["Position"] = UDim2.new(0.37, 0, 0.5, 0);
-
-
--- StarterGui.Starlight.Catalog.HolderTop.PriceOnly.UICorner
 G2L["2d2"] = Instance.new("UICorner", G2L["2d1"]);
 G2L["2d2"]["CornerRadius"] = UDim.new(0, 7);
 
 
+-- StarterGui.Starlight.Catalog.HolderTop.Types.Holder.UIListLayout
+G2L["2d3"] = Instance.new("UIListLayout", G2L["2d1"]);
+G2L["2d3"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["2d3"]["Padding"] = UDim.new(0, 3);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.Types.Holder.!
+G2L["2d4"] = Instance.new("Frame", G2L["2d1"]);
+G2L["2d4"]["BorderSizePixel"] = 0;
+G2L["2d4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d4"]["Size"] = UDim2.new(0, 1, 0, 1);
+G2L["2d4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d4"]["Name"] = [[!]];
+G2L["2d4"]["LayoutOrder"] = 999;
+G2L["2d4"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.Types.Holder.Z!
+G2L["2d5"] = Instance.new("Frame", G2L["2d1"]);
+G2L["2d5"]["BorderSizePixel"] = 0;
+G2L["2d5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d5"]["Size"] = UDim2.new(0, 1, 0, 1);
+G2L["2d5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d5"]["Name"] = [[Z!]];
+G2L["2d5"]["LayoutOrder"] = -999;
+G2L["2d5"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.Types.Holder.UIStroke
+G2L["2d6"] = Instance.new("UIStroke", G2L["2d1"]);
+G2L["2d6"]["Thickness"] = 1.5;
+G2L["2d6"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["2d6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceOnly
+G2L["2d7"] = Instance.new("TextButton", G2L["2c1"]);
+G2L["2d7"]["BorderSizePixel"] = 0;
+G2L["2d7"]["TextSize"] = 14;
+G2L["2d7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d7"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["2d7"]["BackgroundTransparency"] = 0.5;
+G2L["2d7"]["Size"] = UDim2.new(0.25, 0, 0.8, 0);
+G2L["2d7"]["LayoutOrder"] = 2;
+G2L["2d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d7"]["Text"] = [[]];
+G2L["2d7"]["Name"] = [[PriceOnly]];
+G2L["2d7"]["Visible"] = false;
+G2L["2d7"]["Position"] = UDim2.new(0.37, 0, 0.5, 0);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceOnly.UICorner
+G2L["2d8"] = Instance.new("UICorner", G2L["2d7"]);
+G2L["2d8"]["CornerRadius"] = UDim.new(0, 7);
+
+
 -- StarterGui.Starlight.Catalog.HolderTop.PriceOnly.TextLabel
-G2L["2d3"] = Instance.new("TextLabel", G2L["2d1"]);
-G2L["2d3"]["TextWrapped"] = true;
-G2L["2d3"]["BorderSizePixel"] = 0;
-G2L["2d3"]["TextSize"] = 14;
-G2L["2d3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2d3"]["TextScaled"] = true;
-G2L["2d3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d3"]["BackgroundTransparency"] = 1;
-G2L["2d3"]["AnchorPoint"] = Vector2.new(0, 0.5);
-G2L["2d3"]["Size"] = UDim2.new(0.7, 0, 1, 0);
-G2L["2d3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d3"]["Text"] = [[Price Only]];
-G2L["2d3"]["Position"] = UDim2.new(0, 0, 0.5, 0);
+G2L["2d9"] = Instance.new("TextLabel", G2L["2d7"]);
+G2L["2d9"]["TextWrapped"] = true;
+G2L["2d9"]["BorderSizePixel"] = 0;
+G2L["2d9"]["TextSize"] = 14;
+G2L["2d9"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2d9"]["TextScaled"] = true;
+G2L["2d9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d9"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d9"]["BackgroundTransparency"] = 1;
+G2L["2d9"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["2d9"]["Size"] = UDim2.new(0.7, 0, 1, 0);
+G2L["2d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d9"]["Text"] = [[Price Only]];
+G2L["2d9"]["Position"] = UDim2.new(0, 0, 0.5, 0);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceOnly.TextLabel.UIStroke
-G2L["2d4"] = Instance.new("UIStroke", G2L["2d3"]);
-G2L["2d4"]["Thickness"] = 1.5;
-G2L["2d4"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["2da"] = Instance.new("UIStroke", G2L["2d9"]);
+G2L["2da"]["Thickness"] = 1.5;
+G2L["2da"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceOnly.TextLabel.UIPadding
-G2L["2d5"] = Instance.new("UIPadding", G2L["2d3"]);
-G2L["2d5"]["PaddingTop"] = UDim.new(0, 1);
-G2L["2d5"]["PaddingLeft"] = UDim.new(0, 5);
-G2L["2d5"]["PaddingBottom"] = UDim.new(0, 1);
+G2L["2db"] = Instance.new("UIPadding", G2L["2d9"]);
+G2L["2db"]["PaddingTop"] = UDim.new(0, 1);
+G2L["2db"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["2db"]["PaddingBottom"] = UDim.new(0, 1);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceOnly.Button
-G2L["2d6"] = Instance.new("Frame", G2L["2d1"]);
-G2L["2d6"]["BorderSizePixel"] = 0;
-G2L["2d6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d6"]["Selectable"] = true;
-G2L["2d6"]["AnchorPoint"] = Vector2.new(1, 0.5);
-G2L["2d6"]["Size"] = UDim2.new(0.2, 0, 0.8, 0);
-G2L["2d6"]["Position"] = UDim2.new(0.9, 0, 0.5, 0);
-G2L["2d6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d6"]["Name"] = [[Button]];
+G2L["2dc"] = Instance.new("Frame", G2L["2d7"]);
+G2L["2dc"]["BorderSizePixel"] = 0;
+G2L["2dc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2dc"]["Selectable"] = true;
+G2L["2dc"]["AnchorPoint"] = Vector2.new(1, 0.5);
+G2L["2dc"]["Size"] = UDim2.new(0.2, 0, 0.8, 0);
+G2L["2dc"]["Position"] = UDim2.new(0.9, 0, 0.5, 0);
+G2L["2dc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2dc"]["Name"] = [[Button]];
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceOnly.Button.UIAspectRatioConstraint
-G2L["2d7"] = Instance.new("UIAspectRatioConstraint", G2L["2d6"]);
+G2L["2dd"] = Instance.new("UIAspectRatioConstraint", G2L["2dc"]);
 
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceOnly.Button.UICorner
-G2L["2d8"] = Instance.new("UICorner", G2L["2d6"]);
-G2L["2d8"]["CornerRadius"] = UDim.new(0, 2);
+G2L["2de"] = Instance.new("UICorner", G2L["2dc"]);
+G2L["2de"]["CornerRadius"] = UDim.new(0, 2);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceOnly.Button.Check
-G2L["2d9"] = Instance.new("ImageLabel", G2L["2d6"]);
-G2L["2d9"]["BorderSizePixel"] = 0;
-G2L["2d9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d9"]["ImageColor3"] = Color3.fromRGB(255, 135, 206);
-G2L["2d9"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2d9"]["Image"] = [[rbxassetid://107537793705885]];
-G2L["2d9"]["Size"] = UDim2.new(0.9, 0, 0.9, 0);
-G2L["2d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d9"]["BackgroundTransparency"] = 1;
-G2L["2d9"]["Name"] = [[Check]];
-G2L["2d9"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["2df"] = Instance.new("ImageLabel", G2L["2dc"]);
+G2L["2df"]["BorderSizePixel"] = 0;
+G2L["2df"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2df"]["ImageColor3"] = Color3.fromRGB(255, 135, 206);
+G2L["2df"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2df"]["Image"] = [[rbxassetid://107537793705885]];
+G2L["2df"]["Size"] = UDim2.new(0.9, 0, 0.9, 0);
+G2L["2df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2df"]["BackgroundTransparency"] = 1;
+G2L["2df"]["Name"] = [[Check]];
+G2L["2df"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 -- Attributes
-G2L["2d9"]:SetAttribute([[Checkmark]], [[]]);
+G2L["2df"]:SetAttribute([[Checkmark]], [[]]);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceOnly.Button.Check.UIAspectRatioConstraint
-G2L["2da"] = Instance.new("UIAspectRatioConstraint", G2L["2d9"]);
+G2L["2e0"] = Instance.new("UIAspectRatioConstraint", G2L["2df"]);
 
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter
-G2L["2db"] = Instance.new("TextButton", G2L["2bb"]);
-G2L["2db"]["TextWrapped"] = true;
-G2L["2db"]["BorderSizePixel"] = 0;
-G2L["2db"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2db"]["TextSize"] = 14;
-G2L["2db"]["TextScaled"] = true;
-G2L["2db"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2db"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2db"]["AnchorPoint"] = Vector2.new(0, 0.5);
-G2L["2db"]["BackgroundTransparency"] = 0.6;
-G2L["2db"]["Size"] = UDim2.new(0.25, 0, 0.8, 0);
-G2L["2db"]["LayoutOrder"] = 3;
-G2L["2db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2db"]["Text"] = [[]];
-G2L["2db"]["Name"] = [[PriceFilter]];
-G2L["2db"]["Position"] = UDim2.new(0.37, 0, 0.5, 0);
-G2L["2db"]["SelectionGroup"] = true;
+G2L["2e1"] = Instance.new("TextButton", G2L["2c1"]);
+G2L["2e1"]["TextWrapped"] = true;
+G2L["2e1"]["BorderSizePixel"] = 0;
+G2L["2e1"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2e1"]["TextSize"] = 14;
+G2L["2e1"]["TextScaled"] = true;
+G2L["2e1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e1"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["2e1"]["BackgroundTransparency"] = 0.6;
+G2L["2e1"]["Size"] = UDim2.new(0.25, 0, 0.8, 0);
+G2L["2e1"]["LayoutOrder"] = 3;
+G2L["2e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e1"]["Text"] = [[]];
+G2L["2e1"]["Name"] = [[PriceFilter]];
+G2L["2e1"]["Position"] = UDim2.new(0.37, 0, 0.5, 0);
+G2L["2e1"]["SelectionGroup"] = true;
 -- Attributes
-G2L["2db"]:SetAttribute([[Item]], [[]]);
+G2L["2e1"]:SetAttribute([[Item]], [[]]);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.UICorner
-G2L["2dc"] = Instance.new("UICorner", G2L["2db"]);
-G2L["2dc"]["CornerRadius"] = UDim.new(0, 7);
+G2L["2e2"] = Instance.new("UICorner", G2L["2e1"]);
+G2L["2e2"]["CornerRadius"] = UDim.new(0, 7);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Arrow
-G2L["2dd"] = Instance.new("TextLabel", G2L["2db"]);
-G2L["2dd"]["TextWrapped"] = true;
-G2L["2dd"]["Active"] = true;
-G2L["2dd"]["BorderSizePixel"] = 0;
-G2L["2dd"]["TextSize"] = 14;
-G2L["2dd"]["TextScaled"] = true;
-G2L["2dd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2dd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2dd"]["BackgroundTransparency"] = 1;
-G2L["2dd"]["AnchorPoint"] = Vector2.new(1, 0.5);
-G2L["2dd"]["Size"] = UDim2.new(0.2, 0, 1, 0);
-G2L["2dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2dd"]["Text"] = [[↓]];
-G2L["2dd"]["Selectable"] = true;
-G2L["2dd"]["Name"] = [[Arrow]];
-G2L["2dd"]["Position"] = UDim2.new(0.9, 0, 0.5, 0);
+G2L["2e3"] = Instance.new("TextLabel", G2L["2e1"]);
+G2L["2e3"]["TextWrapped"] = true;
+G2L["2e3"]["Active"] = true;
+G2L["2e3"]["BorderSizePixel"] = 0;
+G2L["2e3"]["TextSize"] = 14;
+G2L["2e3"]["TextScaled"] = true;
+G2L["2e3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e3"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2e3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e3"]["BackgroundTransparency"] = 1;
+G2L["2e3"]["AnchorPoint"] = Vector2.new(1, 0.5);
+G2L["2e3"]["Size"] = UDim2.new(0.2, 0, 1, 0);
+G2L["2e3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e3"]["Text"] = [[↓]];
+G2L["2e3"]["Selectable"] = true;
+G2L["2e3"]["Name"] = [[Arrow]];
+G2L["2e3"]["Position"] = UDim2.new(0.9, 0, 0.5, 0);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Arrow.UIStroke
-G2L["2de"] = Instance.new("UIStroke", G2L["2dd"]);
-G2L["2de"]["Thickness"] = 1.5;
-G2L["2de"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["2e4"] = Instance.new("UIStroke", G2L["2e3"]);
+G2L["2e4"]["Thickness"] = 1.5;
+G2L["2e4"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Arrow.UICorner
-G2L["2df"] = Instance.new("UICorner", G2L["2dd"]);
-G2L["2df"]["CornerRadius"] = UDim.new(0, 2);
+G2L["2e5"] = Instance.new("UICorner", G2L["2e3"]);
+G2L["2e5"]["CornerRadius"] = UDim.new(0, 2);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Arrow.UIAspectRatioConstraint
-G2L["2e0"] = Instance.new("UIAspectRatioConstraint", G2L["2dd"]);
+G2L["2e6"] = Instance.new("UIAspectRatioConstraint", G2L["2e3"]);
 
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.TextLabel
-G2L["2e1"] = Instance.new("TextLabel", G2L["2db"]);
-G2L["2e1"]["TextWrapped"] = true;
-G2L["2e1"]["BorderSizePixel"] = 0;
-G2L["2e1"]["TextSize"] = 14;
-G2L["2e1"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2e1"]["TextScaled"] = true;
-G2L["2e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2e1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2e1"]["BackgroundTransparency"] = 1;
-G2L["2e1"]["AnchorPoint"] = Vector2.new(0, 0.5);
-G2L["2e1"]["Size"] = UDim2.new(0.75, 0, 1, 0);
-G2L["2e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2e1"]["Text"] = [[All Items]];
-G2L["2e1"]["Position"] = UDim2.new(0, 0, 0.5, 0);
+G2L["2e7"] = Instance.new("TextLabel", G2L["2e1"]);
+G2L["2e7"]["TextWrapped"] = true;
+G2L["2e7"]["BorderSizePixel"] = 0;
+G2L["2e7"]["TextSize"] = 14;
+G2L["2e7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2e7"]["TextScaled"] = true;
+G2L["2e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e7"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e7"]["BackgroundTransparency"] = 1;
+G2L["2e7"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["2e7"]["Size"] = UDim2.new(0.75, 0, 1, 0);
+G2L["2e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e7"]["Text"] = [[All Items]];
+G2L["2e7"]["Position"] = UDim2.new(0, 0, 0.5, 0);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.TextLabel.UIStroke
-G2L["2e2"] = Instance.new("UIStroke", G2L["2e1"]);
-G2L["2e2"]["Thickness"] = 1.5;
-G2L["2e2"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["2e8"] = Instance.new("UIStroke", G2L["2e7"]);
+G2L["2e8"]["Thickness"] = 1.5;
+G2L["2e8"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.TextLabel.UIPadding
-G2L["2e3"] = Instance.new("UIPadding", G2L["2e1"]);
-G2L["2e3"]["PaddingTop"] = UDim.new(0, 1);
-G2L["2e3"]["PaddingLeft"] = UDim.new(0, 5);
-G2L["2e3"]["PaddingBottom"] = UDim.new(0, 1);
+G2L["2e9"] = Instance.new("UIPadding", G2L["2e7"]);
+G2L["2e9"]["PaddingTop"] = UDim.new(0, 1);
+G2L["2e9"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["2e9"]["PaddingBottom"] = UDim.new(0, 1);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder
-G2L["2e4"] = Instance.new("ScrollingFrame", G2L["2db"]);
-G2L["2e4"]["Visible"] = false;
-G2L["2e4"]["Active"] = true;
-G2L["2e4"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["2e4"]["ZIndex"] = 2;
-G2L["2e4"]["BorderSizePixel"] = 0;
-G2L["2e4"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["2e4"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.ScrollBar;
-G2L["2e4"]["Name"] = [[Holder]];
-G2L["2e4"]["BackgroundColor3"] = Color3.fromRGB(213, 154, 192);
-G2L["2e4"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["2e4"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["2e4"]["Size"] = UDim2.new(0.95, 0, 0, 75);
-G2L["2e4"]["Position"] = UDim2.new(0.5, 0, 1.8, 0);
-G2L["2e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2e4"]["ScrollBarThickness"] = 3;
-G2L["2e4"]["BackgroundTransparency"] = 0.1;
+G2L["2ea"] = Instance.new("ScrollingFrame", G2L["2e1"]);
+G2L["2ea"]["Visible"] = false;
+G2L["2ea"]["Active"] = true;
+G2L["2ea"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["2ea"]["ZIndex"] = 2;
+G2L["2ea"]["BorderSizePixel"] = 0;
+G2L["2ea"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["2ea"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.ScrollBar;
+G2L["2ea"]["Name"] = [[Holder]];
+G2L["2ea"]["BackgroundColor3"] = Color3.fromRGB(213, 154, 192);
+G2L["2ea"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["2ea"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["2ea"]["Size"] = UDim2.new(0.95, 0, 0, 75);
+G2L["2ea"]["Position"] = UDim2.new(0.5, 0, 1.8, 0);
+G2L["2ea"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ea"]["ScrollBarThickness"] = 3;
+G2L["2ea"]["BackgroundTransparency"] = 0.1;
 -- Attributes
-G2L["2e4"]:SetAttribute([[BGCOLOR]], [[]]);
+G2L["2ea"]:SetAttribute([[BGCOLOR]], [[]]);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.UICorner
-G2L["2e5"] = Instance.new("UICorner", G2L["2e4"]);
-G2L["2e5"]["CornerRadius"] = UDim.new(0, 7);
+G2L["2eb"] = Instance.new("UICorner", G2L["2ea"]);
+G2L["2eb"]["CornerRadius"] = UDim.new(0, 7);
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.UIListLayout
-G2L["2e6"] = Instance.new("UIListLayout", G2L["2e4"]);
-G2L["2e6"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["2e6"]["Padding"] = UDim.new(0, 3);
-G2L["2e6"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["2ec"] = Instance.new("UIListLayout", G2L["2ea"]);
+G2L["2ec"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["2ec"]["Padding"] = UDim.new(0, 3);
+G2L["2ec"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.!
-G2L["2e7"] = Instance.new("Frame", G2L["2e4"]);
-G2L["2e7"]["BorderSizePixel"] = 0;
-G2L["2e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2e7"]["Size"] = UDim2.new(0, 1, 0, 1);
-G2L["2e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2e7"]["Name"] = [[!]];
-G2L["2e7"]["LayoutOrder"] = -999;
-G2L["2e7"]["BackgroundTransparency"] = 1;
+G2L["2ed"] = Instance.new("Frame", G2L["2ea"]);
+G2L["2ed"]["BorderSizePixel"] = 0;
+G2L["2ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ed"]["Size"] = UDim2.new(0, 1, 0, 1);
+G2L["2ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ed"]["Name"] = [[!]];
+G2L["2ed"]["LayoutOrder"] = -999;
+G2L["2ed"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.Z!
-G2L["2e8"] = Instance.new("Frame", G2L["2e4"]);
-G2L["2e8"]["BorderSizePixel"] = 0;
-G2L["2e8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2e8"]["Size"] = UDim2.new(0, 1, 0, 1);
-G2L["2e8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2e8"]["Name"] = [[Z!]];
-G2L["2e8"]["LayoutOrder"] = 999;
-G2L["2e8"]["BackgroundTransparency"] = 1;
+G2L["2ee"] = Instance.new("Frame", G2L["2ea"]);
+G2L["2ee"]["BorderSizePixel"] = 0;
+G2L["2ee"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ee"]["Size"] = UDim2.new(0, 1, 0, 1);
+G2L["2ee"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ee"]["Name"] = [[Z!]];
+G2L["2ee"]["LayoutOrder"] = 999;
+G2L["2ee"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.UIStroke
-G2L["2e9"] = Instance.new("UIStroke", G2L["2e4"]);
-G2L["2e9"]["Thickness"] = 1.5;
-G2L["2e9"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["2e9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["2ef"] = Instance.new("UIStroke", G2L["2ea"]);
+G2L["2ef"]["Thickness"] = 1.5;
+G2L["2ef"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["2ef"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.All
-G2L["2ea"] = Instance.new("TextButton", G2L["2e4"]);
-G2L["2ea"]["TextWrapped"] = true;
-G2L["2ea"]["BorderSizePixel"] = 0;
-G2L["2ea"]["TextSize"] = 14;
-G2L["2ea"]["TextScaled"] = true;
-G2L["2ea"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2ea"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2ea"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2ea"]["BackgroundTransparency"] = 0.5;
-G2L["2ea"]["Size"] = UDim2.new(0.9, 0, 0, 15);
-G2L["2ea"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2ea"]["Text"] = [[All Items]];
-G2L["2ea"]["Name"] = [[All]];
--- Attributes
-G2L["2ea"]:SetAttribute([[TypeBtn]], [[]]);
-
-
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.All.UICorner
-G2L["2eb"] = Instance.new("UICorner", G2L["2ea"]);
-G2L["2eb"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.All.UIStroke
-G2L["2ec"] = Instance.new("UIStroke", G2L["2ea"]);
-G2L["2ec"]["Thickness"] = 1.5;
-G2L["2ec"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.CashOnly
-G2L["2ed"] = Instance.new("TextButton", G2L["2e4"]);
-G2L["2ed"]["TextWrapped"] = true;
-G2L["2ed"]["BorderSizePixel"] = 0;
-G2L["2ed"]["TextSize"] = 14;
-G2L["2ed"]["TextScaled"] = true;
-G2L["2ed"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2ed"]["BackgroundTransparency"] = 0.5;
-G2L["2ed"]["Size"] = UDim2.new(0.9, 0, 0, 15);
-G2L["2ed"]["LayoutOrder"] = 2;
-G2L["2ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2ed"]["Text"] = [[Pink Cash Only]];
-G2L["2ed"]["Name"] = [[CashOnly]];
--- Attributes
-G2L["2ed"]:SetAttribute([[TypeBtn]], [[]]);
-
-
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.CashOnly.UICorner
-G2L["2ee"] = Instance.new("UICorner", G2L["2ed"]);
-G2L["2ee"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.CashOnly.UIStroke
-G2L["2ef"] = Instance.new("UIStroke", G2L["2ed"]);
-G2L["2ef"]["Thickness"] = 1.5;
-G2L["2ef"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.OtherOnly
-G2L["2f0"] = Instance.new("TextButton", G2L["2e4"]);
+G2L["2f0"] = Instance.new("TextButton", G2L["2ea"]);
 G2L["2f0"]["TextWrapped"] = true;
 G2L["2f0"]["BorderSizePixel"] = 0;
 G2L["2f0"]["TextSize"] = 14;
@@ -7244,27 +7244,26 @@ G2L["2f0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["2f0"]["BackgroundTransparency"] = 0.5;
 G2L["2f0"]["Size"] = UDim2.new(0.9, 0, 0, 15);
-G2L["2f0"]["LayoutOrder"] = 3;
 G2L["2f0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f0"]["Text"] = [[Other Currencies]];
-G2L["2f0"]["Name"] = [[OtherOnly]];
+G2L["2f0"]["Text"] = [[All Items]];
+G2L["2f0"]["Name"] = [[All]];
 -- Attributes
 G2L["2f0"]:SetAttribute([[TypeBtn]], [[]]);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.OtherOnly.UICorner
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.All.UICorner
 G2L["2f1"] = Instance.new("UICorner", G2L["2f0"]);
 G2L["2f1"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.OtherOnly.UIStroke
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.All.UIStroke
 G2L["2f2"] = Instance.new("UIStroke", G2L["2f0"]);
 G2L["2f2"]["Thickness"] = 1.5;
 G2L["2f2"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.NoPriced
-G2L["2f3"] = Instance.new("TextButton", G2L["2e4"]);
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.CashOnly
+G2L["2f3"] = Instance.new("TextButton", G2L["2ea"]);
 G2L["2f3"]["TextWrapped"] = true;
 G2L["2f3"]["BorderSizePixel"] = 0;
 G2L["2f3"]["TextSize"] = 14;
@@ -7274,27 +7273,27 @@ G2L["2f3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2f3"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["2f3"]["BackgroundTransparency"] = 0.5;
 G2L["2f3"]["Size"] = UDim2.new(0.9, 0, 0, 15);
-G2L["2f3"]["LayoutOrder"] = 4;
+G2L["2f3"]["LayoutOrder"] = 2;
 G2L["2f3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f3"]["Text"] = [[Non Priced Only]];
-G2L["2f3"]["Name"] = [[NoPriced]];
+G2L["2f3"]["Text"] = [[Pink Cash Only]];
+G2L["2f3"]["Name"] = [[CashOnly]];
 -- Attributes
 G2L["2f3"]:SetAttribute([[TypeBtn]], [[]]);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.NoPriced.UICorner
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.CashOnly.UICorner
 G2L["2f4"] = Instance.new("UICorner", G2L["2f3"]);
 G2L["2f4"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.NoPriced.UIStroke
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.CashOnly.UIStroke
 G2L["2f5"] = Instance.new("UIStroke", G2L["2f3"]);
 G2L["2f5"]["Thickness"] = 1.5;
 G2L["2f5"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.AllPriced
-G2L["2f6"] = Instance.new("TextButton", G2L["2e4"]);
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.OtherOnly
+G2L["2f6"] = Instance.new("TextButton", G2L["2ea"]);
 G2L["2f6"]["TextWrapped"] = true;
 G2L["2f6"]["BorderSizePixel"] = 0;
 G2L["2f6"]["TextSize"] = 14;
@@ -7304,47 +7303,107 @@ G2L["2f6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["2f6"]["BackgroundTransparency"] = 0.5;
 G2L["2f6"]["Size"] = UDim2.new(0.9, 0, 0, 15);
-G2L["2f6"]["LayoutOrder"] = 1;
+G2L["2f6"]["LayoutOrder"] = 3;
 G2L["2f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f6"]["Text"] = [[All Priced]];
-G2L["2f6"]["Name"] = [[AllPriced]];
+G2L["2f6"]["Text"] = [[Other Currencies]];
+G2L["2f6"]["Name"] = [[OtherOnly]];
 -- Attributes
 G2L["2f6"]:SetAttribute([[TypeBtn]], [[]]);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.AllPriced.UICorner
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.OtherOnly.UICorner
 G2L["2f7"] = Instance.new("UICorner", G2L["2f6"]);
 G2L["2f7"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.AllPriced.UIStroke
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.OtherOnly.UIStroke
 G2L["2f8"] = Instance.new("UIStroke", G2L["2f6"]);
 G2L["2f8"]["Thickness"] = 1.5;
 G2L["2f8"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.Starlight.Catalog.NoResult
-G2L["2f9"] = Instance.new("TextLabel", G2L["29e"]);
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.NoPriced
+G2L["2f9"] = Instance.new("TextButton", G2L["2ea"]);
 G2L["2f9"]["TextWrapped"] = true;
 G2L["2f9"]["BorderSizePixel"] = 0;
 G2L["2f9"]["TextSize"] = 14;
 G2L["2f9"]["TextScaled"] = true;
+G2L["2f9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2f9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2f9"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2f9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2f9"]["BackgroundTransparency"] = 1;
-G2L["2f9"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2f9"]["Size"] = UDim2.new(0.5, 0, 0.2, 0);
+G2L["2f9"]["BackgroundTransparency"] = 0.5;
+G2L["2f9"]["Size"] = UDim2.new(0.9, 0, 0, 15);
+G2L["2f9"]["LayoutOrder"] = 4;
 G2L["2f9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f9"]["Text"] = [[No Results Found.]];
-G2L["2f9"]["Name"] = [[NoResult]];
-G2L["2f9"]["Position"] = UDim2.new(0.5, 0, 0.62, 0);
+G2L["2f9"]["Text"] = [[Non Priced Only]];
+G2L["2f9"]["Name"] = [[NoPriced]];
+-- Attributes
+G2L["2f9"]:SetAttribute([[TypeBtn]], [[]]);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.NoPriced.UICorner
+G2L["2fa"] = Instance.new("UICorner", G2L["2f9"]);
+G2L["2fa"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.NoPriced.UIStroke
+G2L["2fb"] = Instance.new("UIStroke", G2L["2f9"]);
+G2L["2fb"]["Thickness"] = 1.5;
+G2L["2fb"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.AllPriced
+G2L["2fc"] = Instance.new("TextButton", G2L["2ea"]);
+G2L["2fc"]["TextWrapped"] = true;
+G2L["2fc"]["BorderSizePixel"] = 0;
+G2L["2fc"]["TextSize"] = 14;
+G2L["2fc"]["TextScaled"] = true;
+G2L["2fc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2fc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2fc"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2fc"]["BackgroundTransparency"] = 0.5;
+G2L["2fc"]["Size"] = UDim2.new(0.9, 0, 0, 15);
+G2L["2fc"]["LayoutOrder"] = 1;
+G2L["2fc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2fc"]["Text"] = [[All Priced]];
+G2L["2fc"]["Name"] = [[AllPriced]];
+-- Attributes
+G2L["2fc"]:SetAttribute([[TypeBtn]], [[]]);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.AllPriced.UICorner
+G2L["2fd"] = Instance.new("UICorner", G2L["2fc"]);
+G2L["2fd"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Starlight.Catalog.HolderTop.PriceFilter.Holder.AllPriced.UIStroke
+G2L["2fe"] = Instance.new("UIStroke", G2L["2fc"]);
+G2L["2fe"]["Thickness"] = 1.5;
+G2L["2fe"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.Starlight.Catalog.NoResult
+G2L["2ff"] = Instance.new("TextLabel", G2L["29e"]);
+G2L["2ff"]["TextWrapped"] = true;
+G2L["2ff"]["BorderSizePixel"] = 0;
+G2L["2ff"]["TextSize"] = 14;
+G2L["2ff"]["TextScaled"] = true;
+G2L["2ff"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ff"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ff"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ff"]["BackgroundTransparency"] = 1;
+G2L["2ff"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2ff"]["Size"] = UDim2.new(0.5, 0, 0.2, 0);
+G2L["2ff"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ff"]["Text"] = [[No Results Found.]];
+G2L["2ff"]["Name"] = [[NoResult]];
+G2L["2ff"]["Position"] = UDim2.new(0.5, 0, 0.62, 0);
 
 
 -- StarterGui.Starlight.Catalog.NoResult.UIStroke
-G2L["2fa"] = Instance.new("UIStroke", G2L["2f9"]);
-G2L["2fa"]["Thickness"] = 1.5;
-G2L["2fa"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["300"] = Instance.new("UIStroke", G2L["2ff"]);
+G2L["300"]["Thickness"] = 1.5;
+G2L["300"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Sounds
@@ -9518,114 +9577,120 @@ local script = G2L["1ee"];
 		end
 	end
 	
-	firePurchaseBtn.MouseButton1Up:Connect(function()
-		if nameBox.Text ~= "" then
-			local req = remote:InvokeServer(nameBox.Text)
+	local purchaseConn
+	local closeConn
+	getgenv().loadInfoUI = function(name)
+		local info = getInfoForThing(name)
+		if info then
+			local thingType = info[1]
+			local render = info[2]
+			local price = info[3]
+			local currency = info[5]
+			local clone = infoTemplate
+			local renderFrame = clone.Render
+			for _, img in renderFrame:GetChildren() do
+				if img:IsA("ImageLabel") then
+					img:Destroy()
+				end
+			end
+			for i, renderImage in pairs(render) do
+				local clone = script.Render:Clone()
+				clone.Image = renderImage
+				clone.Visible = true
+				clone.Parent = renderFrame
+				clone.LayoutOrder = i
+				clone.Name = tostring(i)
+			end
+			clone.Type.Text = thingType
+			clone.ItemName.Text = info[4]
+			if price then
+				clone.Price.Text = "Price: $"..price
+				if currency then
+					clone.Price.Text = "Price: $"..price.." "..currency
+				end
+			else
+				clone.Price.Text = "No price."
+			end
+			if replica then
+				local data = replica.Data.Inventory
+				local owned = false
+				for _, tbl in pairs(data) do
+					if tbl.Name == info[4] then
+						owned = true
+						break
+					end
+				end
+				if owned then
+					clone.Price.Text = clone.Price.Text.." (Owned)"
+				end
+			end
+	
+			clone.Name = info[4]
+			clone.Visible = true
+			clone.Parent = gui
+	
+			if closeConn then
+				closeConn:Disconnect()
+				closeConn = nil
+			end
+			if purchaseConn then
+				purchaseConn:Disconnect()
+				purchaseConn = nil
+			end
+	
+			closeConn = clone.Close.MouseButton1Up:Connect(function()
+				clone.Visible = false
+			end)
+	
+			purchaseConn = clone.Purchase.MouseButton1Up:Connect(function()
+				local req = remote:InvokeServer(info[4])
+				if not notifCont then
+					nameBox.Text = req.Response or "Purchase Fired."
+					task.wait(1)
+					nameBox.Text = ""
+				else
+					local to = req.Response or "Purchase Fired."
+					if typeof(to) == "table" then
+						to = to[1]
+					end
+					notifCont:Notify(to)
+				end
+			end)
+		else
 			if not notifCont then
-				nameBox.Text = req.Response or "Purchase Fired."
-				task.wait(1)
+				nameBox.Text = "Failed to get info."
+				task.wait(0.5)
 				nameBox.Text = ""
 			else
-				local to = req.Response or "Purchase Fired."
-				if typeof(to) == "table" then
-					to = to[1]
-				end
-				notifCont:Notify(to)
+				notifCont:Notify("Failed to get info.")
+				nameBox.Text = ""
 			end
+		end
+	end
+	getgenv().firePurchase = function(name)
+		local req = remote:InvokeServer(name)
+		if not notifCont then
+			nameBox.Text = req.Response or "Purchase Fired."
+			task.wait(1)
+			nameBox.Text = ""
+		else
+			local to = req.Response or "Purchase Fired."
+			if typeof(to) == "table" then
+				to = to[1]
+			end
+			notifCont:Notify(to)
+		end
+	end
+	
+	firePurchaseBtn.MouseButton1Up:Connect(function()
+		if nameBox.Text ~= "" then
+			firePurchase(nameBox.Text)
 		end
 	end)
 	
-	local purchaseConn
-	local closeConn
-	
 	infoBtn.MouseButton1Up:Connect(function()
 		if nameBox.Text ~= "" then
-			local info = getInfoForThing(nameBox.Text)
-			if info then
-				local thingType = info[1]
-				local render = info[2]
-				local price = info[3]
-				local currency = info[5]
-				local clone = infoTemplate
-				local renderFrame = clone.Render
-				for _, img in renderFrame:GetChildren() do
-					if img:IsA("ImageLabel") then
-						img:Destroy()
-					end
-				end
-				for i, renderImage in pairs(render) do
-					local clone = script.Render:Clone()
-					clone.Image = renderImage
-					clone.Visible = true
-					clone.Parent = renderFrame
-					clone.LayoutOrder = i
-					clone.Name = tostring(i)
-				end
-				clone.Type.Text = thingType
-				clone.ItemName.Text = info[4]
-				if price then
-					clone.Price.Text = "Price: $"..price
-					if currency then
-						clone.Price.Text = "Price: $"..price.." "..currency
-					end
-				else
-					clone.Price.Text = "No price."
-				end
-				if replica then
-					local data = replica.Data.Inventory
-					local owned = false
-					for _, tbl in pairs(data) do
-						if tbl.Name == info[4] then
-							owned = true
-							break
-						end
-					end
-					if owned then
-						clone.Price.Text = clone.Price.Text.." (Owned)"
-					end
-				end
-				
-				clone.Name = info[4]
-				clone.Visible = true
-				clone.Parent = gui
-				
-				if closeConn then
-					closeConn:Disconnect()
-					closeConn = nil
-				end
-				if purchaseConn then
-					purchaseConn:Disconnect()
-					purchaseConn = nil
-				end
-				
-				closeConn = clone.Close.MouseButton1Up:Connect(function()
-					clone.Visible = false
-				end)
-				
-				purchaseConn = clone.Purchase.MouseButton1Up:Connect(function()
-					local req = remote:InvokeServer(info[4])
-					if not notifCont then
-						nameBox.Text = req.Response or "Purchase Fired."
-						task.wait(1)
-						nameBox.Text = ""
-					else
-						local to = req.Response or "Purchase Fired."
-						if typeof(to) == "table" then
-							to = to[1]
-						end
-						notifCont:Notify(to)
-					end
-				end)
-			else
-				if not notifCont then
-					nameBox.Text = "Failed to get info."
-					task.wait(0.5)
-					nameBox.Text = ""
-				else
-					notifCont:Notify("Failed to get info.")
-					nameBox.Text = ""
-				end
-			end
+			loadInfoUI(nameBox.Text)
 		end
 	end)
 end;
@@ -10111,6 +10176,10 @@ local script = G2L["29f"];
 	local query
 	local priceFilter
 	
+	if not loadInfoUI and firePurchase then
+		repeat task.wait() until loadInfoUI and firePurchase
+	end
+	
 	local function clearExcluding(obj, excludes)
 		for _, child in obj:GetChildren() do
 			if not table.find(excludes, child.ClassName) then
@@ -10176,6 +10245,8 @@ local script = G2L["29f"];
 			local price = data.Metadata.Price
 			if price then
 				item:SetAttribute("Priced", true)
+			else
+				item.Buy.Visible = false
 			end
 			local currency = data.Metadata.Currency
 			if currency then
@@ -10190,6 +10261,12 @@ local script = G2L["29f"];
 					setclipboard(data.Name)
 					notificationController:Notify("Copied Item Name to clipboard!")
 				end
+			end)
+			item.Buy.MouseButton1Up:Connect(function()
+				firePurchase(data.Name)
+			end)
+			item.Info.MouseButton1Up:Connect(function()
+				loadInfoUI(data.Name)
 			end)
 		end
 	end
@@ -10307,14 +10384,14 @@ local script = G2L["29f"];
 end;
 task.spawn(C_29f);
 -- StarterGui.Starlight.Catalog.Close.CloseHandler
-local function C_2ad()
-local script = G2L["2ad"];
+local function C_2b3()
+local script = G2L["2b3"];
 	local main = script.Parent.Parent
 	
 	script.Parent.MouseButton1Up:Connect(function()
 		main.Visible = false
 	end)
 end;
-task.spawn(C_2ad);
+task.spawn(C_2b3);
 
 return G2L["1"], require;
