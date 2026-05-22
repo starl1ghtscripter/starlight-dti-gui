@@ -25,5 +25,6 @@ return {
 	TapeTop = "tapetop",
 	BrownFitTed = "brownfitted",
 	Y2KLeopardPrint = "y2kleopardprint",
-	BeigeBitch = "beigebitch"
+	BeigeBitch = "beigebitch",
+	ZaraLarsson = "zaralarsson"
 }
