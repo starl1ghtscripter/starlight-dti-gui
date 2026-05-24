@@ -8802,13 +8802,20 @@ G2L["38f"]["Color"] = Color3.fromRGB(255, 135, 206);
 -- StarterGui.Starlight.Sounds
 local function C_2()
 local script = G2L["2"];
-	local sound = game:GetService("ReplicatedFirst")["Showdown _GController"].Click
+	local gController = game.ReplicatedFirst:FindFirstChild("Showdown _GController") or game.ReplicatedFirst:FindFirstChild("_GController")
+	getgenv().playSound = function(name)
+		if not gController then return end
+		local sound = gController:FindFirstChild(name)
+		if sound then
+			sound:Play()
+		end
+	end
 	
 	for i, btn in script.Parent:GetDescendants() do
 		if btn:IsA("TextButton") or btn:IsA("ImageButton") then
 			if btn:GetAttribute("CatalogBorder") or btn:GetAttribute("TypeBtn") then continue end
 			btn.MouseButton1Down:Connect(function()
-				sound:Play()
+				playSound("Click")
 			end)
 		end
 	end
@@ -8973,7 +8980,10 @@ local script = G2L["a"];
 	if notifCont then
 		notifCont:Notify("Welcome to Starlight DTI GUI! Please read the Main tab for some info.")
 	end
-	game:GetService("ReplicatedFirst")["Showdown _GController"].PosNotif:Play()
+	if not playSound then
+		repeat task.wait() until playSound
+	end
+	playSound("PosNotif")
 	
 	repeat task.wait() until game:GetService("CoreGui")
 	local gui = script.Parent.Parent
@@ -9462,6 +9472,10 @@ local script = G2L["c3"];
 	local layout = 0
 	local animOrder = {"Idle", "Walk", "Jump"}
 	
+	if not playSound then
+		repeat task.wait() until playSound
+	end
+	
 	for i, packInfo in ipairs(packs) do
 		local packName = packInfo.Name
 	
@@ -9483,6 +9497,9 @@ local script = G2L["c3"];
 			new.Text = "Equip "..animName
 			new.Name = packName.." "..animName
 			new.Parent = script.Parent
+			new.MouseButton1Down:Connect(function()
+				playSound("Click")
+			end)
 			new.MouseButton1Up:Connect(function()
 				local char = game.Players.LocalPlayer.Character
 				local anim = char:WaitForChild("Animate")
@@ -11143,9 +11160,14 @@ local script = G2L["202"];
 	toggle(default)
 	while true do
 		if toggled then
-			fireRemote()
+			local roundState = game.ReplicatedStorage:GetAttribute("RoundState")
+			if roundState then
+				if roundState == "Runway" then
+					fireRemote()
+				end
+			end
 		end
-		task.wait()
+		task.wait(0.1)
 	end
 end;
 task.spawn(C_202);
@@ -11937,6 +11959,11 @@ local script = G2L["2b2"];
 	}
 	
 	print("Starlight Emotes: "..#emotes)
+	
+	if not playSound then
+		repeat task.wait() until playSound
+	end
+	
 	for order, data in ipairs(emotes) do
 		local name = data.Name
 		local id = data.ID
@@ -11945,6 +11972,9 @@ local script = G2L["2b2"];
 		btn.Name = name
 		btn.Text = name
 		btn.LayoutOrder = btn.LayoutOrder + order
+		btn.MouseButton1Down:Connect(function()
+			playSound("Click")
+		end)
 		btn.MouseButton1Click:Connect(function()
 			loadAnimation(id, name)
 		end)
@@ -12099,6 +12129,10 @@ local script = G2L["2fe"];
 		repeat task.wait() until loadInfoUI and firePurchase
 	end
 	
+	if not playSound then
+		repeat task.wait() until playSound
+	end
+	
 	local function clearExcluding(obj, excludes)
 		for _, child in obj:GetChildren() do
 			if not table.find(excludes, child.ClassName) then
@@ -12173,7 +12207,7 @@ local script = G2L["2fe"];
 			end
 			item.Parent = itemScroller
 			item.Button.MouseButton1Down:Connect(function()
-				game:GetService("ReplicatedFirst")["Showdown _GController"].Pop:Play()
+				playSound("Pop")
 			end)
 			item.Button.MouseButton1Up:Connect(function()
 				if setclipboard then
@@ -12181,8 +12215,14 @@ local script = G2L["2fe"];
 					notificationController:Notify("Copied Item Name to clipboard!")
 				end
 			end)
+			item.Buy.MouseButton1Down:Connect(function()
+				playSound("Click")
+			end)
 			item.Buy.MouseButton1Up:Connect(function()
 				firePurchase(data.Name)
+			end)
+			item.Info.MouseButton1Down:Connect(function()
+				playSound("Click")
 			end)
 			item.Info.MouseButton1Up:Connect(function()
 				loadInfoUI(data.Name)
@@ -12197,7 +12237,7 @@ local script = G2L["2fe"];
 			btn.Text = thingType
 			btn.Parent = typeScroller
 			btn.MouseButton1Down:Connect(function()
-				game:GetService("ReplicatedFirst")["Showdown _GController"].Click:Play()
+				playSound("Click")
 			end)
 			btn.MouseButton1Up:Connect(function()
 				usingType = thingType
@@ -12268,7 +12308,7 @@ local script = G2L["2fe"];
 		for _, btn in priceScroller:GetChildren() do
 			if btn:IsA("TextButton") then
 				btn.MouseButton1Down:Connect(function()
-					game:GetService("ReplicatedFirst")["Showdown _GController"].Click:Play()
+					playSound("Click")
 				end)
 				btn.MouseButton1Up:Connect(function()
 					pricedOnly = btn.Name
