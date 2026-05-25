@@ -16,3 +16,9 @@ ReplicatedStorage:WaitForChild("TeleporterEvents")
 queue_on_teleport([[
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/game.lua"))()
 ]])
+
+game.Players.ChildRemoving:Connect(function(plr)
+    if plr == game.Players.LocalPlayer then
+      delfile("StarlightDTI-Config/ssFARM")
+    end
+end)
