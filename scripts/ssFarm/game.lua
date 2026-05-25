@@ -13,7 +13,7 @@ queue_on_teleport([[
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/lobby.lua"))()
 ]])
 
-game.Players.ChildRemoving:Connect(function(plr)
+game.Players.ChildRemoved:Connect(function(plr)
     if plr == game.Players.LocalPlayer then
       delfile("StarlightDTI-Config/ssFARM")
     end
