@@ -11646,6 +11646,7 @@ local script = G2L["204"];
 	while true do
 		if toggled then
 			collectIdols()
+			game:GetService("ReplicatedStorage").ElimAssets.Remotes.UseIdol:FireServer()
 		end
 		task.wait(0.5)
 	end
