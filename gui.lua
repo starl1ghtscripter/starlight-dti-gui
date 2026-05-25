@@ -11576,9 +11576,7 @@ local script = G2L["203"];
 	toggle(default)
 	
 	if isfolder("StarlightDTI-Config") and isfile("StarlightDTI-Config/ssFARM") then
-		if readfile("StarlightDTI-Config/ssFARM") == "true" then
-			toggle(true)
-		end
+		toggle(true)
 	end
 	
 	while true do
@@ -11639,9 +11637,7 @@ local script = G2L["204"];
 	toggle(default)
 	
 	if isfolder("StarlightDTI-Config") and isfile("StarlightDTI-Config/ssFARM") then
-		if readfile("StarlightDTI-Config/ssFARM") == "true" then
-			toggle(true)
-		end
+		toggle(true)
 	end
 	
 	while true do
