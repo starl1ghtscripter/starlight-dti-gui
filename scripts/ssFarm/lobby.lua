@@ -1,5 +1,12 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
+if not isfolder("StarlightDTI-Config") then
+    makefolder("StarlightDTI-Config")
+end
+if not isfile("StarlightDTI-Config/ssFARM") then
+    writefile("StarlightDTI-Config/ssFARM", "true")
+end
+
 task.wait(5)
 
 ReplicatedStorage:WaitForChild("TeleporterEvents")
