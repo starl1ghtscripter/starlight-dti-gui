@@ -5,14 +5,10 @@ if not isfile("StarlightDTI-Config/ssFARM") then
     writefile("StarlightDTI-Config/ssFARM", "true")
 end
 
-task.wait(1)
+task.wait(5)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()
-
-task.wait(5)
 
 queue_on_teleport([[
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/lobby.lua"))()
 ]])
-
-delfile("StarlightDTI-Config/ssFARM")
