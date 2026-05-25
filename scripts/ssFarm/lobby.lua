@@ -1,16 +1,11 @@
-game:GetService("ReplicatedStorage")
-    :WaitForChild("TeleporterEvents")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+task.wait(5)
+
+ReplicatedStorage:WaitForChild("TeleporterEvents")
     :WaitForChild("EnterTeleporter")
     :FireServer()
 
-writefile("StarlightDTI-Config/ssFARM", "true")
-
-local gameCode = [[
+queue_on_teleport([[
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/game.lua"))()
-]]
-
-game.Players.LocalPlayer.OnTeleport:Connect(function(State)
-    if State == Enum.TeleportState.Started then
-        queue_on_teleport(gameCode)
-    end
-end)
+]])
