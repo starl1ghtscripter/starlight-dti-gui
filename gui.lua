@@ -9198,6 +9198,9 @@ local script = G2L["7"];
 	local code = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()'
 	game.Players.LocalPlayer.OnTeleport:Connect(function()
 		if SLexecuted then
+			if isfolder("StarlightDTI-Config") and isfile("StarlightDTI-Config/ssFARM") then
+				return
+			end
 			queue_on_teleport(code)
 		end
 	end)
