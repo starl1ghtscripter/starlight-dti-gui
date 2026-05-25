@@ -12,3 +12,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/sta
 queue_on_teleport([[
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/lobby.lua"))()
 ]])
+
+task.wait(5)
+
+if isfile("StarlightDTI-Config/ssFARM") then
+    delfile("StarlightDTI-Config/ssFARM")
+end
