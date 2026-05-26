@@ -1,28 +1,20 @@
-local Players = game:GetService("Players")
-
-game:GetService("CoreGui").ChildRemoved:Connect(function(child)
-	if child.Name == "Starlight" then
-		if isfile("StarlightDTI-Config/farm_mode.txt") then
-			writefile("StarlightDTI-Config/farm_mode.txt", "normal")
-		end
-	end
-end)
-
-Players.PlayerRemoving:Connect(function(player)
-	if player == Players.LocalPlayer then
-		if isfile("StarlightDTI-Config/farm_mode.txt") then
-			writefile("StarlightDTI-Config/farm_mode.txt", "normal")
-		end
-	end
-end)
+if not isfolder("StarlightDTI-Config") then
+    makefolder("StarlightDTI-Config")
+end
+if not isfile("StarlightDTI-Config/ssFARM") then
+    writefile("StarlightDTI-Config/ssFARM", "true")
+end
 
 task.wait(5)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()
 
-if isfile("StarlightDTI-Config/farm_mode.txt") and readfile("StarlightDTI-Config/farm_mode.txt") == "styleshowdown" then
-	queue_on_teleport([[
-		task.wait(1)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/lobby.lua"))()
-	]])
+queue_on_teleport([[
+loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/lobby.lua"))()
+]])
+
+task.wait(5)
+
+if isfile("StarlightDTI-Config/ssFARM") then
+    delfile("StarlightDTI-Config/ssFARM")
 end
