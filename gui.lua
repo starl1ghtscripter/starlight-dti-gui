@@ -5684,20 +5684,20 @@ G2L["254"]["Text"] = [[Style Showdown AUTOFARM]];
 G2L["254"]["Name"] = [[AutoFarmSS]];
 
 
+-- StarterGui.Starlight.Main.Container.Categories.GameUtils.AutoFarmSS.Auto
+G2L["255"] = Instance.new("LocalScript", G2L["254"]);
+G2L["255"]["Name"] = [[Auto]];
+
+
 -- StarterGui.Starlight.Main.Container.Categories.GameUtils.AutoFarmSS.UICorner
-G2L["255"] = Instance.new("UICorner", G2L["254"]);
-G2L["255"]["CornerRadius"] = UDim.new(0, 5);
+G2L["256"] = Instance.new("UICorner", G2L["254"]);
+G2L["256"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.GameUtils.AutoFarmSS.UIStroke
-G2L["256"] = Instance.new("UIStroke", G2L["254"]);
-G2L["256"]["Thickness"] = 1.5;
-G2L["256"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.Starlight.Main.Container.Categories.GameUtils.AutoFarmSS.Auto
-G2L["257"] = Instance.new("LocalScript", G2L["254"]);
-G2L["257"]["Name"] = [[Auto]];
+G2L["257"] = Instance.new("UIStroke", G2L["254"]);
+G2L["257"]["Thickness"] = 1.5;
+G2L["257"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.Settings
@@ -9228,6 +9228,21 @@ local script = G2L["7"];
 	
 	loadConfig()
 	getgenv().ConfigLoaded = true
+	
+	
+	
+	game.Players.LocalPlayer.OnTeleport:Connect(function()
+		if SLexecuted then
+			if isfolder("StarlightDTI-Config") and isfile("StarlightDTI-Config/ssFARM") then
+				return
+			end
+			local code = [[
+				task.wait(1)
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()
+			]]
+			queue_on_teleport(code)
+		end
+	end)
 end;
 task.spawn(C_7);
 -- StarterGui.Starlight.Logs
@@ -9348,6 +9363,16 @@ task.spawn(C_9);
 -- StarterGui.Starlight.Main.Intro
 local function C_b()
 local script = G2L["b"];
+	if game.CreatorType == Enum.CreatorType.Group then
+		if game.CreatorId ~= 17264167 then
+			script.Parent.Parent:Destroy()
+			return
+		end
+	else
+		script.Parent.Parent:Destroy()
+		return
+	end
+	
 	if SLexecuted then
 		local notifCont
 		local success = pcall(function()
@@ -11786,8 +11811,8 @@ local script = G2L["24e"];
 end;
 task.spawn(C_24e);
 -- StarterGui.Starlight.Main.Container.Categories.GameUtils.AutoFarmSS.Auto
-local function C_257()
-local script = G2L["257"];
+local function C_255()
+local script = G2L["255"];
 	local function start()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/main.lua"))()
 	end
@@ -11803,7 +11828,7 @@ local script = G2L["257"];
 		start()
 	end)
 end;
-task.spawn(C_257);
+task.spawn(C_255);
 -- StarterGui.Starlight.Main.Container.Categories.Settings.Sizes.LocalScript
 local function C_25d()
 local script = G2L["25d"];
