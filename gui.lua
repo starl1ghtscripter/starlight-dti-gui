@@ -9229,11 +9229,16 @@ local script = G2L["7"];
 	loadConfig()
 	getgenv().ConfigLoaded = true
 	
-	game.Players.LocalPlayer.OnTeleport:Connect(function()
+	local hasQueued = false
+	
+	game.Players.LocalPlayer.OnTeleport:Connect(function(tpState)
+		if tpState ~= Enum.TeleportState.Started then return end
+		if hasQueued then return end
 		if SLexecuted then
 			if isfolder("StarlightDTI-Config") and isfile("StarlightDTI-Config/ssFARM") then
 				return
 			end
+			hasQueued = true
 			queue_on_teleport([[
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()
 			]])
