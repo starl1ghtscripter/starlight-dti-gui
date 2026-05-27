@@ -8760,7 +8760,7 @@ G2L["38c"]["BackgroundTransparency"] = 1;
 G2L["38c"]["AnchorPoint"] = Vector2.new(1, 0);
 G2L["38c"]["Size"] = UDim2.new(1, 0, 0.15, 0);
 G2L["38c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38c"]["Text"] = [[Current Version: v1.0.3]];
+G2L["38c"]["Text"] = [[Current Version: v1.0.4]];
 G2L["38c"]["Name"] = [[VERSION]];
 G2L["38c"]["Position"] = UDim2.new(1, 0, 0, 0);
 
@@ -8814,10 +8814,8 @@ G2L["392"]["BackgroundTransparency"] = 1;
 G2L["392"]["AnchorPoint"] = Vector2.new(1, 0);
 G2L["392"]["Size"] = UDim2.new(1, 0, 0, 15);
 G2L["392"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["392"]["Text"] = [[- Style Showdown AUTO FARMER!
-- Removed old Style Showdown farming features.
-- Discord Popup goes away for 24 hours if link is copied!
-- New Discord Ad Popups every 3 mins (also go away for 24hr!)]];
+G2L["392"]["Text"] = [[- Fixed Style Showdown Auto-Farmer.
+- Starlight will re-open when you teleport to other DTI places.]];
 G2L["392"]["AutomaticSize"] = Enum.AutomaticSize.Y;
 G2L["392"]["Name"] = [[Log]];
 G2L["392"]["Position"] = UDim2.new(1, 0, 0, 0);
