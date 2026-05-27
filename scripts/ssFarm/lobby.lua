@@ -2,9 +2,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local teleport = false
 game.Players.LocalPlayer.OnTeleport:Connect(function(_, placeId)
-	if placeId == 93577264377184 then
-		teleport = true
-	end
+	teleport = true
 end)
 
 game.Players.PlayerRemoving:Connect(function(plr)
