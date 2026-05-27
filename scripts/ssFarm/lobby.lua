@@ -8,7 +8,7 @@ end)
 game.Players.PlayerRemoving:Connect(function(plr)
 	if plr == game.Players.LocalPlayer then
 		if not teleport then
-			if isfile("StarlightDTI-Config/ssFARM") then
+			if isfolder("StarlightDTI-Config") and isfile("StarlightDTI-Config/ssFARM") then
 				delfile("StarlightDTI-Config/ssFARM")
 			end
 		end
@@ -51,5 +51,12 @@ if not check() then
 end
 
 queue_on_teleport([[
+if isfolder("StarlightDTI-Config") then
+	if not isfile("StarlightDTI-Config/ssFARM") then
+		return
+	end
+else
+	return
+end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/game.lua"))()
 ]])
