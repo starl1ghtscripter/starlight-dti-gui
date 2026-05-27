@@ -24,9 +24,31 @@ end
 
 task.wait(5)
 
-ReplicatedStorage:WaitForChild("TeleporterEvents")
-	:WaitForChild("EnterTeleporter")
-	:FireServer()
+local function check()
+	local targetPart = workspace.Teleporter.TouchPart
+	local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+	local partsInPart = workspace:GetPartsInPart(targetPart)
+
+	if table.find(partsInPart, rootPart) then
+		return true
+	else
+		return false
+	end
+end
+
+local function tp()
+	if check() == true then
+		return
+	else
+		ReplicatedStorage:WaitForChild("TeleporterEvents"):WaitForChild("EnterTeleporter"):FireServer()
+	end
+end
+
+tp()
+if not check() then
+	repeat tp() task.wait(0.1) until check()
+end
 
 queue_on_teleport([[
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/game.lua"))()
