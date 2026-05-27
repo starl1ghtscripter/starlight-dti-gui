@@ -1,8 +1,6 @@
 local teleport = false
 game.Players.LocalPlayer.OnTeleport:Connect(function(_, placeId)
-	if placeId == 127076465038391 then
-		teleport = true
-	end
+	teleport = true
 end)
 
 game.Players.PlayerRemoving:Connect(function(plr)
