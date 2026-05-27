@@ -1,7 +1,14 @@
+local teleport = false
+game.Players.LocalPlayer.OnTeleport:Connect(function()
+	teleport = true
+end)
+
 game.Players.PlayerRemoving:Connect(function(plr)
 	if plr == game.Players.LocalPlayer then
-		if isfile("StarlightDTI-Config/ssFARM") then
-			delfile("StarlightDTI-Config/ssFARM")
+		if not teleport then
+			if isfile("StarlightDTI-Config/ssFARM") then
+				delfile("StarlightDTI-Config/ssFARM")
+			end
 		end
 	end
 end)
