@@ -9228,6 +9228,17 @@ local script = G2L["7"];
 	
 	loadConfig()
 	getgenv().ConfigLoaded = true
+	
+	game.Players.LocalPlayer.OnTeleport:Connect(function()
+		if SLexecuted then
+			if isfolder("StarlightDTI-Config") and isfile("StarlightDTI-Config/ssFARM") then
+				return
+			end
+			queue_on_teleport([[
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()
+			]])
+		end
+	end)
 end;
 task.spawn(C_7);
 -- StarterGui.Starlight.Logs
@@ -11807,7 +11818,7 @@ local script = G2L["255"];
 			return require(game.ReplicatedStorage.Client.Controllers.NotificationController)
 		end)
 		if notifCont then
-			notifCont:Notify("Starting Style Showdown Auto-Farmer. Leave Game/Close Starlight at any point to stop!")
+			notifCont:Notify("Starting Style Showdown Auto-Farmer. Leave Game at any point to stop!")
 		end
 		task.wait(2)
 		start()
