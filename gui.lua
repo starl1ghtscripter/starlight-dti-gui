@@ -9439,8 +9439,7 @@ G2L["3cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3cb"]["Text"] = [[- Starlight Boutique!
 - Outfit Presets moved.
 - Makeup Presets added.
-- Communtiy/Dev Presets now separated.
-- Discord Vanity Link: .gg/starville]];
+- Communtiy/Dev Presets now separated.]];
 G2L["3cb"]["AutomaticSize"] = Enum.AutomaticSize.Y;
 G2L["3cb"]["Name"] = [[Log]];
 G2L["3cb"]["Position"] = UDim2.new(1, 0, 0, 0);
@@ -9907,7 +9906,7 @@ local script = G2L["9"];
 		print("discord param set to "..StarlightConfig.CopiedDiscord)
 		saveConfig()
 		if setclipboard then
-			setclipboard("https://discord.gg/starville")
+			setclipboard("https://discord.gg/X7YsnPEEzM")
 			local success, notifController = pcall(function()
 				return require(game.ReplicatedStorage.Client.Controllers.NotificationController)
 			end)
@@ -13516,7 +13515,7 @@ local script = G2L["332"];
 	
 	main.Copy.MouseButton1Up:Connect(function()
 		if setclipboard then
-			setclipboard("https://discord.gg/starville")
+			setclipboard("https://discord.gg/X7YsnPEEzM")
 		end
 		main.Copy.Text = "Copied!"
 		getgenv().StarlightConfig.CopiedDiscord = os.time()
