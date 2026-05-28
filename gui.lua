@@ -11070,6 +11070,46 @@ local script = G2L["d0"];
 					end
 				end
 				toggleInfo["Subs"] = stInfo
+				local switchToggles = customizationData:WaitForChild("SwitchToggles")
+				local swInfo = {}
+				if switchToggles then
+					local success, togglesModule = pcall(function()
+						return require(game.ReplicatedStorage.Content.Toggles)
+					end)
+					if success then
+						local itemToggles = togglesModule[itemName]
+						if itemToggles then
+							local swapsInfo = itemToggles.Toggles[tonumber(mainToggle.Value)].SwapToggles
+							if typeof(swapsInfo) == "table" then
+								print("getting swaps for "..itemName)
+								for _, stVal in ipairs(switchToggles:GetChildren()) do
+									if stVal:IsA("StringValue") then
+										local stIndex = tonumber(stVal.Name)
+	
+										if not stIndex then
+											continue
+										end
+	
+										local data = swapsInfo[stIndex]
+										if not data then
+											continue
+										end
+	
+										table.insert(swInfo, {
+											ofType = data.displayName,
+											index = tonumber(stVal.Value)
+										})
+									end
+								end
+							else
+								print(itemName.." no swaps")
+							end
+						end
+					else
+						print("could not require toggles module.")
+					end
+				end
+				toggleInfo["Switch"] = swInfo
 				return toggleInfo
 			end
 		end
@@ -11228,7 +11268,8 @@ local script = G2L["d0"];
 			if toggleInfo then
 				local main = toggleInfo.Main
 				local subs = toggleInfo.Subs
-	
+				local switch = toggleInfo.Switch
+				
 				local parts = {}
 	
 				for key, value in pairs(subs) do
@@ -11236,12 +11277,36 @@ local script = G2L["d0"];
 				end
 	
 				local subsString = '{' .. table.concat(parts, ', ') .. '}'
+				
+				if typeof(switch) ~= "table" then
+					switch = {}
+				end
 	
+				local swapParts = {}
+	
+				for _, swapInfo in ipairs(switch) do
+					if swapInfo and swapInfo.ofType and swapInfo.index then
+						table.insert(
+							swapParts,
+							string.format(
+								'{ofType = [[%s]], index = %d}',
+								swapInfo.ofType or "",
+								tonumber(swapInfo.index) or 0
+							)
+						)
+					end
+				end
+	
+				local swapsString = '{' .. table.concat(swapParts, ', ') .. '}'
+				
 				table.insert(lines,
 					toggleRemote
 						..":FireServer([["..item.Name.."]]"
 						..", "..main
-						..", "..subsString..")"
+						..", "..subsString
+						..", nil, nil"
+						..", "..swapsString
+						..")"
 				)
 			end
 			local adjustments = getItemAdjustments(char, item.Name)
