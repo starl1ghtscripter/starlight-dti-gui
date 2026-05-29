@@ -6401,7 +6401,7 @@ G2L["292"]["BackgroundTransparency"] = 0.5;
 G2L["292"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["292"]["LayoutOrder"] = 2;
 G2L["292"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["292"]["Text"] = [[Commuity Presets]];
+G2L["292"]["Text"] = [[Community Presets]];
 G2L["292"]["Name"] = [[Community]];
 
 
@@ -7627,7 +7627,7 @@ G2L["312"]["BackgroundTransparency"] = 0.5;
 G2L["312"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["312"]["LayoutOrder"] = 2;
 G2L["312"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["312"]["Text"] = [[Commuity Presets]];
+G2L["312"]["Text"] = [[Community Presets]];
 G2L["312"]["Name"] = [[Community]];
 
 
