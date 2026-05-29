@@ -1,2 +1,8 @@
 return {
+  panzscales = "panzscales",
+  panzgolden = "panzgolden",
+  happyfaceghi = "happyfaceghi",
+  colorfulghi = "colorfulghi",
+  cutesoftghi = "cutesoftghi",
+  noeyeren = "noeyeren"
 }
