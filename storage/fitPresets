@@ -27,5 +27,12 @@ return {
 	Y2KLeopardPrint = "y2kleopardprint",
 	BeigeBitch = "beigebitch",
 	ZaraLarsson = "zaralarsson",
-	rainbowicongirl = "rainbowicongirl"
+	rainbowicongirl = "rainbowicongirl",
+	["summergirl1"] = "summergirl1",
+	["summergirl2"] = "summergirl2",
+	vintagedressicon = "vintagedressicon",
+	["v24icongirl"] = "v24icongirl",
+	["bluemermaidicon"] = "bluemermaidicon",
+	["navydiva"] = "navydiva",
+	["darkpplry"] = "darkpplry"
 }
