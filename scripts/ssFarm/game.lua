@@ -1,3 +1,4 @@
+local virtualUser = game:GetService("VirtualUser")
 local teleport = false
 game.Players.LocalPlayer.OnTeleport:Connect(function(_, placeId)
 	teleport = true
@@ -11,6 +12,15 @@ game.Players.PlayerRemoving:Connect(function(plr)
 			end
 		end
 	end
+end)
+
+game.Players.LocalPlayer.Idled:Connect(function()
+  print("player idled")
+  local cam = workspace.CurrentCamera
+  virtualUser:Button2Down(Vector2.zero, cam.CFrame)
+  task.wait(1)
+  virtualUser:Button2Up(Vector2.zero, cam.CFrame)
+  print("unidled player")
 end)
 
 if not isfolder("StarlightDTI-Config") then
