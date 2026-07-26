@@ -8076,101 +8076,101 @@ G2L["33e"]["ScrollBarThickness"] = 3;
 G2L["33e"]["BackgroundTransparency"] = 1;
 
 
+-- StarterGui.Starlight.Main.Container.Categories.PLUS.Handler
+G2L["33f"] = Instance.new("LocalScript", G2L["33e"]);
+G2L["33f"]["Name"] = [[Handler]];
+
+
 -- StarterGui.Starlight.Main.Container.Categories.PLUS.UIListLayout
-G2L["33f"] = Instance.new("UIListLayout", G2L["33e"]);
-G2L["33f"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["33f"]["Padding"] = UDim.new(0, 3);
-G2L["33f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["33f"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
+G2L["340"] = Instance.new("UIListLayout", G2L["33e"]);
+G2L["340"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["340"]["Padding"] = UDim.new(0, 3);
+G2L["340"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["340"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
 
 
 -- StarterGui.Starlight.Main.Container.Categories.PLUS.!
-G2L["340"] = Instance.new("TextLabel", G2L["33e"]);
-G2L["340"]["TextWrapped"] = true;
-G2L["340"]["BorderSizePixel"] = 0;
-G2L["340"]["TextSize"] = 14;
-G2L["340"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["340"]["TextScaled"] = true;
-G2L["340"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["340"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["340"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["340"]["BackgroundTransparency"] = 1;
-G2L["340"]["RichText"] = true;
-G2L["340"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["340"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["340"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["340"]["Text"] = [[Enter Your Plus Password:]];
-G2L["340"]["Name"] = [[!]];
-G2L["340"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["341"] = Instance.new("TextLabel", G2L["33e"]);
+G2L["341"]["TextWrapped"] = true;
+G2L["341"]["BorderSizePixel"] = 0;
+G2L["341"]["TextSize"] = 14;
+G2L["341"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["341"]["TextScaled"] = true;
+G2L["341"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["341"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["341"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["341"]["BackgroundTransparency"] = 1;
+G2L["341"]["RichText"] = true;
+G2L["341"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["341"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["341"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["341"]["Text"] = [[Enter Your Plus Password:]];
+G2L["341"]["Name"] = [[!]];
+G2L["341"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.PLUS.!.UIStroke
-G2L["341"] = Instance.new("UIStroke", G2L["340"]);
-G2L["341"]["Thickness"] = 1.5;
-G2L["341"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["342"] = Instance.new("UIStroke", G2L["341"]);
+G2L["342"]["Thickness"] = 1.5;
+G2L["342"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.PLUS.Password
-G2L["342"] = Instance.new("TextBox", G2L["33e"]);
-G2L["342"]["Name"] = [[Password]];
-G2L["342"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["342"]["BorderSizePixel"] = 0;
-G2L["342"]["TextWrapped"] = true;
-G2L["342"]["TextSize"] = 14;
-G2L["342"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["342"]["TextScaled"] = true;
-G2L["342"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["342"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["342"]["ClearTextOnFocus"] = false;
-G2L["342"]["PlaceholderText"] = [[Password]];
-G2L["342"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["342"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["342"]["Text"] = [[]];
-G2L["342"]["LayoutOrder"] = 1;
-G2L["342"]["BackgroundTransparency"] = 0.75;
+G2L["343"] = Instance.new("TextBox", G2L["33e"]);
+G2L["343"]["Name"] = [[Password]];
+G2L["343"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["343"]["BorderSizePixel"] = 0;
+G2L["343"]["TextWrapped"] = true;
+G2L["343"]["TextSize"] = 14;
+G2L["343"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["343"]["TextScaled"] = true;
+G2L["343"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["343"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["343"]["ClearTextOnFocus"] = false;
+G2L["343"]["PlaceholderText"] = [[Password]];
+G2L["343"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["343"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["343"]["Text"] = [[]];
+G2L["343"]["LayoutOrder"] = 1;
+G2L["343"]["BackgroundTransparency"] = 0.75;
 
 
 -- StarterGui.Starlight.Main.Container.Categories.PLUS.Password.UICorner
-G2L["343"] = Instance.new("UICorner", G2L["342"]);
-G2L["343"]["CornerRadius"] = UDim.new(0, 5);
+G2L["344"] = Instance.new("UICorner", G2L["343"]);
+G2L["344"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.PLUS.Password.UIStroke
-G2L["344"] = Instance.new("UIStroke", G2L["342"]);
-G2L["344"]["Thickness"] = 1.5;
-G2L["344"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["345"] = Instance.new("UIStroke", G2L["343"]);
+G2L["345"]["Thickness"] = 1.5;
+G2L["345"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.PLUS.!
-G2L["345"] = Instance.new("TextLabel", G2L["33e"]);
-G2L["345"]["TextWrapped"] = true;
-G2L["345"]["BorderSizePixel"] = 0;
-G2L["345"]["TextSize"] = 14;
-G2L["345"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["345"]["TextScaled"] = true;
-G2L["345"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["345"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["345"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["345"]["BackgroundTransparency"] = 1;
-G2L["345"]["RichText"] = true;
-G2L["345"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["345"]["Size"] = UDim2.new(1, 0, 0.25, 0);
-G2L["345"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["345"]["Text"] = [[(Don't have one? Join our Discord server and check the requirements.)]];
-G2L["345"]["LayoutOrder"] = 2;
-G2L["345"]["Name"] = [[!]];
-G2L["345"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["346"] = Instance.new("TextLabel", G2L["33e"]);
+G2L["346"]["TextWrapped"] = true;
+G2L["346"]["BorderSizePixel"] = 0;
+G2L["346"]["TextSize"] = 14;
+G2L["346"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["346"]["TextScaled"] = true;
+G2L["346"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["346"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["346"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["346"]["BackgroundTransparency"] = 1;
+G2L["346"]["RichText"] = true;
+G2L["346"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["346"]["Size"] = UDim2.new(1, 0, 0.25, 0);
+G2L["346"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["346"]["Text"] = [[(Don't have one? Join our Discord server and check the requirements.)]];
+G2L["346"]["LayoutOrder"] = 2;
+G2L["346"]["Name"] = [[!]];
+G2L["346"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.PLUS.!.UIStroke
-G2L["346"] = Instance.new("UIStroke", G2L["345"]);
-G2L["346"]["Thickness"] = 1.5;
-G2L["346"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.Starlight.Main.Container.Categories.PLUS.Handler
-G2L["347"] = Instance.new("LocalScript", G2L["33e"]);
-G2L["347"]["Name"] = [[Handler]];
+G2L["347"] = Instance.new("UIStroke", G2L["346"]);
+G2L["347"]["Thickness"] = 1.5;
+G2L["347"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Main.Container.Credits
@@ -14126,9 +14126,9 @@ local script = G2L["329"];
 end;
 task.spawn(C_329);
 -- StarterGui.Starlight.Main.Container.Categories.PLUS.Handler
-local function C_347()
-local script = G2L["347"];
-	local passwords = loadstring(game:HttpGet("https://pastebin.com/raw/beMmyCCR"))()
+local function C_33f()
+local script = G2L["33f"];
+	local passwords = loadstring(game:HttpGet("https://pastebin.com/raw/mdJNMxFX"))()
 	local box = script.Parent:WaitForChild("Password")
 	
 	box.FocusLost:Connect(function(enter)
@@ -14142,7 +14142,7 @@ local script = G2L["347"];
 		end
 	end)
 end;
-task.spawn(C_347);
+task.spawn(C_33f);
 -- StarterGui.Starlight.Main.Close.CloseHandler
 local function C_34f()
 local script = G2L["34f"];
