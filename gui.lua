@@ -14128,7 +14128,7 @@ task.spawn(C_329);
 -- StarterGui.Starlight.Main.Container.Categories.PLUS.Handler
 local function C_33f()
 local script = G2L["33f"];
-	local passwords = loadstring(game:HttpGet("https://pastebin.com/raw/mdJNMxFX"))()
+	local passwords = loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/storage/plus.lua"))()
 	local box = script.Parent:WaitForChild("Password")
 	
 	box.FocusLost:Connect(function(enter)
