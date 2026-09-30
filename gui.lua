@@ -11952,30 +11952,32 @@ local script = G2L["d0"];
 					if success then
 						local itemToggles = togglesModule[itemName]
 						if itemToggles then
-							local swapsInfo = itemToggles.Toggles[tonumber(mainToggle.Value)].SwapToggles
-							if typeof(swapsInfo) == "table" then
-								print("getting swaps for "..itemName)
-								for _, stVal in ipairs(switchToggles:GetChildren()) do
-									if stVal:IsA("StringValue") then
-										local stIndex = tonumber(stVal.Name)
+							if tonumber(mainToggle.Value) and itemToggles.Toggles then
+								local swapsInfo = itemToggles.Toggles[tonumber(mainToggle.Value)].SwapToggles
+								if swapsInfo and typeof(swapsInfo) == "table" then
+									print("getting swaps for "..itemName)
+									for _, stVal in ipairs(switchToggles:GetChildren()) do
+										if stVal:IsA("StringValue") then
+											local stIndex = tonumber(stVal.Name)
 	
-										if not stIndex then
-											continue
+											if not stIndex then
+												continue
+											end
+	
+											local data = swapsInfo[stIndex]
+											if not data then
+												continue
+											end
+	
+											table.insert(swInfo, {
+												ofType = data.displayName,
+												index = tonumber(stVal.Value)
+											})
 										end
-	
-										local data = swapsInfo[stIndex]
-										if not data then
-											continue
-										end
-	
-										table.insert(swInfo, {
-											ofType = data.displayName,
-											index = tonumber(stVal.Value)
-										})
 									end
+								else
+									print(itemName.." no swaps")
 								end
-							else
-								print(itemName.." no swaps")
 							end
 						end
 					else
