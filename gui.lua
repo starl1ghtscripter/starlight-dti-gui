@@ -1,12 +1,3 @@
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
-
 -- Instances: 1095 | Scripts: 72 | Modules: 0 | Tags: 0
 local G2L = {};
 
@@ -42,7 +33,7 @@ G2L["4"]["BackgroundTransparency"] = 1;
 G2L["4"]["AnchorPoint"] = Vector2.new(0, 1);
 G2L["4"]["Size"] = UDim2.new(0.5, 0, 0.045, 0);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4"]["Text"] = [[Press "[" or "]" to unhine Starlight GUI.]];
+G2L["4"]["Text"] = [[Press "[" or "]" to unhide Starlight GUI.]];
 G2L["4"]["Name"] = [[ShiftNotif]];
 G2L["4"]["Position"] = UDim2.new(0, 0, 0.915, 0);
 
@@ -10678,7 +10669,7 @@ local script = G2L["3"];
 		task.spawn(function()
 			textClone.TextTransparency = 0
 			textClone.UIStroke.Transparency = 0
-			task.wait(1)
+			task.wait(1.75)
 			local tween = game.TweenService:Create(textClone, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {TextTransparency = 1})
 			local tween2 = game.TweenService:Create(textClone.UIStroke, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {Transparency = 1})
 			tween:Play()
