@@ -1,13 +1,13 @@
-## Exploit for Dress to Impress - Working as of May 2026 (Spring)
+## Exploit for Dress to Impress - Working as of Oct 2026 (Autumn/Fall)
 ୨ৎ **GUI Features:** ୨ৎ
 
-- Equip DLC makeup for free, including all collections. ⟡
+- Equip locked makeup for free, including all collections. ⟡
 - Ability to steal outfits and custom makeup looks.  ݁ ⟡ ݁ 
 - Free walk packs available. (Occasionally buggy)  ݁ ⟡ ݁ 
 - Unlock all POSES + CODES for free!  ݁ ⟡ ݁ 
 - Outfit presets to help you troll or achieve top spots on the leaderboard.  ݁ ⟡ ݁ 
 -------------------------------------------------------------------------------------
--# Note that we do not take any responsibility if you get banned from/reported to DTI. 𑣲
+! Note that we do not take any responsibility if you get banned from/reported to DTI. 𑣲
 
 Copy and paste the script below into your executor to use the GUI.
 ```lua
