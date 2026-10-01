@@ -12332,14 +12332,13 @@ local script = G2L["d0"];
 	script.Parent:WaitForChild("CustomMakeup").MouseButton1Up:Connect(function()
 		if setclipboard then
 			local mu = getMakeup()
-			if mu then
-				setclipboard(clearMakeup..getMakeup())
-			else
+			if not mu then
 				if notifCont then
-					notifCont:Notify("Error getting makeup.")
+					notifCont:Notify("Error Copying Makeup.")
 				end
 				return
 			end
+			setclipboard(clearMakeup..getMakeup())
 			if notifCont then
 				notifCont:Notify("Copied Your Makeup To Clipboard!")
 			end
@@ -12353,14 +12352,13 @@ local script = G2L["d0"];
 		if setclipboard then
 			local fit = getOutfit()
 			local mu = getMakeup()
-			if fit and mu then
-				setclipboard(clearOutfit..getOutfit()..clearMakeup..getMakeup())
-			else
+			if not mu or not fit then
 				if notifCont then
-					notifCont:Notify("Error getting outfit.")
+					notifCont:Notify("Error Copying Outfit.")
 				end
 				return
 			end
+			setclipboard(clearOutfit..getOutfit()..clearMakeup..getMakeup())
 			if notifCont then
 				notifCont:Notify("Copied Your Outfit To Clipboard!")
 			end
@@ -12376,14 +12374,13 @@ local script = G2L["d0"];
 			if not username then return end
 			if setclipboard then
 				local mu = getMakeup(username)
-				if mu then
-					setclipboard(clearMakeup..getMakeup(username))
-				else
+				if not mu then
 					if notifCont then
-						notifCont:Notify("Error getting makeup.")
+						notifCont:Notify("Player Not Found.")
 					end
 					return
 				end
+				setclipboard(clearMakeup..getMakeup(username))
 				if notifCont then
 					local plr
 					for i, v in game.Players:GetPlayers() do
@@ -12410,14 +12407,13 @@ local script = G2L["d0"];
 			if not username then return end
 			if loadstring then
 				local mu = getMakeup(username)
-				if mu then
-					loadstring(clearMakeup..getMakeup(username))()
-				else
+				if not mu then
 					if notifCont then
-						notifCont:Notify("Error getting makeup.")
+						notifCont:Notify("Player Not Found.")
 					end
 					return
 				end
+				loadstring(clearMakeup..getMakeup(username))()
 				if notifCont then
 					local plr
 					for i, v in game.Players:GetPlayers() do
@@ -12445,14 +12441,13 @@ local script = G2L["d0"];
 			if setclipboard then
 				local fit = getOutfit(username)
 				local mu = getMakeup(username)
-				if fit and mu then
-					setclipboard(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))
-				else
+				if not mu or not fit then
 					if notifCont then
-						notifCont:Notify("Error getting outfit.")
+						notifCont:Notify("Player Not Found.")
 					end
 					return
 				end
+				setclipboard(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))
 				if notifCont then
 					local plr
 					for i, v in game.Players:GetPlayers() do
@@ -12480,14 +12475,13 @@ local script = G2L["d0"];
 			if loadstring then
 				local fit = getOutfit(username)
 				local mu = getMakeup(username)
-				if fit and mu then
-					loadstring(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))()
-				else
+				if not mu or not fit then
 					if notifCont then
-						notifCont:Notify("Error getting outfit.")
+						notifCont:Notify("Player Not Found.")
 					end
 					return
 				end
+				loadstring(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))()
 				if notifCont then
 					local plr
 					for i, v in game.Players:GetPlayers() do
