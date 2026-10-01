@@ -1,3 +1,12 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
 -- Instances: 1095 | Scripts: 72 | Modules: 0 | Tags: 0
 local G2L = {};
 
@@ -6117,101 +6126,101 @@ G2L["277"]["LayoutOrder"] = 7;
 G2L["277"]["BackgroundTransparency"] = 1;
 
 
+-- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.EquipRemote
+G2L["278"] = Instance.new("LocalScript", G2L["277"]);
+G2L["278"]["Name"] = [[EquipRemote]];
+
+
 -- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.Light
-G2L["278"] = Instance.new("TextButton", G2L["277"]);
-G2L["278"]["TextWrapped"] = true;
-G2L["278"]["BorderSizePixel"] = 0;
-G2L["278"]["TextSize"] = 14;
-G2L["278"]["TextScaled"] = true;
-G2L["278"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["278"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["278"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["278"]["BackgroundTransparency"] = 0.5;
-G2L["278"]["Size"] = UDim2.new(0.4, 0, 1, 0);
-G2L["278"]["LayoutOrder"] = 7;
-G2L["278"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["278"]["Text"] = [[Equip Light]];
-G2L["278"]["Name"] = [[Light]];
+G2L["279"] = Instance.new("TextButton", G2L["277"]);
+G2L["279"]["TextWrapped"] = true;
+G2L["279"]["BorderSizePixel"] = 0;
+G2L["279"]["TextSize"] = 14;
+G2L["279"]["TextScaled"] = true;
+G2L["279"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["279"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["279"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["279"]["BackgroundTransparency"] = 0.5;
+G2L["279"]["Size"] = UDim2.new(0.4, 0, 1, 0);
+G2L["279"]["LayoutOrder"] = 7;
+G2L["279"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["279"]["Text"] = [[Equip Light]];
+G2L["279"]["Name"] = [[Light]];
 
 
 -- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.Light.UICorner
-G2L["279"] = Instance.new("UICorner", G2L["278"]);
-G2L["279"]["CornerRadius"] = UDim.new(0, 5);
+G2L["27a"] = Instance.new("UICorner", G2L["279"]);
+G2L["27a"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.Light.UIStroke
-G2L["27a"] = Instance.new("UIStroke", G2L["278"]);
-G2L["27a"]["Thickness"] = 1.5;
-G2L["27a"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["27b"] = Instance.new("UIStroke", G2L["279"]);
+G2L["27b"]["Thickness"] = 1.5;
+G2L["27b"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.UIListLayout
-G2L["27b"] = Instance.new("UIListLayout", G2L["277"]);
-G2L["27b"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
-G2L["27b"]["Padding"] = UDim.new(0.02, 0);
-G2L["27b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["27b"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["27c"] = Instance.new("UIListLayout", G2L["277"]);
+G2L["27c"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
+G2L["27c"]["Padding"] = UDim.new(0.02, 0);
+G2L["27c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["27c"]["FillDirection"] = Enum.FillDirection.Horizontal;
 
 
 -- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.Dark
-G2L["27c"] = Instance.new("TextButton", G2L["277"]);
-G2L["27c"]["TextWrapped"] = true;
-G2L["27c"]["BorderSizePixel"] = 0;
-G2L["27c"]["TextSize"] = 14;
-G2L["27c"]["TextScaled"] = true;
-G2L["27c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27c"]["BackgroundTransparency"] = 0.5;
-G2L["27c"]["Size"] = UDim2.new(0.4, 0, 1, 0);
-G2L["27c"]["LayoutOrder"] = 7;
-G2L["27c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27c"]["Text"] = [[Equip Dark]];
-G2L["27c"]["Name"] = [[Dark]];
+G2L["27d"] = Instance.new("TextButton", G2L["277"]);
+G2L["27d"]["TextWrapped"] = true;
+G2L["27d"]["BorderSizePixel"] = 0;
+G2L["27d"]["TextSize"] = 14;
+G2L["27d"]["TextScaled"] = true;
+G2L["27d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27d"]["BackgroundTransparency"] = 0.5;
+G2L["27d"]["Size"] = UDim2.new(0.4, 0, 1, 0);
+G2L["27d"]["LayoutOrder"] = 7;
+G2L["27d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27d"]["Text"] = [[Equip Dark]];
+G2L["27d"]["Name"] = [[Dark]];
 
 
 -- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.Dark.UICorner
-G2L["27d"] = Instance.new("UICorner", G2L["27c"]);
-G2L["27d"]["CornerRadius"] = UDim.new(0, 5);
+G2L["27e"] = Instance.new("UICorner", G2L["27d"]);
+G2L["27e"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.Dark.UIStroke
-G2L["27e"] = Instance.new("UIStroke", G2L["27c"]);
-G2L["27e"]["Thickness"] = 1.5;
-G2L["27e"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["27f"] = Instance.new("UIStroke", G2L["27d"]);
+G2L["27f"]["Thickness"] = 1.5;
+G2L["27f"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.Neutral
-G2L["27f"] = Instance.new("TextButton", G2L["277"]);
-G2L["27f"]["TextWrapped"] = true;
-G2L["27f"]["BorderSizePixel"] = 0;
-G2L["27f"]["TextSize"] = 14;
-G2L["27f"]["TextScaled"] = true;
-G2L["27f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27f"]["BackgroundTransparency"] = 0.5;
-G2L["27f"]["Size"] = UDim2.new(0.4, 0, 1, 0);
-G2L["27f"]["LayoutOrder"] = 7;
-G2L["27f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27f"]["Text"] = [[Equip Neutral]];
-G2L["27f"]["Name"] = [[Neutral]];
+G2L["280"] = Instance.new("TextButton", G2L["277"]);
+G2L["280"]["TextWrapped"] = true;
+G2L["280"]["BorderSizePixel"] = 0;
+G2L["280"]["TextSize"] = 14;
+G2L["280"]["TextScaled"] = true;
+G2L["280"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["280"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["280"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["280"]["BackgroundTransparency"] = 0.5;
+G2L["280"]["Size"] = UDim2.new(0.4, 0, 1, 0);
+G2L["280"]["LayoutOrder"] = 7;
+G2L["280"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["280"]["Text"] = [[Equip Neutral]];
+G2L["280"]["Name"] = [[Neutral]];
 
 
 -- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.Neutral.UICorner
-G2L["280"] = Instance.new("UICorner", G2L["27f"]);
-G2L["280"]["CornerRadius"] = UDim.new(0, 5);
+G2L["281"] = Instance.new("UICorner", G2L["280"]);
+G2L["281"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.Neutral.UIStroke
-G2L["281"] = Instance.new("UIStroke", G2L["27f"]);
-G2L["281"]["Thickness"] = 1.5;
-G2L["281"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.EquipRemote
-G2L["282"] = Instance.new("LocalScript", G2L["277"]);
-G2L["282"]["Name"] = [[EquipRemote]];
+G2L["282"] = Instance.new("UIStroke", G2L["280"]);
+G2L["282"]["Thickness"] = 1.5;
+G2L["282"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.Starlight.Main.Container.Categories.Emotes
@@ -10463,14 +10472,14 @@ G2L["433"]["Position"] = UDim2.new(0.49873, 0, 0.42073, 0);
 
 
 -- StarterGui.Starlight.MAKEUPS.LocalScript.Makeup.Tone1.UIGradient
-G2L["434"] = Instance.new("UIGradient", G2L["433"]);
-G2L["434"]["Rotation"] = 180;
-G2L["434"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.499, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 0)};
+G2L["434"] = Instance.new("LocalScript", G2L["433"]);
+G2L["434"]["Name"] = [[UIGradient]];
 
 
 -- StarterGui.Starlight.MAKEUPS.LocalScript.Makeup.Tone1.UIGradient
-G2L["435"] = Instance.new("LocalScript", G2L["433"]);
-G2L["435"]["Name"] = [[UIGradient]];
+G2L["435"] = Instance.new("UIGradient", G2L["433"]);
+G2L["435"]["Rotation"] = 180;
+G2L["435"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.499, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 0)};
 
 
 -- StarterGui.Starlight.MAKEUPS.LocalScript.Makeup.Tone2
@@ -10488,13 +10497,13 @@ G2L["436"]["Position"] = UDim2.new(0.49873, 0, 0.42073, 0);
 
 
 -- StarterGui.Starlight.MAKEUPS.LocalScript.Makeup.Tone2.UIGradient
-G2L["437"] = Instance.new("UIGradient", G2L["436"]);
-G2L["437"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.499, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 0)};
+G2L["437"] = Instance.new("LocalScript", G2L["436"]);
+G2L["437"]["Name"] = [[UIGradient]];
 
 
 -- StarterGui.Starlight.MAKEUPS.LocalScript.Makeup.Tone2.UIGradient
-G2L["438"] = Instance.new("LocalScript", G2L["436"]);
-G2L["438"]["Name"] = [[UIGradient]];
+G2L["438"] = Instance.new("UIGradient", G2L["436"]);
+G2L["438"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.499, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 0)};
 
 
 -- StarterGui.Starlight.MAKEUPS.UICorner
@@ -12322,7 +12331,15 @@ local script = G2L["d0"];
 	
 	script.Parent:WaitForChild("CustomMakeup").MouseButton1Up:Connect(function()
 		if setclipboard then
-			setclipboard(clearMakeup..getMakeup())
+			local mu = getMakeup()
+			if mu then
+				setclipboard(clearMakeup..getMakeup())
+			else
+				if notifCont then
+					notifCont:Notify("Error getting makeup.")
+				end
+				return
+			end
 			if notifCont then
 				notifCont:Notify("Copied Your Makeup To Clipboard!")
 			end
@@ -12334,7 +12351,16 @@ local script = G2L["d0"];
 	
 	script.Parent:WaitForChild("Outfit").MouseButton1Up:Connect(function()
 		if setclipboard then
-			setclipboard(clearOutfit..getOutfit()..clearMakeup..getMakeup())
+			local fit = getOutfit()
+			local mu = getMakeup()
+			if fit and mu then
+				setclipboard(clearOutfit..getOutfit()..clearMakeup..getMakeup())
+			else
+				if notifCont then
+					notifCont:Notify("Error getting outfit.")
+				end
+				return
+			end
 			if notifCont then
 				notifCont:Notify("Copied Your Outfit To Clipboard!")
 			end
@@ -12349,7 +12375,15 @@ local script = G2L["d0"];
 			local username = string.lower(script.Parent:WaitForChild("StealName").Text)
 			if not username then return end
 			if setclipboard then
-				setclipboard(clearMakeup..getMakeup(username))
+				local mu = getMakeup(username)
+				if mu then
+					setclipboard(clearMakeup..getMakeup(username))
+				else
+					if notifCont then
+						notifCont:Notify("Error getting makeup.")
+					end
+					return
+				end
 				if notifCont then
 					local plr
 					for i, v in game.Players:GetPlayers() do
@@ -12375,7 +12409,15 @@ local script = G2L["d0"];
 			local username = string.lower(script.Parent:WaitForChild("StealName").Text)
 			if not username then return end
 			if loadstring then
-				loadstring(clearMakeup..getMakeup(username))()
+				local mu = getMakeup(username)
+				if mu then
+					loadstring(clearMakeup..getMakeup(username))()
+				else
+					if notifCont then
+						notifCont:Notify("Error getting makeup.")
+					end
+					return
+				end
 				if notifCont then
 					local plr
 					for i, v in game.Players:GetPlayers() do
@@ -12401,7 +12443,16 @@ local script = G2L["d0"];
 			local username = string.lower(script.Parent:WaitForChild("StealName").Text)
 			if not username then return end
 			if setclipboard then
-				setclipboard(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))
+				local fit = getOutfit(username)
+				local mu = getMakeup(username)
+				if fit and mu then
+					setclipboard(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))
+				else
+					if notifCont then
+						notifCont:Notify("Error getting outfit.")
+					end
+					return
+				end
 				if notifCont then
 					local plr
 					for i, v in game.Players:GetPlayers() do
@@ -12427,7 +12478,16 @@ local script = G2L["d0"];
 			local username = string.lower(script.Parent:WaitForChild("StealName").Text)
 			if not username then return end
 			if loadstring then
-				loadstring(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))()
+				local fit = getOutfit(username)
+				local mu = getMakeup(username)
+				if fit and mu then
+					loadstring(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))()
+				else
+					if notifCont then
+						notifCont:Notify("Error getting outfit.")
+					end
+					return
+				end
 				if notifCont then
 					local plr
 					for i, v in game.Players:GetPlayers() do
@@ -14036,8 +14096,8 @@ local script = G2L["243"];
 end;
 task.spawn(C_243);
 -- StarterGui.Starlight.Main.Container.Categories.Outfit.MAKEUP_OPTIONS.EquipRemote
-local function C_282()
-local script = G2L["282"];
+local function C_278()
+local script = G2L["278"];
 	local box = script.Parent.Parent.MakeupIndex
 	
 	local index = 0
@@ -14062,7 +14122,7 @@ local script = G2L["282"];
 		end
 	end)
 end;
-task.spawn(C_282);
+task.spawn(C_278);
 -- StarterGui.Starlight.Main.Container.Categories.Emotes.Emotes
 local function C_284()
 local script = G2L["284"];
@@ -15084,8 +15144,8 @@ local script = G2L["42d"];
 end;
 task.spawn(C_42d);
 -- StarterGui.Starlight.MAKEUPS.LocalScript.Makeup.Tone1.UIGradient
-local function C_435()
-local script = G2L["435"];
+local function C_434()
+local script = G2L["434"];
 	local gradient = Instance.new("UIGradient")
 	gradient.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 1), NumberSequenceKeypoint.new(0.499, 1), NumberSequenceKeypoint.new(0.5, 0), NumberSequenceKeypoint.new(1, 0)})
 	gradient.Rotation = 180
@@ -15093,10 +15153,10 @@ local script = G2L["435"];
 	
 	script:Destroy()
 end;
-task.spawn(C_435);
+task.spawn(C_434);
 -- StarterGui.Starlight.MAKEUPS.LocalScript.Makeup.Tone2.UIGradient
-local function C_438()
-local script = G2L["438"];
+local function C_437()
+local script = G2L["437"];
 	local gradient = Instance.new("UIGradient")
 	gradient.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 1), NumberSequenceKeypoint.new(0.499, 1), NumberSequenceKeypoint.new(0.5, 0), NumberSequenceKeypoint.new(1, 0)})
 	gradient.Rotation = 0
@@ -15104,7 +15164,7 @@ local script = G2L["438"];
 	
 	script:Destroy()
 end;
-task.spawn(C_438);
+task.spawn(C_437);
 -- StarterGui.Starlight.MAKEUPS.Close.CloseHandler
 local function C_445()
 local script = G2L["445"];
