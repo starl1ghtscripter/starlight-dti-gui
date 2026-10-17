@@ -10913,15 +10913,10 @@ task.spawn(C_9);
 -- StarterGui.Starlight.Main.Intro
 local function C_b()
 local script = G2L["b"];
-	--[[if game.CreatorType == Enum.CreatorType.Group then
-		if game.CreatorId ~= 17264167 then
-			script.Parent.Parent:Destroy()
-			return
-		end
-	else
+	if not game.ReplicatedStorage:FindFirstChild("Fashion Show") then
 		script.Parent.Parent:Destroy()
 		return
-	end]]
+	end
 	
 	if SLexecuted then
 		local notifCont
@@ -14778,14 +14773,23 @@ local script = G2L["385"];
 			item:SetAttribute("Type", data.Type)
 			local renders = data.Render
 			if renders then
-				local render = renders[1]
-				if renders[2] then
-					render = renders[2]
+				local render = renders
+				if typeof(renders) == "table" then
+					if renders[2] then
+						render = renders[2]
+					else
+						render = renders[1]
+					end
 				end
-				if not render then
-					render = renders
+				if typeof(render) ~= "string" or not render then
+					render = "0"
 				end
-				item.ImageLabel.Image = render or ""
+				if tonumber(string.gsub(render, "rbxassetid://", "")) then
+					render = "rbxassetid://"..string.gsub(render, "rbxassetid://", "")
+				else
+					render = "rbxassetid://0"
+				end
+				item.ImageLabel.Image = render
 			else
 				item:Destroy()
 				continue
