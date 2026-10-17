@@ -10913,7 +10913,7 @@ task.spawn(C_9);
 -- StarterGui.Starlight.Main.Intro
 local function C_b()
 local script = G2L["b"];
-	if game.CreatorType == Enum.CreatorType.Group then
+	--[[if game.CreatorType == Enum.CreatorType.Group then
 		if game.CreatorId ~= 17264167 then
 			script.Parent.Parent:Destroy()
 			return
@@ -10921,7 +10921,7 @@ local script = G2L["b"];
 	else
 		script.Parent.Parent:Destroy()
 		return
-	end
+	end]]
 	
 	if SLexecuted then
 		local notifCont
@@ -14782,7 +14782,10 @@ local script = G2L["385"];
 				if renders[2] then
 					render = renders[2]
 				end
-				item.ImageLabel.Image = render
+				if not render then
+					render = renders
+				end
+				item.ImageLabel.Image = render or ""
 			else
 				item:Destroy()
 				continue
