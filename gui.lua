@@ -14778,15 +14778,10 @@ local script = G2L["385"];
 					if renders[2] then
 						render = renders[2]
 					else
-						render = renders[1] or "0"
+						render = renders[1] or "rbxassetid://0"
 					end
 				end
-				if tonumber(string.gsub(render, "rbxassetid://", "")) then
-					render = "rbxassetid://"..string.gsub(render, "rbxassetid://", "")
-				else
-					render = "rbxassetid://0"
-				end
-				item.ImageLabel.Image = render
+				item.ImageLabel.Image = render or "rbxassetid://0"
 			else
 				item:Destroy()
 				continue
