@@ -14778,11 +14778,8 @@ local script = G2L["385"];
 					if renders[2] then
 						render = renders[2]
 					else
-						render = renders[1]
+						render = renders[1] or "0"
 					end
-				end
-				if typeof(render) ~= "string" or not render then
-					render = "0"
 				end
 				if tonumber(string.gsub(render, "rbxassetid://", "")) then
 					render = "rbxassetid://"..string.gsub(render, "rbxassetid://", "")
