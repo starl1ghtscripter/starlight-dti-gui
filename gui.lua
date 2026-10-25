@@ -3906,7 +3906,6 @@ G2L["198"] = Instance.new("ScrollingFrame", G2L["42"]);
 G2L["198"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 G2L["198"]["BorderSizePixel"] = 0;
 G2L["198"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["198"]["CanvasPosition"] = Vector2.new(0, 361.70007);
 G2L["198"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
 G2L["198"]["Name"] = [[GameUtils]];
 G2L["198"]["ScrollBarImageTransparency"] = 0.5;
@@ -9855,7 +9854,7 @@ G2L["3f5"]["BackgroundTransparency"] = 1;
 G2L["3f5"]["AnchorPoint"] = Vector2.new(1, 0);
 G2L["3f5"]["Size"] = UDim2.new(1, 0, 0.15, 0);
 G2L["3f5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3f5"]["Text"] = [[Current Version: v1.0.7]];
+G2L["3f5"]["Text"] = [[Current Version: v1.0.8]];
 G2L["3f5"]["Name"] = [[VERSION]];
 G2L["3f5"]["Position"] = UDim2.new(1, 0, 0, 0);
 
@@ -9909,11 +9908,10 @@ G2L["3fb"]["BackgroundTransparency"] = 1;
 G2L["3fb"]["AnchorPoint"] = Vector2.new(1, 0);
 G2L["3fb"]["Size"] = UDim2.new(1, 0, 0, 15);
 G2L["3fb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3fb"]["Text"] = [[- View Makeups In a Makeup Pack!
-- Equip ANY Makeup Index!
-- “Easea” Partner removed.
-- Fixed Classic Makeup Copying.
-- Show All Nametags Feature]];
+G2L["3fb"]["Text"] = [[- Added H26 Quest Teleports + More.
+- Added H26 Quest Completer (Chapter 3, others coming soon).
+- Added Ghost Hunting Auto-Farmer.
+- Removed Patched Features!]];
 G2L["3fb"]["AutomaticSize"] = Enum.AutomaticSize.Y;
 G2L["3fb"]["Name"] = [[Log]];
 G2L["3fb"]["Position"] = UDim2.new(1.04329, 0, 0.20714, 0);
@@ -13528,8 +13526,8 @@ local script = G2L["1f7"];
 	
 	local function getPack()
 		packGotten = true
-		walk(grabTrigger.Parent.WorldCFrame, true)
-		task.wait(0.5)
+		game.Players.LocalPlayer.Character:PivotTo(grabTrigger.Parent.WorldCFrame)
+		task.wait(0.2)
 		fireproximityprompt(grabTrigger)
 		tpAlr = false
 	end
@@ -13621,10 +13619,6 @@ local script = G2L["1f7"];
 				walkspeed(80)
 			end
 	
-			if not packGotten then
-				getPack()
-			end
-	
 			if autoRecharge then
 				if packStates.FullVacuum.Visible == true or packStates.LowBattery.Visible == true then
 					rechargePack()
@@ -13635,6 +13629,10 @@ local script = G2L["1f7"];
 			end
 	
 			if following then
+				if not packGotten then
+					getPack()
+				end
+				
 				if not blockedRE[stunEvent.Name] then
 					blockRE(stunEvent)
 				end
