@@ -67,5 +67,6 @@ if isfolder("StarlightDTI-Config") then
 else
 	return
 end
+task.wait(4)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/game.lua"))()
 ]])
