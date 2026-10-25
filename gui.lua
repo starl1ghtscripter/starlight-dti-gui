@@ -13510,9 +13510,13 @@ local script = G2L["1f7"];
 		task.wait(0.5)
 		fireproximityprompt(grabTrigger)
 		tpAlr = false
+		packGotten = true
 	end
 	
 	local function rechargePack()
+		if not packGotten then return end
+		repeat task.wait() until prompt.Enabled == true
+		task.wait(0.1)
 		walk(prompt.Parent.CFrame)
 		task.wait(0.5)
 		fireproximityprompt(prompt)
@@ -13549,7 +13553,7 @@ local script = G2L["1f7"];
 			game["Teleport Service"]:Teleport(112689131371607, game.Players.LocalPlayer)
 		end)
 	else
-		if following then
+		if following == true or autoRecharge == true or StarlightConfig.GHOSTFARMON then
 			script.Parent.Text = prefix.. " : On"
 		else
 			script.Parent.Text = prefix.. " : Off"
@@ -13572,16 +13576,16 @@ local script = G2L["1f7"];
 			targetGhost(ghosts:FindFirstChildWhichIsA("Model").Name)
 			tpAlr = false
 		end
+		
+		if not walkspeedSet then
+			walkspeed(80)
+		end
+	
+		if not packGotten then
+			getPack()
+		end
 	
 		if autoRecharge then
-			if not walkspeedSet then
-				walkspeed(80)
-			end
-	
-			if not packGotten then
-				getPack()
-			end
-			
 			if packStates.FullVacuum.Visible == true or packStates.LowBattery.Visible == true then
 				rechargePack()
 				repeat
@@ -13591,14 +13595,8 @@ local script = G2L["1f7"];
 		end
 	
 		if following then
-			blockRE(stunEvent)
-			
-			if not walkspeedSet then
-				walkspeed(80)
-			end
-	
-			if not packGotten then
-				getPack()
+			if not blockedRE[stunEvent.Name] then
+				blockRE(stunEvent)
 			end
 			
 			if tpAlr then
