@@ -13515,7 +13515,11 @@ local script = G2L["1f7"];
 	end
 	
 	local function gotoGhost(w)
-		walk(ghosts:FindFirstChild(currentGhost).HumanoidRootPart.CFrame, w)
+		if w == true then
+			walk(ghosts:FindFirstChild(currentGhost).HumanoidRootPart.CFrame, true)
+		else
+			walk(ghosts:FindFirstChild(currentGhost).HumanoidRootPart.CFrame)
+		end
 	end
 	
 	local function targetGhost(ghostName)
@@ -13603,6 +13607,8 @@ local script = G2L["1f7"];
 			foreverLoop = nil
 		end
 	end)
+	
+	task.wait(2)
 	
 	foreverLoop = task.spawn(function()
 		while true do
