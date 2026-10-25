@@ -10714,9 +10714,11 @@ task.spawn(C_9);
 -- StarterGui.Starlight.Main.Intro
 local function C_b()
 local script = G2L["b"];
-	if not game.ReplicatedStorage:FindFirstChild("Fashion Show") then
-		script.Parent.Parent:Destroy()
-		return
+	if not game.ReplicatedStorage:FindFirstChild("Content") then
+		if game.CreatorId ~= 17264167 and game.CreatorType == Enum.CreatorType.Group then
+			script.Parent.Parent:Destroy()
+			return
+		end
 	end
 	
 	if SLexecuted then
@@ -10787,6 +10789,7 @@ task.spawn(C_b);
 -- StarterGui.Starlight.Main.Container.CategoriesScroll.SwitchHandler
 local function C_10()
 local script = G2L["10"];
+	task.wait(2)
 	local cont = script.Parent.Parent
 	local categories = cont:WaitForChild("Categories")
 	
