@@ -13506,11 +13506,11 @@ local script = G2L["1f7"];
 	end
 	
 	local function getPack()
+		packGotten = true
 		walk(grabTrigger.Parent.WorldCFrame)
 		task.wait(0.5)
 		fireproximityprompt(grabTrigger)
 		tpAlr = false
-		packGotten = true
 	end
 	
 	local function rechargePack()
@@ -13562,7 +13562,7 @@ local script = G2L["1f7"];
 		script.Parent.Activated:Connect(function()
 			following = not following
 			autoRecharge = not autoRecharge
-			StarlightConfig.GHOSTFARMON = following
+			StarlightConfig.GHOSTFARMON = following == true and true or nil
 			if following then
 				script.Parent.Text = prefix.. " : On"
 			else
