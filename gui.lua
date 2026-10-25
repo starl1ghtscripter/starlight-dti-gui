@@ -10583,13 +10583,19 @@ local script = G2L["7"];
 	
 	queue_on_teleport([[
 		task.wait(4)
-		if not SLExecuted then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()
+		if not runfromtp_starlight == false then
+			if not SLExecuted then
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()
+			end
 		end
 	]])
 	
 	game.Players.LocalPlayer.OnTeleport:Connect(function(tpState)
-		SLExecuted = false
+		if SLExecuted then
+			SLExecuted = false
+		else
+			getgenv().runfromtp_starlight = false
+		end
 	end)
 end;
 task.spawn(C_7);
