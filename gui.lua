@@ -13486,7 +13486,12 @@ local script = G2L["1f7"];
 		end
 	end
 	
-	local function walk(target)
+	local function walk(target, justTp)
+		if justTp == true then
+			game.Players.LocalPlayer.Character:PivotTo(target)
+			return
+		end
+		
 		local hum = game.Players.LocalPlayer.Character.Humanoid
 	
 		local cn
@@ -13500,14 +13505,11 @@ local script = G2L["1f7"];
 	
 		hum:MoveTo(target.Position)
 		hum.MoveToFinished:Wait()
+		task.wait(0.1)
 	end
 	
 	local function gotoGhost(w)
-		if w then
-			walk(ghosts:FindFirstChild(currentGhost).HumanoidRootPart.CFrame)
-		else
-			game.Players.LocalPlayer.Character:PivotTo(ghosts:FindFirstChild(currentGhost).HumanoidRootPart.CFrame)
-		end
+		walk(ghosts:FindFirstChild(currentGhost).HumanoidRootPart.CFrame, w)
 	end
 	
 	local function targetGhost(ghostName)
@@ -13516,7 +13518,7 @@ local script = G2L["1f7"];
 	
 	local function getPack()
 		packGotten = true
-		walk(grabTrigger.Parent.WorldCFrame)
+		walk(grabTrigger.Parent.WorldCFrame, true)
 		task.wait(0.5)
 		fireproximityprompt(grabTrigger)
 		tpAlr = false
@@ -13527,7 +13529,7 @@ local script = G2L["1f7"];
 			repeat task.wait() until prompt.Enabled == true
 		end
 		task.wait(0.1)
-		walk(prompt.Parent.CFrame + Vector3.new(0, 0, 3))
+		walk(prompt.Parent.CFrame + Vector3.new(0, 0, 3), true)
 		task.wait(0.5)
 		fireproximityprompt(prompt)
 		tpAlr = false
