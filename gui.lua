@@ -13542,6 +13542,7 @@ local script = G2L["1f7"];
 		script.Parent.Activated:Connect(function()
 			script.Parent.Text = "Teleporting..."
 			StarlightConfig.GHOSTFARMON = true
+			task.wait(1)
 			game["Teleport Service"]:Teleport(112689131371607, game.Players.LocalPlayer)
 		end)
 	else
