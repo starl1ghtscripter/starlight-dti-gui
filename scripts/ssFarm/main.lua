@@ -9,6 +9,7 @@ if not isfile("StarlightDTI-Config/ssFARM") then
 end
 
 queue_on_teleport([[
+task.wait(4)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/scripts/ssFarm/lobby.lua"))()
 ]])
 
