@@ -10583,7 +10583,9 @@ local script = G2L["7"];
 	
 	queue_on_teleport([[
 		task.wait(4)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()
+		if not SLExecuted then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()
+		end
 	]])
 	
 	game.Players.LocalPlayer.OnTeleport:Connect(function(tpState)
@@ -12904,17 +12906,25 @@ local script = G2L["199"];
 		collectCurrent()
 	end)
 	
+	local foreva = nil
+	
 	script.Parent.Parent.Parent.Parent.Parent.Destroying:Connect(function()
 		toggle(false)
+		if foreva then
+			task.cancel(foreva)
+			foreva = nil
+		end
 	end)
 	
 	toggle(default)
-	while true do
-		if toggled then
-			collectCurrent()
+	foreva = task.spawn(function()
+		while true do
+			if toggled then
+				collectCurrent()
+			end
+			task.wait(0.1)
 		end
-		task.wait(0.1)
-	end
+	end)
 end;
 task.spawn(C_199);
 -- StarterGui.Starlight.Main.Container.Categories.GameUtils.Shopping
@@ -13502,7 +13512,6 @@ local script = G2L["1f7"];
 	
 	local function targetGhost(ghostName)
 		currentGhost = ghostName
-		following = true
 	end
 	
 	local function getPack()
@@ -13514,10 +13523,11 @@ local script = G2L["1f7"];
 	end
 	
 	local function rechargePack()
-		if not packGotten then return end
-		repeat task.wait() until prompt.Enabled == true
+		if prompt.Enabled == false then
+			repeat task.wait() until prompt.Enabled == true
+		end
 		task.wait(0.1)
-		walk(prompt.Parent.CFrame)
+		walk(prompt.Parent.CFrame + Vector3.new(0, 0, 3))
 		task.wait(0.5)
 		fireproximityprompt(prompt)
 		tpAlr = false
@@ -13530,6 +13540,7 @@ local script = G2L["1f7"];
 	
 		if wsLoop then
 			task.cancel(wsLoop)
+			wsLoop = nil
 			walkspeedSet = false
 		end
 	
@@ -13553,16 +13564,19 @@ local script = G2L["1f7"];
 			game["Teleport Service"]:Teleport(112689131371607, game.Players.LocalPlayer)
 		end)
 	else
-		if following == true or autoRecharge == true or StarlightConfig.GHOSTFARMON then
+		if following == true then
 			script.Parent.Text = prefix.. " : On"
 		else
 			script.Parent.Text = prefix.. " : Off"
 		end
 		
+		print("starting farm at "..tostring(following))
+		StarlightConfig.GHOSTFARMON = nil
+		
 		script.Parent.Activated:Connect(function()
 			following = not following
 			autoRecharge = not autoRecharge
-			StarlightConfig.GHOSTFARMON = following == true and true or nil
+			StarlightConfig.GHOSTFARMON = nil
 			if following then
 				script.Parent.Text = prefix.. " : On"
 			else
@@ -13571,49 +13585,62 @@ local script = G2L["1f7"];
 		end)
 	end
 	
-	while true do
-		if not ghosts:FindFirstChild(currentGhost) then
-			targetGhost(ghosts:FindFirstChildWhichIsA("Model").Name)
-			tpAlr = false
-		end
-		
-		if not walkspeedSet then
-			walkspeed(80)
-		end
+	local foreverLoop = nil
 	
-		if not packGotten then
-			getPack()
+	script.Parent.Parent.Parent.Parent.Parent.Parent.Destroying:Connect(function()
+		following = false
+		autoRecharge = false
+		if foreverLoop then
+			task.cancel(foreverLoop)
+			foreverLoop = nil
 		end
+	end)
 	
-		if autoRecharge then
-			if packStates.FullVacuum.Visible == true or packStates.LowBattery.Visible == true then
-				rechargePack()
-				repeat
-					task.wait()
-				until not prompt.Parent.Parent.Parent.Root:FindFirstChildWhichIsA("Sound")
+	foreverLoop = task.spawn(function()
+		while true do
+			if not ghosts:FindFirstChild(currentGhost) then
+				targetGhost(ghosts:FindFirstChildWhichIsA("Model").Name)
+				tpAlr = false
 			end
-		end
 	
-		if following then
-			if not blockedRE[stunEvent.Name] then
-				blockRE(stunEvent)
+			if not walkspeedSet then
+				walkspeed(80)
 			end
-			
-			if tpAlr then
-				gotoGhost(true)
+	
+			if not packGotten then
+				getPack()
+			end
+	
+			if autoRecharge then
+				if packStates.FullVacuum.Visible == true or packStates.LowBattery.Visible == true then
+					rechargePack()
+					repeat
+						task.wait()
+					until not prompt.Parent.Parent.Parent.Root:FindFirstChildWhichIsA("Sound")
+				end
+			end
+	
+			if following then
+				if not blockedRE[stunEvent.Name] then
+					blockRE(stunEvent)
+				end
+	
+				if tpAlr then
+					gotoGhost(true)
+				else
+					gotoGhost()
+					tpAlr = true
+				end
+				task.wait(0.1)
+				targetMouse()
+				stun()
 			else
-				gotoGhost()
-				tpAlr = true
+				blockRE(stunEvent, false)
 			end
-			task.wait(0.1)
-			targetMouse()
-			stun()
-		else
-			blockRE(stunEvent, false)
-		end
 	
-		task.wait(0.1)
-	end
+			task.wait(0.1)
+		end
+	end)
 end;
 task.spawn(C_1f7);
 -- StarterGui.Starlight.Main.Container.Categories.Settings.Sizes.LocalScript
