@@ -10583,7 +10583,7 @@ local script = G2L["7"];
 	
 	queue_on_teleport([[
 		task.wait(4)
-		if not runfromtp_starlight == false then
+		if runfromtp_starlight ~= false then
 			if not SLExecuted then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gui.lua"))()
 			end
